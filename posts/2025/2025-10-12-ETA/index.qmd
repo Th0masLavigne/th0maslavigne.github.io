@@ -1,10 +1,10 @@
 ---
 title: "Honored to receive the Excellent Thesis Award at the 2025 University of Luxembourg PhD Graduation."
 bibliography: ../../../Resources/biblio/biblio_web.bib
-date: "2025-10-12"
+date: "2025-12-10"
 categories: 
   - "News"
-image: "ETA.png"
+image: "ETA.JPG"
 ---
 
 On December 10, 2025, I reached a major milestone at the University of Luxembourg’s PhD Graduation ceremony, where I officially received my doctoral diploma. 
