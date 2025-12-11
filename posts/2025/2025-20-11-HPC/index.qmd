@@ -4,7 +4,7 @@ bibliography: ../../../Resources/biblio/biblio_web.bib
 date: "2025-11-20"
 categories: 
   - "News"
-image: "fenics.png"
+image: "fenics2.png"
 ---
 
 As part of my post-doc at I2M, I had the opportunity to install FEniCSx 0.9.0 now available as a module on MCIA Curta cluster for all users.
