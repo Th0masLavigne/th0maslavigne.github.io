@@ -15,7 +15,32 @@
 <link>https://th0maslavigne.github.io/News.html</link>
 </image>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Tue, 11 Aug 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 10 Dec 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Honored to receive the Excellent Thesis Award at the 2025 University of Luxembourg PhD Graduation.</title>
+  <link>https://th0maslavigne.github.io/posts/2025/2025-10-12-ETA/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>On December 10, 2025, I reached a major milestone at the University of Luxembourg’s PhD Graduation ceremony, where I officially received my doctoral diploma.</p>
+<p>I am incredibly honored to announce that I was also the recipient of an Excellent Thesis Award (ETA) from the University of Luxembourg. It was a privilege to be called on stage to accept this prize and celebrate alongside friends and colleagues in the presence of the Rector, Vice-Rector, and the Minister of Higher Education. I was also grateful for the opportunity to present a portion of my research to the audience.</p>
+<p>None of this would have been possible without the support of many incredible people. A heartfelt thank you to: - My Funding: The FNR (Grant AFR-FNR 17013812) for believing in this project. - My Mentors: My supervisors for their guidance. - My Network: My colleagues, friends, and family for their unwavering support. - The Unsung Heroes: The admin support, IT teams, HR, and doctoral schools who work behind the scenes to make projects like this come to life. - The Volunteers: Thank you for making the ceremony such a memorable event.</p>
+<p>You can watch the recording of the ceremony here: (https://www.youtube.com/live/2Aq1HwV_Lv8)</p>
+<p><img src="https://th0maslavigne.github.io/posts/2025/2025-10-12-ETA/ETA.JPG" class="img-fluid quarto-figure quarto-figure-center" style="width:75.0%"> <img src="https://th0maslavigne.github.io/posts/2025/2025-10-12-ETA/ETA2.JPG" class="img-fluid quarto-figure quarto-figure-center" style="width:75.0%"> <img src="https://th0maslavigne.github.io/posts/2025/2025-10-12-ETA/ETA2.JPG" class="img-fluid quarto-figure quarto-figure-center" style="width:75.0%"></p>
+<p>As part of a cotutelle program, I look forward to receiving my second diploma from ENSAM later this year.</p>
+<p>#Gradutation #PhD #Award #UniLu</p>
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <category>News</category>
+  <guid>https://th0maslavigne.github.io/posts/2025/2025-10-12-ETA/</guid>
+  <pubDate>Wed, 10 Dec 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://th0maslavigne.github.io/posts/2025/2025-10-12-ETA/ETA.JPG" medium="image"/>
+</item>
 <item>
   <title>FEniCSx install for MCIA HPC</title>
   <link>https://th0maslavigne.github.io/posts/2025/2025-20-11-HPC/</link>
@@ -86,33 +111,8 @@ font-style: inherit;">"import dolfinx; print(f'DOLFINx version: {dolfinx.__versi
 <a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
   <category>News</category>
   <guid>https://th0maslavigne.github.io/posts/2025/2025-20-11-HPC/</guid>
-  <pubDate>Tue, 11 Aug 2026 00:00:00 GMT</pubDate>
+  <pubDate>Thu, 20 Nov 2025 00:00:00 GMT</pubDate>
   <media:content url="https://th0maslavigne.github.io/posts/2025/2025-20-11-HPC/fenics.png" medium="image" type="image/png" height="102" width="74"/>
-</item>
-<item>
-  <title>Honored to receive the Excellent Thesis Award at the 2025 University of Luxembourg PhD Graduation.</title>
-  <link>https://th0maslavigne.github.io/posts/2025/2025-10-12-ETA/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>On December 10, 2025, I reached a major milestone at the University of Luxembourg’s PhD Graduation ceremony, where I officially received my doctoral diploma.</p>
-<p>I am incredibly honored to announce that I was also the recipient of an Excellent Thesis Award (ETA) from the University of Luxembourg. It was a privilege to be called on stage to accept this prize and celebrate alongside friends and colleagues in the presence of the Rector, Vice-Rector, and the Minister of Higher Education. I was also grateful for the opportunity to present a portion of my research to the audience.</p>
-<p>None of this would have been possible without the support of many incredible people. A heartfelt thank you to: - My Funding: The FNR (Grant AFR-FNR 17013812) for believing in this project. - My Mentors: My supervisors for their guidance. - My Network: My colleagues, friends, and family for their unwavering support. - The Unsung Heroes: The admin support, IT teams, HR, and doctoral schools who work behind the scenes to make projects like this come to life. - The Volunteers: Thank you for making the ceremony such a memorable event.</p>
-<p>You can watch the recording of the ceremony here: (https://www.youtube.com/live/2Aq1HwV_Lv8)</p>
-<p><img src="https://th0maslavigne.github.io/posts/2025/2025-10-12-ETA/ETA.JPG" class="img-fluid quarto-figure quarto-figure-center" style="width:75.0%"> <img src="https://th0maslavigne.github.io/posts/2025/2025-10-12-ETA/ETA2.JPG" class="img-fluid quarto-figure quarto-figure-center" style="width:75.0%"> <img src="https://th0maslavigne.github.io/posts/2025/2025-10-12-ETA/ETA2.JPG" class="img-fluid quarto-figure quarto-figure-center" style="width:75.0%"></p>
-<p>As part of a cotutelle program, I look forward to receiving my second diploma from ENSAM later this year.</p>
-<p>#Gradutation #PhD #Award #UniLu</p>
-
-
-
-<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
-  <category>News</category>
-  <guid>https://th0maslavigne.github.io/posts/2025/2025-10-12-ETA/</guid>
-  <pubDate>Sun, 12 Oct 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://th0maslavigne.github.io/posts/2025/2025-10-12-ETA/ETA.png" medium="image" type="image/png"/>
 </item>
 <item>
   <title>PhD Defense</title>
