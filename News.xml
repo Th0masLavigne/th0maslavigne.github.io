@@ -15,7 +15,105 @@
 <link>https://th0maslavigne.github.io/News.html</link>
 </image>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Tue, 24 Jun 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 11 Aug 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>FEniCSx install for MCIA HPC</title>
+  <link>https://th0maslavigne.github.io/posts/2025/2025-20-11-HPC/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>As part of my post-doc at I2M, I had the opportunity to install FEniCSx 0.9.0 now available as a module on MCIA Curta cluster for all users.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://th0maslavigne.github.io/posts/2025/2025-20-11-HPC/fenics.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></p>
+</figure>
+</div>
+<section id="installation-update" class="level3">
+<h3 class="anchored" data-anchor-id="installation-update"><strong>Installation Update</strong></h3>
+<p>After successful compilation and testing on the <strong>Curta</strong> cluster, the 0.9.0 stable release of the FEniCSx project is now accessible to all researchers and students using the MCIA resources. This installation ensures that users can leverage the most recent improvements in finite element solving without managing complex local environments or containers.</p>
+<p>This module includes the full FEniCSx stack:</p>
+<ul>
+<li><strong>DOLFINx:</strong> The computational environment.</li>
+<li><strong>Basix:</strong> Finite element definitions.</li>
+<li><strong>UFL:</strong> Unified Form Language.</li>
+<li><strong>FFCx:</strong> Form Compiler.</li>
+</ul>
+<p>This module also includes other scientific libraries like Neper, nlopt, skopt, …</p>
+</section>
+<section id="how-to-use-it" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-use-it"><strong>How to use it</strong></h3>
+<p>To use the new installation, you simply need to load the module in your SLURM scripts or interactive sessions. As per MCIA standards, the environment is managed via <code>module</code>.</p>
+<p><strong>1. Check availability:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">module</span> avail fenicsx</span></code></pre></div></div>
+<p><strong>2. Load the module:</strong> You can load the specific version (recommended for reproducibility) or the default alias:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Load specific version (0.9.0)</span></span>
+<span id="cb2-2"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">module</span> load fenicsx/0.9.0</span>
+<span id="cb2-3"></span>
+<span id="cb2-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># OR load default</span></span>
+<span id="cb2-5"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">module</span> load fenicsx</span></code></pre></div></div>
+<p><strong>3. Verify the installation:</strong> Once loaded, you can verify the version directly in Python:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">python3</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-c</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"import dolfinx; print(f'DOLFINx version: {dolfinx.__version__} installed at {dolfinx.__path__[0]}')"</span></span></code></pre></div></div>
+<hr>
+<blockquote class="blockquote">
+<p>Big thanks to the <strong>MCIA support team</strong> for their assistance with the dependencies on the cluster. Happy coding!</p>
+</blockquote>
+<hr>
+<p>For more details please give a look to these <a href="https://th0maslavigne.github.io/FEniCSx_GMSH_tutorials/Install/Spack_Install_MCIA/HPC_FEniCSx_0_9_0_install-gcc_13_2_0.html">tutorials</a></p>
+<p>#FEniCSx #ComputerScience #HPC #Install #Bordeaux</p>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <category>News</category>
+  <guid>https://th0maslavigne.github.io/posts/2025/2025-20-11-HPC/</guid>
+  <pubDate>Tue, 11 Aug 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://th0maslavigne.github.io/posts/2025/2025-20-11-HPC/fenics.png" medium="image" type="image/png" height="102" width="74"/>
+</item>
+<item>
+  <title>Honored to receive the Excellent Thesis Award at the 2025 University of Luxembourg PhD Graduation.</title>
+  <link>https://th0maslavigne.github.io/posts/2025/2025-10-12-ETA/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>On December 10, 2025, I reached a major milestone at the University of Luxembourg’s PhD Graduation ceremony, where I officially received my doctoral diploma.</p>
+<p>I am incredibly honored to announce that I was also the recipient of an Excellent Thesis Award (ETA) from the University of Luxembourg. It was a privilege to be called on stage to accept this prize and celebrate alongside friends and colleagues in the presence of the Rector, Vice-Rector, and the Minister of Higher Education. I was also grateful for the opportunity to present a portion of my research to the audience.</p>
+<p>None of this would have been possible without the support of many incredible people. A heartfelt thank you to: - My Funding: The FNR (Grant AFR-FNR 17013812) for believing in this project. - My Mentors: My supervisors for their guidance. - My Network: My colleagues, friends, and family for their unwavering support. - The Unsung Heroes: The admin support, IT teams, HR, and doctoral schools who work behind the scenes to make projects like this come to life. - The Volunteers: Thank you for making the ceremony such a memorable event.</p>
+<p>You can watch the recording of the ceremony here: (https://www.youtube.com/live/2Aq1HwV_Lv8)</p>
+<p><img src="https://th0maslavigne.github.io/posts/2025/2025-10-12-ETA/ETA.JPG" class="img-fluid quarto-figure quarto-figure-center" style="width:75.0%"> <img src="https://th0maslavigne.github.io/posts/2025/2025-10-12-ETA/ETA2.JPG" class="img-fluid quarto-figure quarto-figure-center" style="width:75.0%"> <img src="https://th0maslavigne.github.io/posts/2025/2025-10-12-ETA/ETA2.JPG" class="img-fluid quarto-figure quarto-figure-center" style="width:75.0%"></p>
+<p>As part of a cotutelle program, I look forward to receiving my second diploma from ENSAM later this year.</p>
+<p>#Gradutation #PhD #Award #UniLu</p>
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
+  <category>News</category>
+  <guid>https://th0maslavigne.github.io/posts/2025/2025-10-12-ETA/</guid>
+  <pubDate>Sun, 12 Oct 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://th0maslavigne.github.io/posts/2025/2025-10-12-ETA/ETA.png" medium="image" type="image/png"/>
+</item>
 <item>
   <title>PhD Defense</title>
   <link>https://th0maslavigne.github.io/posts/2025/2025-24-06-PhD/</link>

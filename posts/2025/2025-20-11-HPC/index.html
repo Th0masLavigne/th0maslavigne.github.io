@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-08-11">
 
-<title>Projects – Thomas Lavigne</title>
+<title>FEniCSx install for MCIA HPC – Thomas Lavigne</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,35 +21,68 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./Resources/images/profile_pic2.jpeg" rel="icon" type="image/jpeg">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-192b582a2c5f9c95e73092cd5d42b32b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-9eff72db99d7477ddebf2e33e6c889cf.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-192b582a2c5f9c95e73092cd5d42b32b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
-<script src="site_libs/quarto-contrib/iconify-3.0.0/iconify-icon.min.js"></script>
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../Resources/images/profile_pic2.jpeg" rel="icon" type="image/jpeg">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-192b582a2c5f9c95e73092cd5d42b32b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-9eff72db99d7477ddebf2e33e6c889cf.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-192b582a2c5f9c95e73092cd5d42b32b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-contrib/iconify-3.0.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,74 +110,17 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 <script src="carousel.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="Thomas Lavigne" href="Research.xml" data-external="1"><meta property="og:title" content="Projects – Thomas Lavigne">
-<meta property="og:image" content="https://th0maslavigne.github.io/projects/2025/2025-12-01/ROSALY.png">
+<link rel="stylesheet" href="../../../styles.css">
+<meta property="og:title" content="FEniCSx install for MCIA HPC – Thomas Lavigne">
+<meta property="og:description" content="Thomas Lavigne, PhD in biomechanics (biomécanique), specialized in vascular mechanics, poromechanics, hydrogels, and numerical simulation (fenics and fenicsx). Personal research webpage presenting projects in FEniCSx, Gmsh, porous media modeling, publications, CV, and post-doctoral work at ENS Paris-Saclay, I2M Bordeaux, Université du Luxembourg, LMS Polytechnique, and the IBHGC laboratory at ENSAM Paris.">
+<meta property="og:image" content="https://th0maslavigne.github.io/posts/2025/2025-20-11-HPC/fenics.png">
 <meta property="og:site_name" content="Thomas Lavigne">
-<meta property="og:image:height" content="664">
-<meta property="og:image:width" content="1169">
+<meta property="og:image:height" content="102">
+<meta property="og:image:width" content="74">
 </head>
 
 <body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -324,7 +301,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Thomas Lavigne</span>
     </a>
   </div>
@@ -335,11 +312,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./News.html"> 
+    <a class="nav-link" href="../../../News.html"> 
 <span class="menu-text">News</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -348,25 +325,25 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-research">    
         <li>
-    <a class="dropdown-item" href="./Research.html">
+    <a class="dropdown-item" href="../../../Research.html">
  <span class="dropdown-text">Projects</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./Publication.html">
+    <a class="dropdown-item" href="../../../Publication.html">
  <span class="dropdown-text">Publications</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./Talks.html">
+    <a class="dropdown-item" href="../../../Talks.html">
  <span class="dropdown-text">Talks</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./Teaching.html"> 
+    <a class="nav-link" href="../../../Teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./Education.html"> 
+    <a class="nav-link" href="../../../Education.html"> 
 <span class="menu-text">Academic &amp; Research Appointments</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -375,11 +352,11 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-cv">    
         <li>
-    <a class="dropdown-item" href="./Resources/documents/CV.pdf">
+    <a class="dropdown-item" href="../../../Resources/documents/CV.pdf">
  <span class="dropdown-text">CV</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./Resources/documents/Narrative_CV_Lavigne.pdf">
+    <a class="dropdown-item" href="../../../Resources/documents/Narrative_CV_Lavigne.pdf">
  <span class="dropdown-text">Narrative CV</span></a>
   </li>  
     </ul>
@@ -401,26 +378,42 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#installation-update" id="toc-installation-update" class="nav-link active" data-scroll-target="#installation-update"><strong>Installation Update</strong></a></li>
+  <li><a href="#how-to-use-it" id="toc-how-to-use-it" class="nav-link" data-scroll-target="#how-to-use-it"><strong>How to use it</strong></a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Projects</h1>
-</div>
+<h1 class="title">FEniCSx install for MCIA HPC</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">News</div>
+  </div>
+  </div>
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 11, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -430,172 +423,49 @@ window.Quarto = {
 </header>
 
 
-<div style="margin-top: 3em;">
+<p>As part of my post-doc at I2M, I had the opportunity to install FEniCSx 0.9.0 now available as a module on MCIA Curta cluster for all users.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="fenics.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></p>
+</figure>
+</div>
+<section id="installation-update" class="level3">
+<h3 class="anchored" data-anchor-id="installation-update"><strong>Installation Update</strong></h3>
+<p>After successful compilation and testing on the <strong>Curta</strong> cluster, the 0.9.0 stable release of the FEniCSx project is now accessible to all researchers and students using the MCIA resources. This installation ensures that users can leverage the most recent improvements in finite element solving without managing complex local environments or containers.</p>
+<p>This module includes the full FEniCSx stack:</p>
+<ul>
+<li><strong>DOLFINx:</strong> The computational environment.</li>
+<li><strong>Basix:</strong> Finite element definitions.</li>
+<li><strong>UFL:</strong> Unified Form Language.</li>
+<li><strong>FFCx:</strong> Form Compiler.</li>
+</ul>
+<p>This module also includes other scientific libraries like Neper, nlopt, skopt, …</p>
+</section>
+<section id="how-to-use-it" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-use-it"><strong>How to use it</strong></h3>
+<p>To use the new installation, you simply need to load the module in your SLURM scripts or interactive sessions. As per MCIA standards, the environment is managed via <code>module</code>.</p>
+<p><strong>1. Check availability:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> avail fenicsx</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>2. Load the module:</strong> You can load the specific version (recommended for reproducibility) or the default alias:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load specific version (0.9.0)</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load fenicsx/0.9.0</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># OR load default</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load fenicsx</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>3. Verify the installation:</strong> Once loaded, you can verify the version directly in Python:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> <span class="at">-c</span> <span class="st">"import dolfinx; print(f'DOLFINx version: {dolfinx.__version__} installed at {dolfinx.__path__[0]}')"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+<blockquote class="blockquote">
+<p>Big thanks to the <strong>MCIA support team</strong> for their assistance with the dependencies on the cluster. Happy coding!</p>
+</blockquote>
+<hr>
+<p>For more details please give a look to these <a href="https://th0maslavigne.github.io/FEniCSx_GMSH_tutorials/Install/Spack_Install_MCIA/HPC_FEniCSx_0_9_0_install-gcc_13_2_0.html">tutorials</a></p>
+<p>#FEniCSx #ComputerScience #HPC #Install #Bordeaux</p>
 
-</div>
 
+</section>
 
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="UHJvamVjdHM=" data-listing-date-sort="1764547200000" data-listing-file-modified-sort="1765441748763" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="88">
-<div class="thumbnail"><a href="./projects/2025/2025-12-01/index.html" class="no-external">
-
-<img loading="lazy" src="./projects/2025/2025-12-01/ROSALY.png" class="thumbnail-image" style="height: 125pt;">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/2025/2025-12-01/index.html" class="no-external">ANR Rosaly: Simulation of the mechanical behavior of hydrogels</a>
-</h3>
-<div class="delink listing-description"><a href="./projects/2025/2025-12-01/index.html" class="no-external">
-During my postdoctoral position, I will focus on simulating the mechanical behavior of collagen hydrogels using…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./projects/2025/2025-12-01/index.html" class="no-external">
-<div class="listing-date">
-Dec 1, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="UHJvamVjdHM=" data-listing-date-sort="1756857600000" data-listing-file-modified-sort="1765441748762" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="98">
-<div class="thumbnail"><a href="./projects/2025/2025-09-03/index.html" class="no-external">
-
-<img loading="lazy" src="./projects/2025/2025-09-03/I2M_logo.png" class="thumbnail-image" style="height: 125pt;">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/2025/2025-09-03/index.html" class="no-external">ANR MATISSE: Simulation of porous liquids and HPC installations</a>
-</h3>
-<div class="delink listing-description"><a href="./projects/2025/2025-09-03/index.html" class="no-external">
-I primarily focused on simulating the mechanical behavior of porous fluids (e.g., poroelastic models for fluids) using the…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./projects/2025/2025-09-03/index.html" class="no-external">
-<div class="listing-date">
-Sep 3, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="UHJvamVjdHM=" data-listing-date-sort="1661990400000" data-listing-file-modified-sort="1765441748754" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="593">
-<div class="thumbnail"><a href="./projects/2022/2022-09-01-PhD/index.html" class="no-external">
-
-<img loading="lazy" src="./projects/2022/2022-09-01-PhD/ETA_background.jpeg" class="thumbnail-image" style="height: 125pt;">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/2022/2022-09-01-PhD/index.html" class="no-external">AFR-FNR 17013182: Unraveling Mechano-Biological Couplings: Towards Personalized Medicine and Targeted Pressure Ulcer Prevention</a>
-</h3>
-<div class="delink listing-description"><a href="./projects/2022/2022-09-01-PhD/index.html" class="no-external">
-For years, research models studied two risk factors separately — how tissue is compressed and how blood circulates within…<span class="citation" data-cites="Lavigne2023"></span><span class="citation" data-cites="Lavigne2024"></span><span class="citation" data-cites="Lavigne2025b"></span><span class="citation" data-cites="lavigne2025synthetic"></span>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./projects/2022/2022-09-01-PhD/index.html" class="no-external">
-<div class="listing-date">
-Sep 1, 2022
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="UHJvamVjdHM=" data-listing-date-sort="1630454400000" data-listing-file-modified-sort="1765441748737" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="527">
-<div class="thumbnail"><a href="./projects/2021/2021-09-01/index.html" class="no-external">
-
-<img loading="lazy" src="./projects/2021/2021-09-01/breast_scheme.png" class="thumbnail-image" style="height: 125pt;">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/2021/2021-09-01/index.html" class="no-external">Soft Tissue Modelling: Breast application and theoretical developments</a>
-</h3>
-<div class="delink listing-description"><a href="./projects/2021/2021-09-01/index.html" class="no-external">
-This area of research is dedicated to the advanced biomechanical characterization of soft tissues and bodies, particularly…<span class="citation" data-cites="Lavigne2023b"></span><span class="citation" data-cites="Lavigne2022b"></span>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./projects/2021/2021-09-01/index.html" class="no-external">
-<div class="listing-date">
-Sep 1, 2021
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="UHJvamVjdHM=" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1765441748736" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="105">
-<div class="thumbnail"><a href="./projects/2021/2021-03-01/index.html" class="no-external">
-
-<img loading="lazy" src="./projects/2021/2021-03-01/indent.png" class="thumbnail-image" style="height: 125pt;">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/2021/2021-03-01/index.html" class="no-external">Numerical investigation of the time-dependent stress–strain mechanical behaviour of skeletal muscle tissue in the context of pressure ulcer prevention</a>
-</h3>
-<div class="delink listing-description"><a href="./projects/2021/2021-03-01/index.html" class="no-external">
-This project focuses on the numerical investigation of the time-dependent stress-strain mechanical behaviour of skeletal…<span class="citation" data-cites="Lavigne2022"></span>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./projects/2021/2021-03-01/index.html" class="no-external">
-<div class="listing-date">
-Mar 1, 2021
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="UHJvamVjdHM=" data-listing-date-sort="1583020800000" data-listing-file-modified-sort="1765441748736" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="140">
-<div class="thumbnail"><a href="./projects/2020/2020-03-01/index.html" class="no-external">
-
-<img loading="lazy" src="./projects/2020/2020-03-01/impact.jpeg" class="thumbnail-image" style="height: 125pt;">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/2020/2020-03-01/index.html" class="no-external">Simulink-Based Biomechanical Model of Neck Muscle Response and Concussion Risk in Rugby Impacts</a>
-</h3>
-<div class="delink listing-description"><a href="./projects/2020/2020-03-01/index.html" class="no-external">
-This research project, undertaken as an M1 Internship related to Antoine Knwebleski’s PhD, was dedicated to developing…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./projects/2020/2020-03-01/index.html" class="no-external">
-<div class="listing-date">
-Mar 1, 2020
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="UHJvamVjdHM=" data-listing-date-sort="1572566400000" data-listing-file-modified-sort="1765441748735" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="532">
-<div class="thumbnail"><a href="./projects/2019/2019-11-01/index.html" class="no-external">
-
-<img loading="lazy" src="./projects/2019/2019-11-01/mesh.png" class="thumbnail-image" style="height: 125pt;">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/2019/2019-11-01/index.html" class="no-external">Poynting Effects in Pantographic Metamaterial Captured via Multiscale DVC</a>
-</h3>
-<div class="delink listing-description"><a href="./projects/2019/2019-11-01/index.html" class="no-external">
-This project provides a critical experimental analysis into the complex mechanical behavior of pantographic metamaterials…<span class="citation" data-cites="Auger2020"></span>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./projects/2019/2019-11-01/index.html" class="no-external">
-<div class="listing-date">
-Nov 1, 2019
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -1071,5 +941,5 @@ Nov 1, 2019
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

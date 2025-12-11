@@ -1,0 +1,68 @@
+---
+title: "FEniCSx install for MCIA HPC"
+bibliography: ../../../Resources/biblio/biblio_web.bib
+date: "2025-20-11"
+categories: 
+  - "News"
+image: "fenics.png"
+---
+
+As part of my post-doc at I2M, I had the opportunity to install FEniCSx 0.9.0 now available as a module on MCIA Curta cluster for all users.
+
+
+
+![](fenics.png){width="75%" fig-align="center"}
+
+
+### **Installation Update**
+
+After successful compilation and testing on the **Curta** cluster, the 0.9.0 stable release of the FEniCSx project is now accessible to all researchers and students using the MCIA resources. This installation ensures that users can leverage the most recent improvements in finite element solving without managing complex local environments or containers.
+
+This module includes the full FEniCSx stack:
+
+  * **DOLFINx:** The computational environment.
+  * **Basix:** Finite element definitions.
+  * **UFL:** Unified Form Language.
+  * **FFCx:** Form Compiler.
+
+This module also includes other scientific libraries like Neper, nlopt, skopt, ...
+
+### **How to use it**
+
+To use the new installation, you simply need to load the module in your SLURM scripts or interactive sessions. As per MCIA standards, the environment is managed via `module`.
+
+**1. Check availability:**
+
+```bash
+module avail fenicsx
+```
+
+**2. Load the module:**
+You can load the specific version (recommended for reproducibility) or the default alias:
+
+```bash
+# Load specific version (0.9.0)
+module load fenicsx/0.9.0
+
+# OR load default
+module load fenicsx
+```
+
+**3. Verify the installation:**
+Once loaded, you can verify the version directly in Python:
+
+```bash
+python3 -c "import dolfinx; print(f'DOLFINx version: {dolfinx.__version__} installed at {dolfinx.__path__[0]}')"
+```
+
+-----
+
+
+> Big thanks to the **MCIA support team** for their assistance with the dependencies on the cluster. Happy coding\!
+
+-----
+
+For more details please give a look to these [tutorials](https://th0maslavigne.github.io/FEniCSx_GMSH_tutorials/Install/Spack_Install_MCIA/HPC_FEniCSx_0_9_0_install-gcc_13_2_0.html)
+
+
+\#FEniCSx \#ComputerScience \#HPC \#Install \#Bordeaux
