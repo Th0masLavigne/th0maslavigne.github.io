@@ -9,11 +9,6 @@ image: "fenics.png"
 
 As part of my post-doc at I2M, I had the opportunity to install FEniCSx 0.9.0 now available as a module on MCIA Curta cluster for all users.
 
-
-
-![](fenics.png){width="75%" fig-align="center"}
-
-
 ### **Installation Update**
 
 After successful compilation and testing on the **Curta** cluster, the 0.9.0 stable release of the FEniCSx project is now accessible to all researchers and students using the MCIA resources. This installation ensures that users can leverage the most recent improvements in finite element solving without managing complex local environments or containers.
