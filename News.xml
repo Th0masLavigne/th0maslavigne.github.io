@@ -112,7 +112,7 @@ font-style: inherit;">"import dolfinx; print(f'DOLFINx version: {dolfinx.__versi
   <category>News</category>
   <guid>https://th0maslavigne.github.io/posts/2025/2025-20-11-HPC/</guid>
   <pubDate>Thu, 20 Nov 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://th0maslavigne.github.io/posts/2025/2025-20-11-HPC/fenics.png" medium="image" type="image/png" height="102" width="74"/>
+  <media:content url="https://th0maslavigne.github.io/posts/2025/2025-20-11-HPC/fenics.png" medium="image" type="image/png" height="68" width="144"/>
 </item>
 <item>
   <title>PhD Defense</title>
