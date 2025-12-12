@@ -83,7 +83,11 @@ Former student of **École Normale Supérieure (ENS) Paris-Saclay** (mechanical 
 - **Université du Luxembourg**
 - **École Nationale Supérieure des Arts et Métiers (ENSAM) Paris**
 
-This work was recognized with the **2025 Excellent Thesis Award** from the University of Luxembourg and proposed for the FNR FNR Outstanding PhD Award, Prix Bézier (ENSAM), and more recently proposed for a potential participation at Prix Tarrach from *Les Amis du Luxembourg*. 
+This work was recognized with the **2025 Excellent Thesis Award** from the University of Luxembourg and proposed for the FNR FNR Outstanding PhD Award, Prix Bézier (ENSAM), suggested for application to the FNR Outstanding PhD Award.
+
+::: {.content-hidden}
+ and more recently proposed for a potential participation at Prix Tarrach from *Les Amis du Luxembourg*
+:::
 
 ---
 
