@@ -18,7 +18,7 @@ about:
       href: https://github.com/Th0masLavigne
     - icon: envelope
       text: Email
-      href: 'mailto: thomas.lavigne@ens-paris-saclay.fr'
+      href: 'mailto: thomas.lavigne@polytechnique.edu'
 format:
   html:
     page-layout: custom

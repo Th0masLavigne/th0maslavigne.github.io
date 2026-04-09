@@ -13,6 +13,46 @@ format:
 :::: {style='margin-top: 3em;'}
 ::::
 
+::: {.talk-card}
+### Euromech 670 -  Breaking barriers in soft tissue research: Collaborative insights and future directions ([website](https://euromech.org/colloquia/all-events/670/))
+*Rennes, France, 08th-10th of April 2026*
+
+**Title:** POROMECHANICS TO INVESTIGATE THE IMPACT OF MECHANICAL LOADING ON HUMAN SKIN MICRO-CIRCULATION. 
+
+**Authors:** [T. Lavigne](index.qmd), *et al.*
+
+
+:::: {.columns}
+
+::: {.column width="85pt"}
+::: {.button}
+
+[<iconify-icon icon="fa-solid:chalkboard" aria-label="Slides"></iconify-icon> Slides](Resources/presentations/euromech/euromech_670_2026_lavigne.pptx){.button target="_blank"}
+
+:::
+:::
+
+::: {.column width="80pt"}
+::: {.button}
+
+[<iconify-icon icon="fa-regular:file" aria-label="Code"></iconify-icon> Abstract](Resources/documents/Euromech_670_abstracts.pdf){.button target="_blank"}
+
+:::
+:::
+
+:::: {style='margin-top: 0.5em;'}
+::::
+
+
+::: {.column width="85pt"}
+::: {.button}
+[<iconify-icon icon="fa-solid:code" aria-label="Code"></iconify-icon> Code](https://github.com/Th0masLavigne/2-compartment-poromechanical-and-LDF-measurement.git){.button target="_blank"}
+
+:::
+:::
+
+::::
+:::
 
 
 ## {{< iconify fa6-solid:clock-rotate-left >}} &nbsp; Past talks
