@@ -1,38 +1,24 @@
 [
   {
-    "objectID": "Resources/presentations/phd_defense/presentation.html#pressure-ulcers-pus",
-    "href": "Resources/presentations/phd_defense/presentation.html#pressure-ulcers-pus",
-    "title": "Biomechanical Response of Human Skin: A Hierarchical Porous Media Framework.",
-    "section": "Pressure Ulcers (PUs)",
-    "text": "Pressure Ulcers (PUs)\n\n\nPressure ulcers: localised injuries to the skin and underlying soft tissue that form during prolonged exposure to mechanical loads.\n\n\n\n\nStage 1 and stage 2 account for 70% of PUs {.fragment}\n20% of hospitalised patients {.fragment}\n34% of amputees experienced a skin lesion {.fragment}"
+    "objectID": "Talks.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e6966792066612d736f6c69643a62756c6c686f726e203e7d7d-incoming-talks",
+    "href": "Talks.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e6966792066612d736f6c69643a62756c6c686f726e203e7d7d-incoming-talks",
+    "title": "Talks (selection)",
+    "section": "   Incoming talks",
+    "text": "Incoming talks\n\n\n\n\nEuromech 670 - Breaking barriers in soft tissue research: Collaborative insights and future directions (website)\nRennes, France, 08th-10th of April 2026\nTitle: POROMECHANICS TO INVESTIGATE THE IMPACT OF MECHANICAL LOADING ON HUMAN SKIN MICRO-CIRCULATION.\nAuthors: T. Lavigne, et al.\n\n\n\n Slides\n\n\n\n Abstract\n\n\n\n\n\n Code"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n\n\n Back to top"
+    "objectID": "Talks.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206661362d736f6c69643a636c6f636b2d726f746174652d6c656674203e7d7d-past-talks",
+    "href": "Talks.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206661362d736f6c69643a636c6f636b2d726f746174652d6c656674203e7d7d-past-talks",
+    "title": "Talks (selection)",
+    "section": "   Past talks",
+    "text": "Past talks\n\n          Conferences\n\n\n\n\n\nEPUAP - European Pressure Ulcer Advisory Panel (website)\nLausanne, Switzerland, 25th-27th of September 2024\nTitle: Poro-elasticity to capture the time-dependent mechanical behavior of in vivo human skin during an extension test.\nAuthors: T. Lavigne, et al.\n\n\n Code\n\n\n\n\n Code 2\n\n\n\n\nInterpore BeneLux 2024 (website)\nEsch-sur-Alzette, Luxembourg, 11th of April 2024\nTitle: Poromechanics to account for the time-dependent behaviour of human skin during extension tests.\nAuthors: T. Lavigne, et al.\nTitle: Image informed breast tumour models to predict the outcome of neoadjuvant chemotherapy.\nAuthors: R. Collet, T. Lavigne, et al.\n\n\nBSSM - British Society For Strain Measurement (website)\nParis, France, 20th of August-1st of September 2023\nTitle: FE-based Heterogeneous Digital Volume Correlation to Measure Large Deformations of Breast’s Soft Tissues\nAuthors: T. Lavigne, A. Mazier, A. Perney, S.P.A. Bordas, F. Hild, J. Lengiewicz\n\n\n\n Slides\n\n\n\n Abstract\n\n\n\n\n\n\n\n\nCMBBE - Computer Methods in Biomechanics and Biomedical Engineering (website)\nParis, France, 3rd-5th of May 2023\nTitle: Modelling the apparent viscoelastic behaviour of passive muscle tissue under confined compression using a poroelastic framework\nAuthors: T. Lavigne, G. Sciumè, S. Laporte, H. Pillet, S. Urcun, B. Wheatley, P-Y. Rohan\n\n\n\n Abstract\n\n\n\n\n\n\n\n\nWCB - World Congress of Biomechanics (website)\nTaïpei, Taïwan, 10th-14th of July 2022\nTitle: Modelling the apparent viscoelastic behaviour of passive muscle tissue under confined compression using a poroelastic framework\nAuthors: T. Lavigne, G. Sciumè, S. Laporte, H. Pillet, S. Urcun, B. Wheatley, P-Y. Rohan\n\n\n\n Slides\n\n\n\n Abstract\n\n\n\nTitle: Towards real-time patient-specific breast simulations: from full-field information to surrogate model\nAuthors: T. Lavigne, J. Lengiewicz, S. Deshpande, S. Urcun, S. Bordas, A. Mazier\n\n\n\n Abstract\n\n\n\n\n\nSB - Société de Biomécanique (website)\nSaint-Étienne, France, 27th of October 2021\nTitle: The possible role of poro-elasticity in the apparent viscoelastic behaviour of passive muscle: a case study\nAuthors: T. Lavigne, T. Lavigne, G. Sciumè, S. Laporte, H. Pillet, S. Urcun, P-Y. Rohan.\n\n\n\n Abstract\n\n\n\n\n\n          Symposiums and Mini-Conferences\n\n\n\n\n\nF2M - Fédération Francilienne de Mécanique (website)\nIle-de-France, France, 2023 & 2024\nTitle 1: Multiscale Modelling of the muscle, 13𝑡ℎ of February 2023, F2M - Jussieu Paris\nTitle 2: Modélisation poro-élastique de la peau humaine in vivo,4𝑡ℎ of April 2024, F2M - Polytechnique Saclay\nAuthors: T. Lavigne, et al.\n\n\n Code"
   },
   {
-    "objectID": "posts/2025/2025-24-06-PhD/index.html",
-    "href": "posts/2025/2025-24-06-PhD/index.html",
-    "title": "PhD Defense",
-    "section": "",
-    "text": "I successfully defended my PhD as part of a cotutelle program between Université du Luxembourg & Arts et Métiers ParisTech - École Nationale Supérieure d’Arts et Métiers (i-biomec I2M – Institut de Mécanique et d’Ingénierie de Bordeaux)\nMy thesis, entitled “Biomechanical Response of Human Skin: a Hierarchical Porous Media Framework”, explored and evaluated a novel two-compartment porous model to capture the interaction between the mechanical behavior of soft tissues and microcirculatory response.\nThis journey was made possible thanks to the support and mentorship of my supervisors: Stéphane P.A. Bordas (FLSW), Pierre-Yves Rohan and Giuseppe Sciumè.\nI’m also grateful to the jury and expert members for the rich and insightful discussions during the defence: Yohan Payan, Stéphane Avril, Christian Vincenot, Dr.-Ing. Silvia Budday, and Sébastien LAPORTE.\nA special thank you as well to our collaborating laboratories -Laboratoire de Biologie Tissulaire et Ingénierie thérapeutique (LBTI), Institut FEMTO-ST, Laboratoire de Mécanique Paris-Saclay)- whose contributions, especially on the experimental side, were essential.\nHeartfelt thanks to the volunteers who participated in the experimental cohorts and to all the individuals who contributed to this PhD.\nFinally, I am honoured to have been proposed for the Pierre Béziers prize (ENSAM), Excellent Thesis Award (University of Luxembourg), the FNR Outstanding PhD Thesis, and the pre-selection for Prix Tarrach of Les Amis du Luxembourg.\nThis work was supported by the Luxembourg National Research Fund (FNR) under grant n° 17013182.\nOn to the next chapter!\n#Biomechanics #PorousMedia #SoftTissues #Microcirculation #CotutellePhD\n\n\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "posts/2024/2024-09-10-FEniCSx/index.html",
-    "href": "posts/2024/2024-09-10-FEniCSx/index.html",
-    "title": "FEniCSx-Gmsh Training-Symposium",
-    "section": "",
-    "text": "“September -2024 - We had an inspiring and stimulating time at the First FEniCSx-Gmsh Training-Symposium at I2M, Université de Bordeaux (Sept 9-11), with great scientific exchanges and collaboration.\nA big thank you to Thomas Lavigne who co-organized the symposium, Stéphane Urcun and Meryem Abbad Andaloussi who joined us from the University of Luxembourg for these three days.\nWe’re excited about the possibility of reconducting this initiative in the future!” here\n\n\n\n\n  \n\n\n\n\n❮ ❯\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "posts/2024/2024-02-06-Most_Cited/index.html",
-    "href": "posts/2024/2024-02-06-Most_Cited/index.html",
-    "title": "Prix Most cited paper : 2 normaliens du DER-Génie Mécanique à l’honneur",
-    "section": "",
-    "text": "“Rédigé en 2020 par deux normaliens Patrick AUGER et Thomas LAVIGNE, avec la participation de Mario SPAGNUILO et Francesco DELL’ISOLA et sous la direction de François HILD et Benjamin SMANIOTTO, l’article”Poynting Effects in Pantographic Metamaterials Captured via Multiscale DVC” a été distingué par le prix “Most cited Paper” dans la revue Journal of Strain Analysis for Engineering Design.” here\n\n\n\n\n  \n\n\n\n\n❮ ❯\n\n\n\n\n\n Back to top"
+    "objectID": "Talks.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e69667920696f6e3a656173656c203e7d7d-co-organised-symposiums-and-mini-conferences",
+    "href": "Talks.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e69667920696f6e3a656173656c203e7d7d-co-organised-symposiums-and-mini-conferences",
+    "title": "Talks (selection)",
+    "section": "   Co-organised Symposiums and Mini-Conferences",
+    "text": "Co-organised Symposiums and Mini-Conferences\n\n\n\n\nOrganised FEniCSx-GMSH tutorials at I2M Bordeaux (website)\nTalence, France, September 2024\nTitle: Tutorials for the install and use of FEniCSx.\nAuthors: T. Lavigne, G. Sciumè, S. Urcun, M. Abbad Andaloussi.\n\n\n\n Website\n\n\n\n Code"
   },
   {
     "objectID": "Teaching.html",
@@ -42,60 +28,32 @@
     "text": "Teaching in BME Program and Apprentices at Ecole National Supérieure d’Arts et Métiers Paris\n\n\n\n\n\n\n\n\n\n\n2022 - 2025\n\nL3: Mathematics,\nM1: Mechanics,\nM2: Dynamics, Informatics, Experimental Methods.\n\n\n\n\n\n\n\nTutored sessions for students in difficulty at École Normale Supérieure Paris Saclay\n\n\n\n\n2019 - 2020\n\nPhysics, Mathematics, Mechanics, Practical Works, Reporting methods.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nClasse Préparatoire aux grandes écoles\n\n\n\n\n\n\n\n\n\n\n\n\nPhysique-chimie PSI-PSI* Concours X, ENS, CentraleSupélec, Mines-Ponts, CCINP\n\nWriting a physics book for undergraduate students (Classes Préparatoires aux Grandes Écoles)\nPhysics problems, corrections, and comments, helping students prepare for their entrance exams to prestigious universities (French “Grandes Écoles”).\n\n\n\n\n\n\n\n\n\n\n\n\n\n2018 - 2020: Oral examiner in class preparing for competitive national entrance exams (Physics, Chemistry and Engineering Science) – Lycée Hoche, Versailles, France\n\n\n\n\n\nAdvanced-level courses\nI designed notebooks about FEniCSx and gmsh for finite elemnt modelling and their installation (locally, using docker or spack for HPC). These are available on my github and at this link.\n\nFEniCSx & GMSH Tutorial Website (v0.9.0)\nFEniCSx & GMSH Tutorial Repository (v0.9.0)\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "News.html",
-    "href": "News.html",
-    "title": "News",
+    "objectID": "posts/2024/2024-12-12-Erlangen/index.html",
+    "href": "posts/2024/2024-12-12-Erlangen/index.html",
+    "title": "Visiting Brainiacs laboratory at FAU",
     "section": "",
-    "text": "Honored to receive the Excellent Thesis Award at the 2025 University of Luxembourg PhD Graduation.\n\n\n\n\n\n\n\n\nDec 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nFEniCSx install for MCIA HPC\n\n\n\n\n\n\n\n\nNov 20, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPhD Defense\n\n\n\n\n\n\n\n\nJun 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nVisiting Brainiacs laboratory at FAU\n\n\n\n\n\n\n\n\nDec 12, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nFEniCSx-Gmsh Training-Symposium\n\n\n\n\n\n\n\n\nSep 10, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nPrix Most cited paper : 2 normaliens du DER-Génie Mécanique à l’honneur\n\n\n\n\n\n\n\n\nFeb 6, 2024\n\n\n\n\n\nNo matching items\n Back to top"
+    "text": "Thanks to collaborations with Pr. S. Budday, we had the distinct opportunity to spend a productive week visiting the new, state-of-the-art laboratory of the brainiacs research team at the University of Erlangen-Nuremberg (FAU). This highly collaborative visit allowed us to be warmly received by the group and gain in-depth exposure to their advanced work in brain experimentation and computational modeling. The trip served to strengthen research ties and provided invaluable insights into cutting-edge methodologies for both the physical study and the numerical simulation of complex brain mechanics.\nWe’re excited about the possibility of reconducting this initiative in the future!\n\n\n\n\n  \n\n\n\n\n\n  \n\n\n\n\n\n  \n\n\n\n\n❮ ❯\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "projects/2025/2025-12-01/index.html",
-    "href": "projects/2025/2025-12-01/index.html",
-    "title": "ANR Rosaly: Simulation of the mechanical behavior of hydrogels",
+    "objectID": "posts/2024/2024-09-10-FEniCSx/index.html",
+    "href": "posts/2024/2024-09-10-FEniCSx/index.html",
+    "title": "FEniCSx-Gmsh Training-Symposium",
     "section": "",
-    "text": "During my postdoctoral position, I will focus on simulating the mechanical behavior of collagen hydrogels using poroelasticity models implemented in FEniCS. The core work involves using experimental data to identify the material’s mechanical properties based on its fabrication conditions. A key objective is the enhancement of these models to incorporate the complex influence of contractile cells within the gel, specifically including their mechanoperception response. Further development will integrate microstructural information to accurately describe how the collagen fibers move and reorient under mechanical load.\nMore to come, stay tuned !\n\n\n\n Back to top"
+    "text": "“September -2024 - We had an inspiring and stimulating time at the First FEniCSx-Gmsh Training-Symposium at I2M, Université de Bordeaux (Sept 9-11), with great scientific exchanges and collaboration.\nA big thank you to Thomas Lavigne who co-organized the symposium, Stéphane Urcun and Meryem Abbad Andaloussi who joined us from the University of Luxembourg for these three days.\nWe’re excited about the possibility of reconducting this initiative in the future!” here\n\n\n\n\n  \n\n\n\n\n❮ ❯\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "projects/2021/2021-09-01/index.html",
-    "href": "projects/2021/2021-09-01/index.html",
-    "title": "Soft Tissue Modelling: Breast application and theoretical developments",
+    "objectID": "posts/2025/2025-20-11-HPC/index.html",
+    "href": "posts/2025/2025-20-11-HPC/index.html",
+    "title": "FEniCSx install for MCIA HPC",
     "section": "",
-    "text": "This area of research is dedicated to the advanced biomechanical characterization of soft tissues and bodies, particularly under complex conditions involving large deformation and contact. The project is built on two inter-connected technical pillars. First, we developed and evaluated a Digital Volume Correlation (DVC) pipeline to accurately measure 3D kinematic fields within soft tissues under significant displacements. This innovative methodology, which utilizes X-ray tomography for detailed imaging, has critical clinical applications, such as enabling the precise mapping of ex vivo breast deformations to improve the accuracy of radiotherapy planning by assisting with tumor repositioning. Complementary to this, the project also designed a novel optimization framework that employs an inverse+forward hyper-elasticity formulation to simultaneously identify the unknown material parameters and the contact traction field of soft bodies from measured deformed geometries. By rigorously integrating computational modeling with experimental data, this work provides powerful tools for a complete and robust understanding of soft tissue mechanics in various physiological and loading scenarios. (Lavigne, Bordas, and Lengiewicz 2023),(Lavigne et al. 2022)\n\n\n\n\n  \n\n\n\n\n\n  \n\n\n\n\n\n  \n\n\n\n\n❮ ❯\n\n\n\n\n\n\n Back to topReferences\n\nLavigne, T., S. P. A. Bordas, and J. Lengiewicz. 2023. “Identification of Material Parameters and Traction Field for Soft Bodies in Contact.” Computer Methods in Applied Mechanics and Engineering 406 (March): 115889. https://doi.org/10.1016/j.cma.2023.115889.\n\n\nLavigne, T., A. Mazier, A. Perney, S. P. A. Bordas, F. Hild, and J. Lengiewicz. 2022. “Digital Volume Correlation for Large Deformations of Soft Tissues: Pipeline and Proof of Concept for the Application to Breast Ex Vivo Deformations.” Journal of the Mechanical Behavior of Biomedical Materials 136 (December): 105490. https://doi.org/10.1016/j.jmbbm.2022.105490."
+    "text": "As part of my post-doc at I2M, I had the opportunity to install FEniCSx 0.9.0 now available as a module on MCIA Curta cluster for all users.\n\nInstallation Update\nAfter successful compilation and testing on the Curta cluster, the 0.9.0 stable release of the FEniCSx project is now accessible to all researchers and students using the MCIA resources. This installation ensures that users can leverage the most recent improvements in finite element solving without managing complex local environments or containers.\nThis module includes the full FEniCSx stack:\n\nDOLFINx: The computational environment.\nBasix: Finite element definitions.\nUFL: Unified Form Language.\nFFCx: Form Compiler.\n\nThis module also includes other scientific libraries like Neper, nlopt, skopt, …\n\n\nHow to use it\nTo use the new installation, you simply need to load the module in your SLURM scripts or interactive sessions. As per MCIA standards, the environment is managed via module.\n1. Check availability:\nmodule avail fenicsx\n2. Load the module: You can load the specific version (recommended for reproducibility) or the default alias:\n# Load specific version (0.9.0)\nmodule load fenicsx/0.9.0\n\n# OR load default\nmodule load fenicsx\n3. Verify the installation: Once loaded, you can verify the version directly in Python:\npython3 -c \"import dolfinx; print(f'DOLFINx version: {dolfinx.__version__} installed at {dolfinx.__path__[0]}')\"\n\n\nBig thanks to the MCIA support team for their assistance with the dependencies on the cluster. Happy coding!\n\n\nFor more details please give a look to these tutorials\n#FEniCSx #ComputerScience #HPC #Install #Bordeaux\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "projects/2022/2022-09-01-PhD/index.html",
-    "href": "projects/2022/2022-09-01-PhD/index.html",
-    "title": "AFR-FNR 17013182: Unraveling Mechano-Biological Couplings: Towards Personalized Medicine and Targeted Pressure Ulcer Prevention",
+    "objectID": "posts/2026/2026-08-04-diplome_ENSAM/index.html",
+    "href": "posts/2026/2026-08-04-diplome_ENSAM/index.html",
+    "title": "PhD Graduation Ceremony: ENSAM",
     "section": "",
-    "text": "For years, research models studied two risk factors separately — how tissue is compressed and how blood circulates within it. My PhD work combines them in a unified porous model, developed and evaluated alongside new experiments on human patients. Think of the skin as a living sponge filled with tiny blood vessels. When pressure is applied, it’s gradually squeezed, cutting off oxygen — and when released, blood rushes back in. This new model reveals the subtle interplay between mechanical stress and biological response (ischemia and hyperemia), helping us understand when and how damage starts. This open-source work marks a significant step forward in understanding and preventing pressure ulcers — and moves us closer to truly personalized medicine. (Lavigne et al. 2023),(Lavigne et al. 2024),(Lavigne, Urcun, et al. 2025),(Lavigne, Afanador, et al. 2025)\n\n\n\n\nPhD Graphical Abstract  Coupling biology in mechanics through porous modelling for Human skin.\n\n\n\n\n\nExperiment  Laser Doppler Flowmetry to capture the microcirculatory response.\n\n\n\n\n\nExperimental setup  Laser Doppler Flowmetry to capture the microcirculatory response.\n\n\n\n\n\nThe skin as a sponge  Porous representation of the skin: multiscale.\n\n\n\n\n\nHierarchical Porous Model  Porous model as a brick\n\n\n\n\n\nPorous-like viewcut of the skin.  AI generated.\n\n\n\n\n\nPhD Defense  PhD Defense\n\n\n\n\n❮ ❯\n\n\n\n\n\n\n Back to topReferences\n\nLavigne, Thomas, Camilo Andrés Suarez Afanador, Anas Obeidat, and Stéphane Urcun. 2025. “Synthetic Porous Microstructures: Automatic Design, Simulation, and Permeability Analysis.” https://arxiv.org/abs/2502.14518.\n\n\nLavigne, Thomas, Stéphane Urcun, Bérengère Fromy, Audrey Josset-Lamaugarny, Alexandre Lagache, Camilo A. Suarez-Afanador, Stéphane P. A. Bordas, Pierre-Yves Rohan, and Giuseppe Sciumè. 2025. “Hierarchical Poromechanical Approach to Investigate the Impact of Mechanical Loading on Human Skin Micro-Circulation.” International Journal for Numerical Methods in Biomedical Engineering. https://doi.org/10.1002/cnm.70066.\n\n\nLavigne, Thomas, Stéphane Urcun, Emmanuelle Jacquet, Jérôme Chambert, Aflah Elouneg, Camilo A. Suarez-Afanador, Stéphane P. A. Bordas, Giuseppe Sciumè, and Pierre-Yves Rohan. 2024. “Poromechanical Modelling of the Time-Dependent Response of in Vivo Human Skin During Extension.” International Journal for Numerical Methods in Biomedical Engineering. International Journal for Numerical Methods in Biomedical Engineering. https://doi.org/10.48550/ARXIV.2412.07374.\n\n\nLavigne, Thomas, Stéphane Urcun, Pierre-Yves Rohan, Giuseppe Sciumè, Davide Baroli, and Stéphane P. A. Bordas. 2023. “Single and Bi-Compartment Poro-Elastic Model of Perfused Biological Soft Tissues: FEniCSx Implementation and Tutorial.” Journal of the Mechanical Behavior of Biomedical Materials 143 (July): 105902. https://doi.org/10.1016/j.jmbbm.2023.105902."
-  },
-  {
-    "objectID": "Publication.html#publications",
-    "href": "Publication.html#publications",
-    "title": "Publications",
-    "section": "   Publications",
-    "text": "Publications"
-  },
-  {
-    "objectID": "Publication.html#work-in-progress",
-    "href": "Publication.html#work-in-progress",
-    "title": "Publications",
-    "section": "   Work in progress",
-    "text": "Work in progress\n\nPorous Liquides: When the “Matrix” is a highly viscous fluid\nAuthors: T. Lavigne, G. Sciumè\nThis is ongoing work. This section will be refined soon."
-  },
-  {
-    "objectID": "Publication.html#public-outreach",
-    "href": "Publication.html#public-outreach",
-    "title": "Publications",
-    "section": "   Public outreach",
-    "text": "Public outreach\n\n\n\n\n Dissemination PhD Slides\nYou can find here work in progress for dissemination of my PhD research to a broader public.\n\n\n\n Slides\n\n\n\n Slides 3min\n\n\n\n\n\n Articles in Eduscol [French]\n\nCaractérisation mécanique d’un tissu mou : le muscle passif\n\n\n\n\n\n\n\n\n\n\n\nThis resource aims to present the scientific approach in biomechanics for modeling a soft tissue, namely muscle, at the macroscopic scale subjected to external loading (tension/compression). It was designed to complement the resource “Introduction to Biomechanics,” which covers several important points of this discipline. The present resource is based on research work conducted during the authors’ master’s degree in biomechanics, as well as their master 1 internships, master 2 thesis, and pre-doctoral research year. click here\n\n\n\n\nIntroduction à la Biomécanique\n\n\n\n\n\n\n\n\n\n\n\n\n\nBiomechanics, in its commonly accepted definition, consists of applying the tools, methods, and principles of mechanics to biological tissues and organs and their associated medical problems. It is an ancient discipline, studied since antiquity, but it became established as a distinct field in its own right during the 1960s and 1970s. As a varied discipline at the intersection of multiple subjects and methods, it is difficult to approach this theme using a single method. Thus, this resource aims to present the main challenges, their associated analyses and measurement tools, and their clinical applications. It is therefore not an exhaustive list of the topics studied, but an approach to the scientific methodology centered around the biomechanical question. First, we will present what historically founded the domain, namely the analysis of locomotion and movement. Second, we will focus on the effects of forces and deformations on tissues and the biological processes involved. Finally, we will consider the, primarily clinical, applications of the developed tools, and their place and potential in the current treatment of pathologies. The resource “Mechanical characterization of a soft tissue: passive muscle” specifically addresses the process of modeling a complex tissue using the tools of continuum mechanics. click here"
-  },
-  {
-    "objectID": "Publication.html#reviewing-tasks",
-    "href": "Publication.html#reviewing-tasks",
-    "title": "Publications",
-    "section": "   Reviewing Tasks",
-    "text": "Reviewing Tasks\nParticipated in reviews for the Journal of Biomechanics and Applied Mathematical Modelling."
+    "text": "Following my graduation in Luxembourg last December, I was honored to attend my second ceremony with my friends also graduated past year—this time in France.\nReceiving my French doctoral diploma officially marks the conclusion of my cotutelle journey between the University of Luxembourg and Arts et Métiers (ENSAM Paris), in collaboration with I2M Bordeaux.\nNavigating a joint PhD across borders was a challenging but incredibly rewarding experience. It allowed me to bridge two academic cultures and work alongside brilliant minds in both countries. I am deeply grateful to my French supervisors and colleagues for their warm welcome, mentorship, and support throughout these years.\nThis ceremony was the perfect way to celebrate the “French side” of my research on the biomechanics of human skin. A huge thank you to everyone who made yesterday so memorable!\n#PhD #Graduation #Cotutelle #France #Luxembourg #Biomechanics #ArtsEtMetiers #ResearchLife #DualDegree\n\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "Research.html",
@@ -112,13 +70,6 @@
     "text": "This research project, undertaken as an M1 Internship related to Antoine Knwebleski’s PhD, was dedicated to developing advanced biomechanical models to investigate head and neck dynamics during impact events, with a direct application to concussion prevention in sports such as rugby. The central technical task involved the creation and implementation of rheological muscle models for the cervical spine region within the MATLAB/Simulink simulation environment. These models were designed to accurately simulate the complex action of neck muscles during a sudden torso impact. The primary objective was to quantitatively assess the protective effect of muscle preactivation—the voluntary tensing of muscles prior to impact—on mitigating peak head and neck accelerations. By establishing a clearer understanding of this neuromuscular defense mechanism, the project delivers crucial simulated data essential for evaluating and optimizing existing concussion protocols, thereby advancing player safety in contact sports.\n\n\n\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "projects/2021/2021-03-01/index.html",
-    "href": "projects/2021/2021-03-01/index.html",
-    "title": "Numerical investigation of the time-dependent stress–strain mechanical behaviour of skeletal muscle tissue in the context of pressure ulcer prevention",
-    "section": "",
-    "text": "This project focuses on the numerical investigation of the time-dependent stress-strain mechanical behaviour of skeletal muscle tissue. This research addresses a critical clinical challenge: the development of Pressure Ulcers (PU), specifically Deep Tissue Injury, which is primarily instigated by pressure-induced tissue strain. While existing literature often relies on simplified viscoelastic formulations, this work advances the field by developing sophisticated computational models that explicitly characterize the underlying physical mechanisms governing the tissue’s time-dependent response under prolonged loading. The resulting biomechanical insights are essential for more accurately understanding the risk pathway and creating predictive tools to lead to the proactive prevention of Pressure Ulcer formation. (Lavigne et al. 2022)\n\n\n\n\n\n\n\n\n\n Back to topReferences\n\nLavigne, T., G. Sciumè, S. Laporte, H. Pillet, S. Urcun, B. Wheatley, and P-Y. Rohan. 2022. “Société de Biomécanique Young Investigator Award 2021: Numerical Investigation of the Time-Dependent Stress–Strain Mechanical Behaviour of Skeletal Muscle Tissue in the Context of Pressure Ulcer Prevention.” Clinical Biomechanics 93 (March): 105592. https://doi.org/10.1016/j.clinbiomech.2022.105592."
-  },
-  {
     "objectID": "projects/2019/2019-11-01/index.html",
     "href": "projects/2019/2019-11-01/index.html",
     "title": "Poynting Effects in Pantographic Metamaterial Captured via Multiscale DVC",
@@ -133,39 +84,46 @@
     "text": "I primarily focused on simulating the mechanical behavior of porous fluids (e.g., poroelastic models for fluids) using the advanced finite element software FEniCSx. In addition to leading these simulations, the Postdoc will provide essential computational and numerical support to four specific PhD students (S. Pastore, C. Cornillon, M. Laccour, and L. Liquette) to help them overcome technical hurdles in their research. A key institutional responsibility involves installing and configuring the FEniCSx environment on the available MCIA HPC (High-Performance Computing) cluster and creating a comprehensive installation and usage procedure document for the system.\nMore info to come. Stay tuned !\n\n\n\n Back to top"
   },
   {
-    "objectID": "Talks.html#incoming-talks",
-    "href": "Talks.html#incoming-talks",
-    "title": "Talks (selection)",
-    "section": "   Incoming talks",
-    "text": "Incoming talks"
-  },
-  {
-    "objectID": "Talks.html#past-talks",
-    "href": "Talks.html#past-talks",
-    "title": "Talks (selection)",
-    "section": "   Past talks",
-    "text": "Past talks\n\n          Conferences\n\n\n\n\n\nEPUAP - European Pressure Ulcer Advisory Panel (website)\nLausanne, Switzerland, 25th-27th of September 2024\nTitle: Poro-elasticity to capture the time-dependent mechanical behavior of in vivo human skin during an extension test.\nAuthors: T. Lavigne, et al.\n\n\n Code\n\n\n\n\n Code 2\n\n\n\n\nInterpore BeneLux 2024 (website)\nEsch-sur-Alzette, Luxembourg, 11th of April 2024\nTitle: Poromechanics to account for the time-dependent behaviour of human skin during extension tests.\nAuthors: T. Lavigne, et al.\nTitle: Image informed breast tumour models to predict the outcome of neoadjuvant chemotherapy.\nAuthors: R. Collet, T. Lavigne, et al.\n\n\nBSSM - British Society For Strain Measurement (website)\nParis, France, 20th of August-1st of September 2023\nTitle: FE-based Heterogeneous Digital Volume Correlation to Measure Large Deformations of Breast’s Soft Tissues\nAuthors: T. Lavigne, A. Mazier, A. Perney, S.P.A. Bordas, F. Hild, J. Lengiewicz\n\n\n\n Slides\n\n\n\n Abstract\n\n\n\n\n\n\n\n\nCMBBE - Computer Methods in Biomechanics and Biomedical Engineering (website)\nParis, France, 3rd-5th of May 2023\nTitle: Modelling the apparent viscoelastic behaviour of passive muscle tissue under confined compression using a poroelastic framework\nAuthors: T. Lavigne, G. Sciumè, S. Laporte, H. Pillet, S. Urcun, B. Wheatley, P-Y. Rohan\n\n\n\n Abstract\n\n\n\n\n\n\n\n\nWCB - World Congress of Biomechanics (website)\nTaïpei, Taïwan, 10th-14th of July 2022\nTitle: Modelling the apparent viscoelastic behaviour of passive muscle tissue under confined compression using a poroelastic framework\nAuthors: T. Lavigne, G. Sciumè, S. Laporte, H. Pillet, S. Urcun, B. Wheatley, P-Y. Rohan\n\n\n\n Slides\n\n\n\n Abstract\n\n\n\nTitle: Towards real-time patient-specific breast simulations: from full-field information to surrogate model\nAuthors: T. Lavigne, J. Lengiewicz, S. Deshpande, S. Urcun, S. Bordas, A. Mazier\n\n\n\n Abstract\n\n\n\n\n\nSB - Société de Biomécanique (website)\nSaint-Étienne, France, 27th of October 2021\nTitle: The possible role of poro-elasticity in the apparent viscoelastic behaviour of passive muscle: a case study\nAuthors: T. Lavigne, T. Lavigne, G. Sciumè, S. Laporte, H. Pillet, S. Urcun, P-Y. Rohan.\n\n\n\n Abstract\n\n\n\n\n\n          Symposiums and Mini-Conferences\n\n\n\n\n\nF2M - Fédération Francilienne de Mécanique (website)\nIle-de-France, France, 2023 & 2024\nTitle 1: Multiscale Modelling of the muscle, 13𝑡ℎ of February 2023, F2M - Jussieu Paris\nTitle 2: Modélisation poro-élastique de la peau humaine in vivo,4𝑡ℎ of April 2024, F2M - Polytechnique Saclay\nAuthors: T. Lavigne, et al.\n\n\n Code"
-  },
-  {
-    "objectID": "Talks.html#co-organised-symposiums-and-mini-conferences",
-    "href": "Talks.html#co-organised-symposiums-and-mini-conferences",
-    "title": "Talks (selection)",
-    "section": "   Co-organised Symposiums and Mini-Conferences",
-    "text": "Co-organised Symposiums and Mini-Conferences\n\n\n\n\nOrganised FEniCSx-GMSH tutorials at I2M Bordeaux (website)\nTalence, France, September 2024\nTitle: Tutorials for the install and use of FEniCSx.\nAuthors: T. Lavigne, G. Sciumè, S. Urcun, M. Abbad Andaloussi.\n\n\n\n Website\n\n\n\n Code"
-  },
-  {
-    "objectID": "posts/2024/2024-12-12-Erlangen/index.html",
-    "href": "posts/2024/2024-12-12-Erlangen/index.html",
-    "title": "Visiting Brainiacs laboratory at FAU",
+    "objectID": "projects/2021/2021-09-01/index.html",
+    "href": "projects/2021/2021-09-01/index.html",
+    "title": "Soft Tissue Modelling: Breast application and theoretical developments",
     "section": "",
-    "text": "Thanks to collaborations with Pr. S. Budday, we had the distinct opportunity to spend a productive week visiting the new, state-of-the-art laboratory of the brainiacs research team at the University of Erlangen-Nuremberg (FAU). This highly collaborative visit allowed us to be warmly received by the group and gain in-depth exposure to their advanced work in brain experimentation and computational modeling. The trip served to strengthen research ties and provided invaluable insights into cutting-edge methodologies for both the physical study and the numerical simulation of complex brain mechanics.\nWe’re excited about the possibility of reconducting this initiative in the future!\n\n\n\n\n  \n\n\n\n\n\n  \n\n\n\n\n\n  \n\n\n\n\n❮ ❯\n\n\n\n\n\n Back to top"
+    "text": "This area of research is dedicated to the advanced biomechanical characterization of soft tissues and bodies, particularly under complex conditions involving large deformation and contact. The project is built on two inter-connected technical pillars. First, we developed and evaluated a Digital Volume Correlation (DVC) pipeline to accurately measure 3D kinematic fields within soft tissues under significant displacements. This innovative methodology, which utilizes X-ray tomography for detailed imaging, has critical clinical applications, such as enabling the precise mapping of ex vivo breast deformations to improve the accuracy of radiotherapy planning by assisting with tumor repositioning. Complementary to this, the project also designed a novel optimization framework that employs an inverse+forward hyper-elasticity formulation to simultaneously identify the unknown material parameters and the contact traction field of soft bodies from measured deformed geometries. By rigorously integrating computational modeling with experimental data, this work provides powerful tools for a complete and robust understanding of soft tissue mechanics in various physiological and loading scenarios. (Lavigne et al. 2023),(Lavigne et al. 2022)\n\n\n\n\n  \n\n\n\n\n\n  \n\n\n\n\n\n  \n\n\n\n\n❮ ❯\n\n\n\n\n\n\n Back to topReferences\n\nLavigne, T., S. P. A. Bordas, and J. Lengiewicz. 2023. “Identification of Material Parameters and Traction Field for Soft Bodies in Contact.” Computer Methods in Applied Mechanics and Engineering 406 (March): 115889. https://doi.org/10.1016/j.cma.2023.115889.\n\n\nLavigne, T., A. Mazier, A. Perney, S. P. A. Bordas, F. Hild, and J. Lengiewicz. 2022. “Digital Volume Correlation for Large Deformations of Soft Tissues: Pipeline and Proof of Concept for the Application to Breast Ex Vivo Deformations.” Journal of the Mechanical Behavior of Biomedical Materials 136 (December): 105490. https://doi.org/10.1016/j.jmbbm.2022.105490."
   },
   {
-    "objectID": "posts/2025/2025-20-11-HPC/index.html",
-    "href": "posts/2025/2025-20-11-HPC/index.html",
-    "title": "FEniCSx install for MCIA HPC",
+    "objectID": "projects/2021/2021-03-01/index.html",
+    "href": "projects/2021/2021-03-01/index.html",
+    "title": "Numerical investigation of the time-dependent stress–strain mechanical behaviour of skeletal muscle tissue in the context of pressure ulcer prevention",
     "section": "",
-    "text": "As part of my post-doc at I2M, I had the opportunity to install FEniCSx 0.9.0 now available as a module on MCIA Curta cluster for all users.\n\nInstallation Update\nAfter successful compilation and testing on the Curta cluster, the 0.9.0 stable release of the FEniCSx project is now accessible to all researchers and students using the MCIA resources. This installation ensures that users can leverage the most recent improvements in finite element solving without managing complex local environments or containers.\nThis module includes the full FEniCSx stack:\n\nDOLFINx: The computational environment.\nBasix: Finite element definitions.\nUFL: Unified Form Language.\nFFCx: Form Compiler.\n\nThis module also includes other scientific libraries like Neper, nlopt, skopt, …\n\n\nHow to use it\nTo use the new installation, you simply need to load the module in your SLURM scripts or interactive sessions. As per MCIA standards, the environment is managed via module.\n1. Check availability:\nmodule avail fenicsx\n2. Load the module: You can load the specific version (recommended for reproducibility) or the default alias:\n# Load specific version (0.9.0)\nmodule load fenicsx/0.9.0\n\n# OR load default\nmodule load fenicsx\n3. Verify the installation: Once loaded, you can verify the version directly in Python:\npython3 -c \"import dolfinx; print(f'DOLFINx version: {dolfinx.__version__} installed at {dolfinx.__path__[0]}')\"\n\n\nBig thanks to the MCIA support team for their assistance with the dependencies on the cluster. Happy coding!\n\n\nFor more details please give a look to these tutorials\n#FEniCSx #ComputerScience #HPC #Install #Bordeaux\n\n\n\n\n Back to top"
+    "text": "This project focuses on the numerical investigation of the time-dependent stress-strain mechanical behaviour of skeletal muscle tissue. This research addresses a critical clinical challenge: the development of Pressure Ulcers (PU), specifically Deep Tissue Injury, which is primarily instigated by pressure-induced tissue strain. While existing literature often relies on simplified viscoelastic formulations, this work advances the field by developing sophisticated computational models that explicitly characterize the underlying physical mechanisms governing the tissue’s time-dependent response under prolonged loading. The resulting biomechanical insights are essential for more accurately understanding the risk pathway and creating predictive tools to lead to the proactive prevention of Pressure Ulcer formation. (Lavigne et al. 2022)\n\n\n\n\n\n\n\n\n\n Back to topReferences\n\nLavigne, T., G. Sciumè, S. Laporte, et al. 2022. “Société de Biomécanique Young Investigator Award 2021: Numerical Investigation of the Time-Dependent Stress–Strain Mechanical Behaviour of Skeletal Muscle Tissue in the Context of Pressure Ulcer Prevention.” Clinical Biomechanics 93 (March): 105592. https://doi.org/10.1016/j.clinbiomech.2022.105592."
+  },
+  {
+    "objectID": "projects/2025/2025-12-01/index.html",
+    "href": "projects/2025/2025-12-01/index.html",
+    "title": "ANR Rosaly: Simulation of the mechanical behavior of hydrogels",
+    "section": "",
+    "text": "During my postdoctoral position, I will focus on simulating the mechanical behavior of collagen hydrogels using poroelasticity models implemented in FEniCS. The core work involves using experimental data to identify the material’s mechanical properties based on its fabrication conditions. A key objective is the enhancement of these models to incorporate the complex influence of contractile cells within the gel, specifically including their mechanoperception response. Further development will integrate microstructural information to accurately describe how the collagen fibers move and reorient under mechanical load.\nMore to come, stay tuned !\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "projects/2022/2022-09-01-PhD/index.html",
+    "href": "projects/2022/2022-09-01-PhD/index.html",
+    "title": "AFR-FNR 17013182: Unraveling Mechano-Biological Couplings: Towards Personalized Medicine and Targeted Pressure Ulcer Prevention",
+    "section": "",
+    "text": "For years, research models studied two risk factors separately — how tissue is compressed and how blood circulates within it. My PhD work combines them in a unified porous model, developed and evaluated alongside new experiments on human patients. Think of the skin as a living sponge filled with tiny blood vessels. When pressure is applied, it’s gradually squeezed, cutting off oxygen — and when released, blood rushes back in. This new model reveals the subtle interplay between mechanical stress and biological response (ischemia and hyperemia), helping us understand when and how damage starts. This open-source work marks a significant step forward in understanding and preventing pressure ulcers — and moves us closer to truly personalized medicine. (Lavigne et al. 2023),(Lavigne et al. 2024),(Lavigne, Urcun, et al. 2025),(Lavigne, Afanador, et al. 2025)\n\n\n\n\nPhD Graphical Abstract  Coupling biology in mechanics through porous modelling for Human skin.\n\n\n\n\n\nExperiment  Laser Doppler Flowmetry to capture the microcirculatory response.\n\n\n\n\n\nExperimental setup  Laser Doppler Flowmetry to capture the microcirculatory response.\n\n\n\n\n\nThe skin as a sponge  Porous representation of the skin: multiscale.\n\n\n\n\n\nHierarchical Porous Model  Porous model as a brick\n\n\n\n\n\nPorous-like viewcut of the skin.  AI generated.\n\n\n\n\n\nPhD Defense  PhD Defense\n\n\n\n\n❮ ❯\n\n\n\n\n\n\n Back to topReferences\n\nLavigne, Thomas, Camilo Andrés Suarez Afanador, Anas Obeidat, and Stéphane Urcun. 2025. Synthetic Porous Microstructures: Automatic Design, Simulation, and Permeability Analysis. https://arxiv.org/abs/2502.14518.\n\n\nLavigne, Thomas, Stéphane Urcun, Bérengère Fromy, et al. 2025. “Hierarchical Poromechanical Approach to Investigate the Impact of Mechanical Loading on Human Skin Micro-Circulation.” International Journal for Numerical Methods in Biomedical Engineering, ahead of print. https://doi.org/10.1002/cnm.70066.\n\n\nLavigne, Thomas, Stéphane Urcun, Emmanuelle Jacquet, et al. 2024. “Poromechanical Modelling of the Time-Dependent Response of in Vivo Human Skin During Extension.” In International Journal for Numerical Methods in Biomedical Engineering. International Journal for Numerical Methods in Biomedical Engineering. https://doi.org/10.48550/ARXIV.2412.07374.\n\n\nLavigne, Thomas, Stéphane Urcun, Pierre-Yves Rohan, Giuseppe Sciumè, Davide Baroli, and Stéphane P. A. Bordas. 2023. “Single and Bi-Compartment Poro-Elastic Model of Perfused Biological Soft Tissues: FEniCSx Implementation and Tutorial.” Journal of the Mechanical Behavior of Biomedical Materials 143 (July): 105902. https://doi.org/10.1016/j.jmbbm.2023.105902."
+  },
+  {
+    "objectID": "News.html",
+    "href": "News.html",
+    "title": "News",
+    "section": "",
+    "text": "PhD Graduation Ceremony: ENSAM\n\n\n\n\n\n\n\n\nApr 8, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nHonored to receive the Excellent Thesis Award at the 2025 University of Luxembourg PhD Graduation.\n\n\n\n\n\n\n\n\nDec 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nFEniCSx install for MCIA HPC\n\n\n\n\n\n\n\n\nNov 20, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPhD Defense\n\n\n\n\n\n\n\n\nJun 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nVisiting Brainiacs laboratory at FAU\n\n\n\n\n\n\n\n\nDec 12, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nFEniCSx-Gmsh Training-Symposium\n\n\n\n\n\n\n\n\nSep 10, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nPrix Most cited paper : 2 normaliens du DER-Génie Mécanique à l’honneur\n\n\n\n\n\n\n\n\nFeb 6, 2024\n\n\n\n\n\nNo matching items\n Back to top"
+  },
+  {
+    "objectID": "Resources/presentations/phd_defense/presentation.html#pressure-ulcers-pus",
+    "href": "Resources/presentations/phd_defense/presentation.html#pressure-ulcers-pus",
+    "title": "Biomechanical Response of Human Skin: A Hierarchical Porous Media Framework.",
+    "section": "Pressure Ulcers (PUs)",
+    "text": "Pressure Ulcers (PUs)\n\n\nPressure ulcers: localised injuries to the skin and underlying soft tissue that form during prolonged exposure to mechanical loads.\n\n\n\n\nStage 1 and stage 2 account for 70% of PUs {.fragment}\n20% of hospitalised patients {.fragment}\n34% of amputees experienced a skin lesion {.fragment}"
   },
   {
     "objectID": "posts/2025/2025-10-12-ETA/index.html",
@@ -173,6 +131,55 @@
     "title": "Honored to receive the Excellent Thesis Award at the 2025 University of Luxembourg PhD Graduation.",
     "section": "",
     "text": "On December 10, 2025, I reached a major milestone at the University of Luxembourg’s PhD Graduation ceremony, where I officially received my doctoral diploma.\nI am incredibly honored to announce that I was also the recipient of an Excellent Thesis Award (ETA) from the University of Luxembourg. It was a privilege to be called on stage to accept this prize and celebrate alongside friends and colleagues in the presence of the Rector, Vice-Rector, and the Minister of Higher Education. I was also grateful for the opportunity to present a portion of my research to the audience.\nNone of this would have been possible without the support of many incredible people. A heartfelt thank you to: - My Funding: The FNR (Grant AFR-FNR 17013812) for believing in this project. - My Mentors: My supervisors for their guidance. - My Network: My colleagues, friends, and family for their unwavering support. - The Unsung Heroes: The admin support, IT teams, HR, and doctoral schools who work behind the scenes to make projects like this come to life. - The Volunteers: Thank you for making the ceremony such a memorable event.\nYou can watch the recording of the ceremony here: (https://www.youtube.com/live/2Aq1HwV_Lv8)\n  \nAs part of a cotutelle program, I look forward to receiving my second diploma from ENSAM later this year.\n#Gradutation #PhD #Award #UniLu\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "posts/2025/2025-24-06-PhD/index.html",
+    "href": "posts/2025/2025-24-06-PhD/index.html",
+    "title": "PhD Defense",
+    "section": "",
+    "text": "I successfully defended my PhD as part of a cotutelle program between Université du Luxembourg & Arts et Métiers ParisTech - École Nationale Supérieure d’Arts et Métiers (i-biomec I2M – Institut de Mécanique et d’Ingénierie de Bordeaux)\nMy thesis, entitled “Biomechanical Response of Human Skin: a Hierarchical Porous Media Framework”, explored and evaluated a novel two-compartment porous model to capture the interaction between the mechanical behavior of soft tissues and microcirculatory response.\nThis journey was made possible thanks to the support and mentorship of my supervisors: Stéphane P.A. Bordas (FLSW), Pierre-Yves Rohan and Giuseppe Sciumè.\nI’m also grateful to the jury and expert members for the rich and insightful discussions during the defence: Yohan Payan, Stéphane Avril, Christian Vincenot, Dr.-Ing. Silvia Budday, and Sébastien LAPORTE.\nA special thank you as well to our collaborating laboratories -Laboratoire de Biologie Tissulaire et Ingénierie thérapeutique (LBTI), Institut FEMTO-ST, Laboratoire de Mécanique Paris-Saclay)- whose contributions, especially on the experimental side, were essential.\nHeartfelt thanks to the volunteers who participated in the experimental cohorts and to all the individuals who contributed to this PhD.\nFinally, I am honoured to have been proposed for the Pierre Béziers prize (ENSAM), Excellent Thesis Award (University of Luxembourg), the FNR Outstanding PhD Thesis, and the pre-selection for Prix Tarrach of Les Amis du Luxembourg.\nThis work was supported by the Luxembourg National Research Fund (FNR) under grant n° 17013182.\nOn to the next chapter!\n#Biomechanics #PorousMedia #SoftTissues #Microcirculation #CotutellePhD\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "posts/2024/2024-02-06-Most_Cited/index.html",
+    "href": "posts/2024/2024-02-06-Most_Cited/index.html",
+    "title": "Prix Most cited paper : 2 normaliens du DER-Génie Mécanique à l’honneur",
+    "section": "",
+    "text": "“Rédigé en 2020 par deux normaliens Patrick AUGER et Thomas LAVIGNE, avec la participation de Mario SPAGNUILO et Francesco DELL’ISOLA et sous la direction de François HILD et Benjamin SMANIOTTO, l’article”Poynting Effects in Pantographic Metamaterials Captured via Multiscale DVC” a été distingué par le prix “Most cited Paper” dans la revue Journal of Strain Analysis for Engineering Design.” here\n\n\n\n\n  \n\n\n\n\n❮ ❯\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Publication.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e6966792066612d736f6c69643a626f6f6b203e7d7d-publications",
+    "href": "Publication.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e6966792066612d736f6c69643a626f6f6b203e7d7d-publications",
+    "title": "Publications",
+    "section": "   Publications",
+    "text": "Publications"
+  },
+  {
+    "objectID": "Publication.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206661362d726567756c61723a70656e2d746f2d737175617265203e7d7d-work-in-progress",
+    "href": "Publication.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206661362d726567756c61723a70656e2d746f2d737175617265203e7d7d-work-in-progress",
+    "title": "Publications",
+    "section": "   Work in progress",
+    "text": "Work in progress\n\nPorous Liquides: When the “Matrix” is a highly viscous fluid\nAuthors: T. Lavigne, G. Sciumè\nThis is ongoing work. This section will be refined soon."
+  },
+  {
+    "objectID": "Publication.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e69667920696f6e3a73686172652d736f6369616c2d7368617270203e7d7d-public-outreach",
+    "href": "Publication.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e69667920696f6e3a73686172652d736f6369616c2d7368617270203e7d7d-public-outreach",
+    "title": "Publications",
+    "section": "   Public outreach",
+    "text": "Public outreach\n\n\n\n\n Dissemination PhD Slides\nYou can find here work in progress for dissemination of my PhD research to a broader public.\n\n\n\n Slides\n\n\n\n Slides 3min\n\n\n\n\n\n Articles in Eduscol [French]\n\nCaractérisation mécanique d’un tissu mou : le muscle passif\n\n\n\n\n\n\n\n\n\n\n\nThis resource aims to present the scientific approach in biomechanics for modeling a soft tissue, namely muscle, at the macroscopic scale subjected to external loading (tension/compression). It was designed to complement the resource “Introduction to Biomechanics,” which covers several important points of this discipline. The present resource is based on research work conducted during the authors’ master’s degree in biomechanics, as well as their master 1 internships, master 2 thesis, and pre-doctoral research year. click here\n\n\n\n\nIntroduction à la Biomécanique\n\n\n\n\n\n\n\n\n\n\n\n\n\nBiomechanics, in its commonly accepted definition, consists of applying the tools, methods, and principles of mechanics to biological tissues and organs and their associated medical problems. It is an ancient discipline, studied since antiquity, but it became established as a distinct field in its own right during the 1960s and 1970s. As a varied discipline at the intersection of multiple subjects and methods, it is difficult to approach this theme using a single method. Thus, this resource aims to present the main challenges, their associated analyses and measurement tools, and their clinical applications. It is therefore not an exhaustive list of the topics studied, but an approach to the scientific methodology centered around the biomechanical question. First, we will present what historically founded the domain, namely the analysis of locomotion and movement. Second, we will focus on the effects of forces and deformations on tissues and the biological processes involved. Finally, we will consider the, primarily clinical, applications of the developed tools, and their place and potential in the current treatment of pathologies. The resource “Mechanical characterization of a soft tissue: passive muscle” specifically addresses the process of modeling a complex tissue using the tools of continuum mechanics. click here"
+  },
+  {
+    "objectID": "Publication.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e69667920696f6e3a73686172652d736f6369616c2d7368617270203e7d7d-reviewing-tasks",
+    "href": "Publication.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e69667920696f6e3a73686172652d736f6369616c2d7368617270203e7d7d-reviewing-tasks",
+    "title": "Publications",
+    "section": "   Reviewing Tasks",
+    "text": "Reviewing Tasks\nParticipated in reviews for the Journal of Biomechanics and Applied Mathematical Modelling."
   },
   {
     "objectID": "Education.html",
