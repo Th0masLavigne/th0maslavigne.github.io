@@ -45,8 +45,10 @@ website:
         text: Academic & Research Appointments
       - text: CV
         menu:
-        - text: CV
-          href: Resources/documents/CV.pdf
+        - text: Short CV
+          href: Resources/documents/CV_2026_short.pdf
+        - text: Academic CV
+          href: Resources/documents/CV_2026.pdf
         - text: Narrative CV
           href: Resources/documents/Narrative_CV_Lavigne.pdf
         target: _blank
