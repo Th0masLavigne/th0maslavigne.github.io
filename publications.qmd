@@ -237,8 +237,8 @@ You can find here work in progress for dissemination of my PhD research to a bro
 **Ajouter ici le résumé de thèse et la présentation Tarrach**
 
 <div style="display: flex; gap: 10px; margin-top: 15px; margin-bottom: 30px;">
-  <a href="resources/presentations/ETA/ETA_v0.pptx" target="_blank" class="btn btn-outline-primary rounded-pill">{{< iconify fa-solid:chalkboard >}} Slides</a>
-  <a href="resources/presentations/ETA/ETA_3_min_new_template.pptx" target="_blank" class="btn btn-outline-primary rounded-pill">{{< iconify fa-solid:chalkboard >}} Slides 3min</a>
+  <a href="resources/documents/phd/Lavigne_tarrach_template_ppt_split.pdf" target="_blank" class="btn btn-outline-primary rounded-pill">{{< iconify fa-solid:chalkboard >}} Slides</a>
+  <a href="resources/documents/phd/summary_thesis_lavigne.pdf" target="_blank" class="btn btn-outline-primary rounded-pill">{{< iconify fa-solid:chalkboard >}} Lay Summary</a>
 </div>
 
 ### {{< iconify fa-solid:caret-right >}} Articles in Eduscol [French]
