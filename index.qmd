@@ -22,6 +22,12 @@ format:
       linear-gradient(rgba(3, 28, 89, 0.1), rgba(3, 28, 89, 0.3)), 
       url("resources/images/backgrounds/background_skin.JPG");
     background-size: cover; background-position: center center; background-attachment: fixed; margin: 0;
+    /* Fix for iOS missing background image */
+    @media (max-width: 768px) {
+      body {
+        background-attachment: scroll; /* Overrides the 'fixed' property on mobile */
+      }
+    }
   }
 
   #quarto-content, .quarto-container, .page-layout-custom { background-color: transparent !important; }
