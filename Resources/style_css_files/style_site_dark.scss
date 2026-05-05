@@ -1,0 +1,160 @@
+/*-- scss:defaults --*/
+// Base document colors for Dark Mode (IP Paris Theme)
+$body-bg: #263770; // Very dark IP Paris Navy for the main background
+$body-color: #f3f3f3;
+$link-color: #99ddff; // IP Paris Light Blue (Lochmara)
+$navbar-bg: #031C59; // IP Paris Navy (Gulf Blue)
+$warning_color: #D66547; // IP Paris Accent Red
+$pink : #D66547; // Repurposed variable to match the IP Paris Red
+
+.navbar {
+  display: flex;
+  align-items: center; /* Center-aligns the content vertically */
+}
+
+/* Footer background image */
+.nav-footer {
+  color: white !important;
+}
+
+.nav-footer a {
+  color: white !important;  /* improves readability over image */
+}
+
+.page-footer .footer-center {
+  /* Aligns the items (icons) vertically in the center */
+  align-items: center; 
+}
+
+
+/*-- scss:rules --*/
+
+h2 {
+    color: $link-color;
+}
+
+h1 {
+    color: $link-color;
+}
+
+.mark-orange {
+    background-color: $warning_color;
+    border-radius: 4px;
+}
+
+body {
+    font-weight: 380; 
+    font-size: medium;
+    text-align: justify;
+}
+
+.callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
+}
+  
+.callout .callout-header {
+    font-family: bitter;
+    font-size: 0.4rem;
+    font-weight: 650;
+    color: #008BD2; // IP Paris Light Blue
+}
+  
+.callout.callout-style-simple { 
+    padding: 0em 1.8em;
+    border-left: solid #D66547 0rem; // IP Paris Accent Red
+    border-right: solid 0px rgb(255, 255, 255);
+    border-top: solid 0px #D66547;
+    border-bottom: solid 0px rgb(247, 247, 247);
+}
+  
+.callout.callout-style-simple .callout-body {
+    font-size: 0.8rem;
+    font-weight: 350;
+    background-color: rgba(0, 139, 210, 0.05); // Slight IP Paris Light Blue tint
+}
+
+.button {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  
+    a.button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.25rem 0.5rem;
+        border-radius: 10px; // Makes the button rounded
+        background-color: #008cd2c2; // IP Paris Light Blue for dark mode visibility
+        color: white;
+        text-decoration: none;
+        transition: background-color 0.3s, box-shadow 0.3s;
+  
+        &:hover {
+            background-color: #D66547; // IP Paris Accent Red on hover
+            box-shadow: 0 4px 8px rgba(226, 226, 226, 0.2); // Adds a shadow
+            font-size: 0.97rem;
+        }
+  
+        &:active {
+            background-color: #a84f37; // Darker Red for active state
+            box-shadow: inset 0 2px 4px rgb(222, 222, 222); // Inset shadow
+            font-size: 0.97rem;
+        }
+  
+        span.button-text {
+            margin-left: 0.5rem; // Spacing between icon and text
+        }
+    }
+}
+  
+// Fix for Outline Buttons in Dark Mode
+.btn-outline-primary {
+    color: $link-color; 
+    border-color: $link-color; 
+    
+    &:hover, &:focus, &:active {
+        background-color: $link-color;
+        color: $body-bg; // Inverts to dark navy text on hover for contrast
+        border-color: $link-color;
+    }
+}
+
+.btn-outline-secondary {
+    color: $body-color; // Uses your off-white #f3f3f3
+    border-color: $body-color; 
+    
+    &:hover, &:focus, &:active {
+        background-color: $body-color;
+        color: $body-bg; // Inverts to dark navy text on hover
+        border-color: $body-color;
+    }
+}
+
+// Fix for Secondary Text & Borders (used in your Key Topic badges)
+.text-secondary {
+    color: #d1d1d1 !important; // Brightened up grey/white so it doesn't disappear
+}
+
+.border-secondary {
+    border-color: #d1d1d1 !important;
+}
+
+// scss for about page
+div.quarto-about-trestles {
+  background-color: var(--bs-body-bg) !important;
+  margin-top: 2rem !important; 
+  margin-left: 40px !important; 
+  margin-right: 40px !important; 
+  padding: 2rem; 
+}
+
+.talk-card {
+    border: 1px solid rgba(0, 139, 210, 0.8); // IP Paris Light Blue border
+    padding: 0 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 139, 210, 0.1);
+    background-color: rgba(0, 139, 210, 0.05); // Slight Light Blue tint for background
+}

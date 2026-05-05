@@ -1,16 +1,9 @@
 project:
   type: website
   resources:
-    - "Resources"
+    - "resources"
     - "posts"
     - "projects"
-    - "style.css"
-    - "style_site.scss"
-    - "style_site_dark.scss"
-    - "Hal_css.css"
-    - "Hal_css_dark.css"
-    - "custom_hal.js"
-    - "carousel.js"
   output-dir: docs
 
 
@@ -19,38 +12,38 @@ website:
   back-to-top-navigation: true
   page-navigation: true
   bread-crumbs: true
-  open-graph: true
-  title: "Thomas Lavigne"
-  image: Resources/images/profile_pic2.jpeg
-  favicon: Resources/images/profile_pic2.jpeg
+  open-graph: true 
+  title: "Thomas Lavigne, PhD"
+  image: resources/images/profile_pic2.jpeg
+  favicon: resources/images/profile_pic2.jpeg
   description: "Thomas Lavigne, PhD in biomechanics (biomécanique), specialized in vascular mechanics, poromechanics, hydrogels, and numerical simulation (fenics and fenicsx). Personal research webpage presenting projects in FEniCSx, Gmsh, porous media modeling, publications, CV, and post-doctoral work at ENS Paris-Saclay, I2M Bordeaux, Université du Luxembourg, LMS Polytechnique, and the IBHGC laboratory at ENSAM Paris."
   site-url: https://th0maslavigne.github.io/
   navbar:
     right:
       - href: index.qmd
         text: Home
-      - href: News.qmd
+      - href: news.qmd
         text: News 
       - text: Research
         menu:
-          - href: Research.qmd
+          - href: projects.qmd
             text: Projects
-          - href: Publication.qmd
-            text: Publications
-          - href: Talks.qmd
+          - href: publications.qmd
+            text: Publications & Outreach
+          - href: talks.qmd
             text: Talks
-      - href: Teaching.qmd
-        text: Teaching
-      - href: Education.qmd
-        text: Academic & Research Appointments
+      - text: Academia
+        menu:
+          - href: teaching.qmd
+            text: Teaching & Supervision
+          - href: education.qmd
+            text: Academic & Research Appointments
       - text: CV
         menu:
-        - text: Short CV
-          href: Resources/documents/CV_2026_short.pdf
         - text: Academic CV
-          href: Resources/documents/CV_2026.pdf
-        - text: Narrative CV
-          href: Resources/documents/Narrative_CV_Lavigne.pdf
+          href: resources/documents/cv/thomas_lavigne_cv_2.pdf
+        - text: Narrative CV (2025)
+          href: resources/documents/cv/Narrative_CV_Lavigne.pdf
         target: _blank
       - text: "{{< iconify ion:logo-github >}}"
         href: https://github.com/Th0masLavigne
@@ -59,7 +52,7 @@ website:
   page-footer: 
     right: |
       <ul style="list-style-type: none; padding: 0; margin: 0;">
-        <li>📍 Institut Polytechnique de Paris</li>
+        <li>📍 <a href="https://lms.ip-paris.fr">Laboratoire de Mécanique des Solides</a> </li>
         <li>📧 <a href="mailto:thomas.lavigne@polytechnique.edu">thomas.lavigne@polytechnique.edu</a></li>
       </ul>
 
@@ -83,31 +76,22 @@ website:
         <a href="https://quarto.org/">Built with Quarto</a>
       </small>
 
-  # reader-mode: if side bar allows to hide
-  # reader-mode: true
-  # repo-url: https://github.com/Th0masLavigne/Resume.git
-  # repo-actions: [edit, source, issue]
-
 
 # https://quarto.org/docs/output-formats/html-themes.html
 format:
   html:
     email-obfuscation: javascript
     theme:
-      light: [flatly,style_site.scss]
-      dark: [darkly,style_site_dark.scss]
+      light: [flatly,resources/style_css_files/style_site.scss]
+      dark: [darkly,resources/style_css_files/style_site_dark.scss]
     respect-user-color-scheme: true
-    css: styles.css
+    css: resources/style_css_files/styles.css
     toc: true
     smooth-scroll: true
-    include-after-body:
-      text: |
-        <script type="application/javascript" src="custom_hal.js"></script>
-        <script type="application/javascript" src="carousel.js"></script>
-    # metadata:
-      # description: "Thomas Lavigne, PhD in biomechanics (biomécanique), specialized in vascular mechanics, poromechanics, hydrogels, and numerical simulation (fenics and fenicsx). Personal research webpage presenting projects in FEniCSx, Gmsh, porous media modeling, publications, CV, and post-doctoral work at ENS Paris-Saclay, I2M Bordeaux, Université du Luxembourg, LMS Polytechnique, and the IBHGC laboratory at ENSAM Paris."
-      # keywords: ["Thomas Lavigne", "PhD", "biomécanique", "post-doctoral", "personal webpage", "mechanics", "biomechanics", "vascular", "coupling", "poromechanics", "hydrogel", "fenicsx", "simulation", "gmsh", "porous", "medium", "biomechanics", "CV", "Bordeaux", "Paris", "I2M", "LMS", "ENS", "Ecole normale supérieure Paris-Saclay", "ENSAM", "IBHGC", "website", "github", "links", "th0maslavigne", "thomaslavigne", "th0mas lavigne", "th0mas", "lavigne", "research", "doctoral", "post-doctoral", "Université du Luxembourg", "Luxembourg", "Legato", "Team", "Polytechnique"]
-      # google-site-verification: "tU9wtzWA1tzRdwTl-Sqo-j5PqUVDTz4gUn_Xy9Pji1Q" #also in index.qmd
+#     include-after-body:
+#       text: |
+#         <script type="application/javascript" src="resources/style_css_files/custom_hal.js"></script>
+#         <script type="application/javascript" src="resources/style_css_files/carousel.js"></script>
 
-header-includes:
-  - <script src="carousel.js"></script>
+# header-includes:
+#   - <script src="resources/style_css_files/carousel.js"></script>

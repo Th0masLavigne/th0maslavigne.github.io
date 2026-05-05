@@ -1,103 +1,240 @@
 ---
-title: Teaching activities
-bibliography: Resources/biblio/biblio_web.bib
-# image: Resources/images/ETA_background - Copie.jpeg
+title: "Teaching & Supervision"
+bibliography: resources/biblio/biblio_web.bib
 toc: false
-# about:
-  # template: broadside
 format:
   html:
     page-layout: full
 ---
 
-### Teaching in [BME](https://www.bme-paris.com/) Program and Apprentices at Ecole National Supérieure d'Arts et Métiers Paris
+<style>
+  /* --- GLOBAL CARD COLOR THEME --- */
+  :root {
+    --card-bg: #f4f9fc; 
+    --card-border: #031C59; 
+    --text-main: #031C59; 
+  }
 
-:::: {.columns}
+  /* This completely fixes the Dark Mode issue by catching all Quarto theme toggles */
+  html[data-bs-theme="dark"], 
+  body.quarto-dark,
+  [data-bs-theme="dark"] {
+    --card-bg: rgba(198, 198, 198, 0.1);
+    --card-border: #99ddff;
+    --text-main: #f3f3f3;
+  }
 
-::: {.column width="50%"}
-![](Resources/images/ensam.jpg){width="70%" fig-align="left"}
-:::
+  /* --- TEACHING & SUPERVISION CARD STYLES --- */
+  .teaching-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-left: 5px solid var(--card-border); /* Matches the Appointments timeline */
+    border-radius: 0 12px 12px 0; /* Matches the Appointments timeline */
+    overflow: hidden;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: var(--bs-body-color);
+  }
 
-::: {.column width="50%"}
-<div style="margin-top: 4%;">
-- **2022 - 2025** 
-  - L3: Mathematics, 
-  - M1: Mechanics, 
-  - M2: Dynamics, 
-        Informatics,
-        Experimental Methods.
+  .teaching-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 15px rgba(0, 139, 210, 0.15);
+  }
+
+  .teaching-card-body {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .teaching-img-wrapper {
+    flex: 0 0 25%;
+    max-width: 250px;
+    text-align: center;
+  }
+
+  .teaching-img-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    object-fit: cover;
+  }
+  
+  .teaching-text {
+    flex: 1;
+  }
+
+  .teaching-text h3 {
+    margin-top: 0;
+    color: var(--text-main);
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+  }
+
+  .teaching-text h5 {
+    color: var(--card-border);
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+  }
+
+  .teaching-text p, .teaching-text ul {
+    color: var(--bs-body-color);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .teaching-text ul {
+    padding-left: 1.5rem;
+  }
+
+  .teaching-text li {
+    margin-bottom: 0.5rem;
+  }
+
+  /* List specific style for the Supervision section */
+  .supervision-list li {
+    margin-bottom: 1rem;
+  }
+
+  /* Mobile Stacking */
+  @media (max-width: 768px) {
+    .teaching-card {
+      border-radius: 12px;
+      border-left: 1px solid var(--card-border);
+      border-top: 5px solid var(--card-border);
+    }
+    .teaching-card-body {
+      flex-direction: column;
+      text-align: left;
+    }
+    .teaching-img-wrapper {
+      max-width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+</style>
+
+:::: {style='margin-top: 3em;'}
+::::
+
+## {{< iconify fa-solid:users >}} &nbsp; Student Mentorship & Supervision
+
+<div class="teaching-card">
+<div class="teaching-card-body">
+<div class="teaching-text">
+<h3>Research & Computational Mentorship</h3>
+<h5>LMS (École Polytechnique) & I2M (Univ. Bordeaux) | 2024 - Present</h5>
+<p>I actively supervise and mentor junior researchers, focusing on computational modelling, poromechanics, experimental needs, and rigorous software engineering practices (Git, CI/CD testing, code review):</p>
+<ul class="supervision-list">
+<li><strong>Matthieu Lacour (M2 & PhD - I2M):</strong> Co-supervised M2 internship on micro-fluidic chip design. Currently providing advanced computational mentoring for his PhD on Finite Element modelling using FEniCS.</li>
+<li><strong>Gaspard Deremble (L3 - LMS):</strong> Supervising the computational modelling of the cornea, including advanced meshing methods and hyper-elastic material parameter gradients.</li>
+<li><strong>Parsa Namazian (M1 - LMS):</strong> Supervising research on the poromechanics of hydrogels and cellular realignment during contraction.</li>
+<li><strong>Laura Liquette (Contractual Researcher - I2M):</strong> Providing computational supervision and technical support for FEniCS-based Finite Element modelling.</li>
+</ul>
 </div>
-:::
-
-::::
-
-### Tutored sessions for students in difficulty at École Normale Supérieure Paris Saclay
-
-:::: {.columns}
-
-::: {.column width="50%"}
-
-<div style="margin-top: 12%;">
-- **2019 - 2020** 
-  - Physics, Mathematics, Mechanics, Practical Works, Reporting methods.  
+</div>
 </div>
 
-:::
-
-::: {.column width="50%"}
-
-![](Resources/images/ens.jpg){width="60%" fig-align="right"}
-
-
-:::
-
+:::: {style='margin-top: 3em;'}
 ::::
 
+## {{< iconify fa-solid:chalkboard-user >}} &nbsp; University Teaching
 
-### Classe Préparatoire aux grandes écoles
+<!-- ENSAM CARD -->
+<div class="teaching-card">
+<div class="teaching-card-body">
+<div class="teaching-img-wrapper">
+<img src="resources/images/places/ensam.jpg" alt="ENSAM Paris">
+</div>
+<div class="teaching-text">
+<h3>Lecturer & Teaching Assistant</h3>
+<h5>ENSAM Paris (BME Program & Apprentices) | 2022 - 2025</h5>
+<p>Delivered over 75 hours of teaching across L3, M1, and M2 university levels.</p>
+<ul>
+<li><strong>L3:</strong> Mathematics</li>
+<li><strong>M1:</strong> Basics in Solid Mechanics, Finite Element Modelling</li>
+<li><strong>M2:</strong> Dynamics, Informatics, Experimental Methods</li>
+</ul>
+</div>
+</div>
+</div>
 
+<!-- ENS CARD -->
+<div class="teaching-card">
+<div class="teaching-card-body">
+<div class="teaching-img-wrapper">
+<img src="resources/images/places/ens.jpg" alt="ENS Paris-Saclay">
+</div>
+<div class="teaching-text">
+<h3>Academic Tutor</h3>
+<h5>École Normale Supérieure (ENS) Paris-Saclay | 2019 - 2020</h5>
+<p>Provided dedicated, tutored sessions for M1 students requiring additional academic support.</p>
+<ul>
+<li><strong>Subjects covered:</strong> Physics, Mathematics, Mechanics, Practical Works, and Reporting methods.</li>
+</ul>
+</div>
+</div>
+</div>
 
-:::: {.columns}
-
-::: {.column width="25%"}
-
-![](Resources/images/livre_prepa.jpg){width="80%" fig-align="center"}
-
-:::
-
-::: {.column width="75%"}
-
-:::: {style='margin-top: 7em;'}
+:::: {style='margin-top: 3em;'}
 ::::
 
-- Physique-chimie PSI-PSI* Concours X, ENS, CentraleSupélec, Mines-Ponts, CCINP
-  - Writing a **[physics book](https://www.editions-ellipses.fr/accueil/16845-31310-oraux-corriges-et-commentes-de-physique-chimie-psi-2e-edition-9782340111981.html#/1-format_disponible-broche)** for undergraduate students (**Classes Préparatoires aux Grandes Écoles**)
-  - **Physics** problems, **corrections**, and **comments**, helping students prepare for their entrance exams to prestigious universities (French "Grandes Écoles").
+## {{< iconify fa-solid:book-open-reader >}} &nbsp; Preparatory Classes & Publications
 
-:::
+<!-- PREP BOOK CARD -->
+<div class="teaching-card">
+<div class="teaching-card-body">
+<div class="teaching-img-wrapper">
+<img src="resources/images/livre_prepa.jpg" alt="Physics Prep Book">
+</div>
+<div class="teaching-text">
+<h3>Textbook Co-Author</h3>
+<h5>Éditions Ellipses | Physique-chimie PSI-PSI*</h5>
+<p>Co-authored the physics preparatory book <em>Oraux corrigés et commentés de Physique-Chimie PSI/PSI*</em> for undergraduate students (Classes Préparatoires aux Grandes Écoles).</p>
+<p>The book provides physics problems, detailed corrections, and methodological comments to help students prepare for highly competitive entrance exams to prestigious French "Grandes Écoles" (X, ENS, CentraleSupélec, Mines-Ponts).</p>
+<a href="https://www.editions-ellipses.fr/accueil/16845-31310-oraux-corriges-et-commentes-de-physique-chimie-psi-2e-edition-9782340111981.html#/1-format_disponible-broche" target="_blank" class="btn btn-outline-primary rounded-pill btn-sm mt-2">View Book &nbsp; {{< iconify fa-solid:arrow-right >}}</a>
+</div>
+</div>
+</div>
 
+<!-- HOCHE CARD -->
+<div class="teaching-card">
+<div class="teaching-card-body">
+<div class="teaching-img-wrapper">
+<img src="resources/images/places/hoche.jpg" alt="Lycée Hoche">
+</div>
+<div class="teaching-text">
+<h3>Oral Examiner (Khôlleur)</h3>
+<h5>Lycée Hoche, Versailles | 2018 - 2020</h5>
+<p>Conducted weekly oral examinations in Physics, Chemistry, and Engineering Sciences for classes préparatoires students. Evaluated and guided students preparing for competitive national engineering entrance exams.</p>
+</div>
+</div>
+</div>
+
+:::: {style='margin-top: 3em;'}
 ::::
 
-:::: {.columns}
+## {{< iconify fa-solid:laptop-code >}} &nbsp; Advanced Computational Courses
 
-::: {.column width="25%"}
-![](Resources/images/hoche.jpg){width="80%" fig-align="center" style="margin-top: -2%;"}
-:::
-
-
-::: {.column width="75%"}
-- **2018 - 2020**: Oral examiner in class preparing for competitive national entrance exams (Physics, Chemistry and Engineering Science) -- Lycée Hoche, Versailles, France
-:::
-
-::::
-
-
-
-### Advanced-level courses
-
-
-
-I designed notebooks about **FEniCSx** and **gmsh** for finite elemnt modelling and their installation (locally, using docker or spack for HPC). These are available on my github and at this [link]().
-
-* [**FEniCSx & GMSH Tutorial Website (v0.9.0)**](https://th0maslavigne.github.io/FEniCSx_GMSH_tutorials/README.html) 
-* [**FEniCSx & GMSH Tutorial Repository (v0.9.0)**](https://github.com/Th0masLavigne/FEniCSx_GMSH_tutorials.git) 
+<div class="teaching-card">
+<div class="teaching-card-body">
+<div class="teaching-text">
+<h3>FEniCSx & GMSH Open-Source Tutorials</h3>
+<h5>Available Online (v0.9.0) | (v0.10.0 in progress)</h5>
+<p>Designed comprehensive open-source Jupyter notebooks and tutorials teaching the use of <strong>FEniCSx</strong> and <strong>GMSH</strong> for finite element modelling. The course covers local installation, Docker deployment, and using Spack for High-Performance Computing (HPC) environments.</p>
+<div style="display: flex; gap: 10px; margin-top: 15px;">
+<a href="https://th0maslavigne.github.io/FEniCSx_GMSH_tutorials/README.html" target="_blank" class="btn btn-outline-primary rounded-pill btn-sm">{{< iconify fa-solid:globe >}} Tutorial Website</a>
+<a href="https://github.com/Th0masLavigne/FEniCSx_GMSH_tutorials.git" target="_blank" class="btn btn-outline-primary rounded-pill btn-sm">{{< iconify ion:logo-github >}} GitHub Repository</a>
+</div>
+</div>
+</div>
+</div>

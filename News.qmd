@@ -1,20 +1,178 @@
 ---
 title: "News"
-title-block-banner: false
-page-layout: full
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  max-items: 50
-  image-align: right
-  image-height: 125pt
-  max-description-length: 125
-  categories: false
-  sort-ui: false
-  filter-ui: false
-  feed: true
+format:
+  html:
+    page-layout: full
+    include-in-header:
+      - text: |
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
 ---
+
+<style>
+  /* --- GLOBAL CARD COLOR THEME --- */
+  :root {
+    --card-bg: #f4f9fc; 
+    --card-border: #031C59; 
+    --text-main: #031C59; 
+  }
+
+  html[data-bs-theme="dark"], body.quarto-dark, [data-bs-theme="dark"] {
+    --card-bg: rgba(198, 198, 198, 0.1);
+    --card-border: #99ddff;
+    --text-main: #f3f3f3;
+  }
+
+  /* --- NEWS CARD STYLES (TIMELINE SYNC) --- */
+  .news-card {
+    display: flex;
+    flex-direction: row;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-left: 5px solid var(--card-border); 
+    border-radius: 0 12px 12px 0; 
+    overflow: hidden;
+    margin-bottom: 2rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    color: var(--bs-body-color);
+  }
+
+  .news-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 15px rgba(0, 139, 210, 0.15); 
+  }
+
+  .news-img-zone {
+    flex: 0 0 220px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-right: 1px solid rgba(0,0,0,0.05);
+  }
+
+  .news-img-zone img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .news-content-zone {
+    padding: 1.5rem 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .news-category-meta {
+    color: var(--card-border);
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .news-card-title {
+    margin: 0;
+    color: var(--text-main);
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+  }
+
+  /* --- DETAIL VIEW STYLES --- */
+  .news-detail-container { display: none; animation: fadeIn 0.3s ease; }
+  .news-detail-container.active { display: block; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+  .back-btn {
+    display: inline-flex; align-items: center; background: transparent; border: 1px solid var(--card-border);
+    color: var(--text-main); padding: 8px 18px; border-radius: 20px; cursor: pointer; font-weight: 600;
+    margin-bottom: 30px; transition: background 0.2s;
+  }
+  .back-btn:hover { background: rgba(0, 139, 210, 0.1); }
+
+  .detail-journal-title { font-size: 2.5rem; font-weight: 800; color: var(--text-main); margin-bottom: 10px; }
+  .detail-journal-meta { font-size: 1.1rem; color: var(--card-border); margin-bottom: 30px; border-bottom: 1px solid var(--card-border); padding-bottom: 10px; }
+  .detail-journal-content { font-size: 1.1rem; line-height: 1.8; text-align: justify; }
+
+  @media (max-width: 768px) {
+    .news-card { flex-direction: column; border-radius: 12px; border-left: 1px solid var(--card-border); border-top: 5px solid var(--card-border); }
+    .news-img-zone { flex: auto; height: 180px; border-right: none; border-bottom: 1px solid rgba(0,0,0,0.05); }
+  }
+</style>
 
 :::: {style='margin-top: 3em;'}
 ::::
+
+<!-- APP WRAPPER -->
+<div id="news-app">
+
+<!-- LIST VIEW -->
+<div id="list-view"></div>
+
+<!-- DETAIL VIEW -->
+<div id="detail-view" class="news-detail-container">
+<button class="back-btn" onclick="closeNewsDetail()">← Back to Journal</button>
+<img id="detail-img" style="width:100%; max-height:400px; object-fit:cover; border-radius:12px; margin-bottom:30px;" src="">
+<h1 id="detail-title" class="detail-journal-title"></h1>
+<div id="detail-meta" class="detail-journal-meta"></div>
+<div id="detail-content" class="detail-journal-content"></div>
+</div>
+
+</div>
+
+<script>
+  let newsData = [];
+
+  document.addEventListener('DOMContentLoaded', () => {
+    fetch('posts/news_data.yml')
+      .then(res => res.text())
+      .then(yaml => {
+        newsData = jsyaml.load(yaml);
+        newsData.sort((a, b) => new Date(b.date) - new Date(a.date));
+        renderNewsList();
+      });
+  });
+
+  function renderNewsList() {
+    const list = document.getElementById('list-view');
+    list.innerHTML = '';
+    newsData.forEach((item, index) => {
+      const card = document.createElement('div');
+      card.className = 'news-card';
+      card.onclick = () => openNewsDetail(index);
+      card.innerHTML = `
+        <div class="news-img-zone">
+          <img src="${item.image}" alt="${item.title}">
+        </div>
+        <div class="news-content-zone">
+          <div class="news-category-meta">${item.category} | ${new Date(item.date).toLocaleDateString('en-US', {month:'long', year:'numeric'})}</div>
+          <h3 class="news-card-title">${item.title}</h3>
+          <p style="margin:0; line-height:1.5;">${item.short_description}</p>
+        </div>
+      `;
+      list.appendChild(card);
+    });
+  }
+
+  function openNewsDetail(index) {
+    const item = newsData[index];
+    document.getElementById('list-view').style.display = 'none';
+    document.getElementById('detail-view').classList.add('active');
+    
+    document.getElementById('detail-img').src = item.image;
+    document.getElementById('detail-title').innerText = item.title;
+    document.getElementById('detail-meta').innerText = `${item.category} • Published on ${new Date(item.date).toLocaleDateString('en-US', {day:'numeric', month:'long', year:'numeric'})}`;
+    document.getElementById('detail-content').innerHTML = item.full_content;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function closeNewsDetail() {
+    document.getElementById('detail-view').classList.remove('active');
+    document.getElementById('list-view').style.display = 'block';
+  }
+</script>

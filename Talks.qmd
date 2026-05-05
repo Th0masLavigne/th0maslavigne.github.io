@@ -3,365 +3,189 @@ title: Talks (selection)
 format:
   html:
     page-layout: full
+    include-in-header:
+      - text: |
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
 ---
+
+<style>
+  /* --- TALK CARD STYLES --- */
+  .talk-card {
+    background: rgba(0, 139, 210, 0.03); 
+    border-left: 5px solid var(--bs-primary, #031C59);
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0 12px 12px 0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .talk-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+    background: rgba(0, 139, 210, 0.08);
+  }
+
+  body.quarto-dark .talk-card {
+    background: rgba(198, 198, 198, 0.1);
+    border-color: #99ddff;
+  }
+
+  .talk-title-link {
+    color: var(--bs-primary, #031C59);
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+    display: inline-block;
+  }
+
+  .talk-title-link:hover {
+    text-decoration: underline;
+  }
+  
+  body.quarto-dark .talk-title-link {
+    color: #99ddff;
+  }
+
+  .talk-meta {
+    font-size: 0.9rem;
+    color: var(--bs-body-color);
+    font-style: italic;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+  }
+
+  .talk-details p {
+    margin-bottom: 0.5rem;
+  }
+
+  .talk-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+  }
+</style>
 
 :::: {style='margin-top: 3em;'}
 ::::
 
 ## {{< iconify fa-solid:bullhorn >}} &nbsp; Incoming talks
-
-:::: {style='margin-top: 3em;'}
-::::
-
-::: {.talk-card}
-### Euromech 670 -  Breaking barriers in soft tissue research: Collaborative insights and future directions ([website](https://euromech.org/colloquia/all-events/670/))
-*Rennes, France, 08th-10th of April 2026*
-
-**Title:** POROMECHANICS TO INVESTIGATE THE IMPACT OF MECHANICAL LOADING ON HUMAN SKIN MICRO-CIRCULATION. 
-
-**Authors:** [T. Lavigne](index.qmd), *et al.*
-
-
-:::: {.columns}
-
-::: {.column width="85pt"}
-::: {.button}
-
-[<iconify-icon icon="fa-solid:chalkboard" aria-label="Slides"></iconify-icon> Slides](Resources/presentations/euromech/euromech_670_2026_lavigne.pptx){.button target="_blank"}
-
-:::
-:::
-
-::: {.column width="80pt"}
-::: {.button}
-
-[<iconify-icon icon="fa-regular:file" aria-label="Code"></iconify-icon> Abstract](Resources/documents/Euromech_670_abstracts.pdf){.button target="_blank"}
-
-:::
-:::
-
-:::: {style='margin-top: 0.5em;'}
-::::
-
-
-::: {.column width="85pt"}
-::: {.button}
-[<iconify-icon icon="fa-solid:code" aria-label="Code"></iconify-icon> Code](https://github.com/Th0masLavigne/2-compartment-poromechanical-and-LDF-measurement.git){.button target="_blank"}
-
-:::
-:::
-
-::::
-:::
-
+<div id="talks-incoming"></div>
 
 ## {{< iconify fa6-solid:clock-rotate-left >}} &nbsp; Past talks
 
-
-
-
 ### &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Conferences
-:::: {style='margin-top: 2em;'}
-::::
-
-
-::: {.talk-card}
-### EPUAP -  European Pressure Ulcer Advisory Panel ([website](https://www.bing.com/search?q=epuap+2024&cvid=8b741bde2a3e4d5dab42fc1dd05d03bf&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQABhAMgYIAhBFGDwyBggDEEUYPNIBCDE5NDFqMGo0qAIIsAIB&FORM=ANAB01&PC=DCTS))
-*Lausanne, Switzerland, 25th-27th of September 2024*
-
-**Title:** Poro-elasticity to capture the time-dependent mechanical behavior of in vivo human skin during an extension test. 
-
-**Authors:** [T. Lavigne](index.qmd), *et al.*
-
-::: {.column width="85pt"}
-::: {.button}
-
-[<iconify-icon icon="fa-solid:code" aria-label="Code"></iconify-icon> Code](https://github.com/Th0masLavigne/Skin_porous_modelling.git){.button target="_blank"}
-
-:::
-
-:::
-
-::: {.column width="85pt"}
-::: {.button}
-[<iconify-icon icon="fa-solid:code" aria-label="Code"></iconify-icon> Code 2](https://github.com/Th0masLavigne/2-compartment-poromechanical-and-LDF-measurement.git){.button target="_blank"}
-
-:::
-:::
-
-:::
-
-::: {.talk-card}
-###  Interpore BeneLux 2024 ([website](https://events.interpore.org/event/55/))
-*Esch-sur-Alzette, Luxembourg, 11th of April 2024*
-
-**Title:** Poromechanics to account for the time-dependent behaviour of human skin during extension tests.
-
-**Authors:** [T. Lavigne](index.qmd), *et al.*
-
-**Title:** Image informed breast tumour models to predict the outcome of neoadjuvant chemotherapy.
-
-**Authors:** R. Collet, [T. Lavigne](index.qmd), *et al.*
-
-:::
-
-::: {.talk-card}
-### BSSM -  British Society For Strain Measurement ([website](https://www.bssm.org/events/conference/))
-*Paris, France, 20th of August-1st of September 2023*
-
-**Title:** FE-based Heterogeneous Digital Volume Correlation to Measure Large Deformations of Breast’s Soft Tissues
-
-**Authors:** [T. Lavigne](index.qmd), A. Mazier, A. Perney, S.P.A. Bordas, F. Hild, J. Lengiewicz
-
-:::: {.columns}
-
-::: {.column width="85pt"}
-::: {.button}
-
-[<iconify-icon icon="fa-solid:chalkboard" aria-label="Slides"></iconify-icon> Slides](Resources/documents/BSSM2023_LAVIGNE.pdf){.button target="_blank"}
-
-:::
-:::
-
-::: {.column width="80pt"}
-
-::: {.button}
-
-[<iconify-icon icon="fa-regular:file" aria-label="Code"></iconify-icon> Abstract](Resources/documents/British_Society_LAVIGNE.pdf){.button target="_blank"}
-
-:::
-
-:::
-
-::::
-:::
-
-
-:::: {style='margin-top: 2em;'}
-::::
-
-::: {.talk-card}
-### CMBBE -  Computer Methods in Biomechanics and Biomedical Engineering ([website](https://www.cmbbe-symposium.com/2023/))
-*Paris, France, 3rd-5th of May 2023*
-
-**Title:** Modelling the apparent viscoelastic behaviour of passive muscle tissue under confined compression using a poroelastic framework
-
-**Authors:** [T. Lavigne](index.qmd), G. Sciumè, S. Laporte, H. Pillet, S. Urcun, B. Wheatley, P-Y. Rohan
-
-:::: {.columns}
-
-
-::: {.column width="80pt"}
-
-::: {.button}
-
-[<iconify-icon icon="fa-regular:file" aria-label="Code"></iconify-icon> Abstract](https://www.cmbbe-symposium.com/2023/wp-content/uploads/sites/14/2023/04/CMBBE23_Abstract_book_posters_small.pdf){.button target="_blank"}
-
-:::
-
-:::
-
-::::
-:::
-
-:::: {style='margin-top: 2em;'}
-::::
-
-
-::: {.talk-card}
-### WCB - World Congress of Biomechanics ([website](https://www.wcb2022.com/))
-*Taïpei, Taïwan, 10th-14th of July 2022*
-
-**Title:** Modelling the apparent viscoelastic behaviour of passive muscle tissue under confined compression using a poroelastic framework
-
-**Authors:** [T. Lavigne](index.qmd), G. Sciumè, S. Laporte, H. Pillet, S. Urcun, B. Wheatley, P-Y. Rohan
-
-:::: {.columns}
-
-
-::: {.column width="85pt"}
-::: {.button}
-
-[<iconify-icon icon="fa-solid:chalkboard" aria-label="Slides"></iconify-icon> Slides](Resources/documents/WCB_2022_Escarres.pdf){.button target="_blank"}
-
-:::
-:::
-
-::: {.column width="80pt"}
-
-::: {.button}
-
-[<iconify-icon icon="fa-regular:file" aria-label="Code"></iconify-icon> Abstract](Resources/documents/WCB2022-Abstract-LAVIGNE.pdf){.button target="_blank"}
-
-:::
-
-:::
-
-
-
-
-
-::::
-
-**Title:** Towards real-time patient-specific breast simulations: from full-field information to surrogate model
-
-**Authors:** [T. Lavigne](index.qmd), J. Lengiewicz, S. Deshpande, S. Urcun, S. Bordas, A. Mazier
-
-
-:::: {.columns}
-
-::: {.column width="80pt"}
-
-::: {.button}
-
-[<iconify-icon icon="fa-regular:file" aria-label="Code"></iconify-icon> Abstract](Resources/documents/WCB2022-Abstract.pdf){.button target="_blank"}
-
-:::
-
-:::
-
-
-::::
-
-:::
-
-
-
-::: {.talk-card}
-### SB - Société de Biomécanique ([website](https://www.biomecanique.org/fr/notre-congres-annuel/historique-congres/219-2021-46e-congres-sb))
-*Saint-Étienne, France, 27th of October 2021*
-
-**Title:** The possible role of poro-elasticity in the apparent viscoelastic behaviour of passive muscle: a case study
-
-**Authors:** [T. Lavigne](index.qmd), T. Lavigne, G. Sciumè, S. Laporte, H. Pillet, S. Urcun, P-Y. Rohan.
-
-
-:::: {.columns}
-
-::: {.column width="80pt"}
-
-::: {.button}
-
-[<iconify-icon icon="fa-regular:file" aria-label="Code"></iconify-icon> Abstract](https://doi.org/10.1080/10255842.2021.1978758){.button target="_blank"}
-
-:::
-
-:::
-
-
-::::
-
-:::
-
-
+<div id="talks-conferences"></div>
 
 ### &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Symposiums and Mini-Conferences
-:::: {style='margin-top: 2em;'}
-::::
+<div id="talks-symposiums"></div>
 
+## {{< iconify ion:easel >}} &nbsp; Co-organised Symposiums
+<div id="talks-organised"></div>
 
-::: {.talk-card}
-### F2M - Fédération Francilienne de Mécanique ([website](https://www.bing.com/search?q=F2M+francilienne+de+mecanique&cvid=585d09229d2d499988553f59e7dda8ec&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQABhAMgYIAhAAGEDSAQg5Njk2ajBqOagCCLACAQ&FORM=ANAB01&PC=DCTS))
-*Ile-de-France, France, 2023 & 2024*
+<!-- =======================================================
+     THE DATA FETCHER AND LOGIC FOR THE TALKS APP
+     ======================================================= -->
+<script>
+  let talksData = [];
 
-**Title 1:** Multiscale Modelling of the muscle, 13𝑡ℎ of February 2023, F2M - Jussieu Paris
+  // Fetch the YAML file automatically (Ensure the path is correct for your repo)
+  fetch('resources/talks/talks.yml')
+    .then(response => {
+      if (!response.ok) throw new Error("Could not find talks.yml");
+      return response.text();
+    })
+    .then(yamlText => {
+      talksData = jsyaml.load(yamlText);
+      
+      if (talksData && talksData.length > 0) {
+        // Sort talks by date (Newest to Oldest)
+        talksData.sort((a, b) => new Date(b.date) - new Date(a.date));
+        renderTalks();
+      }
+    })
+    .catch(error => {
+      console.error("Error loading talks:", error);
+      document.getElementById('talks-conferences').innerHTML = "<p><em>Loading talks... (Ensure talks.yml is deployed).</em></p>";
+    });
 
-**Title 2:** Modélisation poro-élastique de la peau humaine in vivo,4𝑡ℎ of April 2024, F2M - Polytechnique Saclay
+  function createTalkCard(talk) {
+    let html = `<div class="talk-card">`;
+    
+    // Title with Website Link
+    if(talk.website) {
+      html += `<a href="${talk.website}" target="_blank" class="talk-title-link">${talk.event}</a>`;
+    } else {
+      html += `<h3 class="talk-title-link" style="margin-bottom:0;">${talk.event}</h3>`;
+    }
 
-**Authors:** [T. Lavigne](index.qmd), *et al.*
+    // Metadata (Location and Date)
+    html += `<div class="talk-meta">${talk.location}, ${new Date(talk.date).toLocaleDateString('en-GB', {day: 'numeric', month: 'long', year: 'numeric'})}</div>`;
 
-::: {.column width="85pt"}
-::: {.button}
+    // Talk Details
+    html += `<div class="talk-details">
+               <p><strong>Title:</strong> ${talk.title}</p>
+               <p><strong>Authors:</strong> ${talk.authors}</p>
+             </div>`;
 
-[<iconify-icon icon="fa-solid:code" aria-label="Code"></iconify-icon> Code](https://github.com/Th0masLavigne/Skin_porous_modelling.git){.button target="_blank"}
+    // Buttons Container
+    html += `<div class="talk-buttons">`;
+    
+    if(talk.slides) {
+      html += `<a href="${talk.slides}" target="_blank" class="btn btn-outline-primary rounded-pill btn-sm">{{< iconify fa-solid:chalkboard >}} Slides</a>`;
+    }
+    if(talk.abstract) {
+      html += `<a href="${talk.abstract}" target="_blank" class="btn btn-outline-primary rounded-pill btn-sm">{{< iconify fa-regular:file >}} Abstract</a>`;
+    }
+    if(talk.code) {
+      html += `<a href="${talk.code}" target="_blank" class="btn btn-outline-primary rounded-pill btn-sm">{{< iconify fa-solid:code >}} Code</a>`;
+    }
+    if(talk.code2) {
+      html += `<a href="${talk.code2}" target="_blank" class="btn btn-outline-primary rounded-pill btn-sm">{{< iconify fa-solid:code >}} Code 2</a>`;
+    }
+    
+    html += `</div></div>`;
+    return html;
+  }
 
-:::
-:::
+  function renderTalks() {
+    const confContainer = document.getElementById('talks-conferences');
+    const sympContainer = document.getElementById('talks-symposiums');
+    const orgContainer = document.getElementById('talks-organised');
+    const incomingContainer = document.getElementById('talks-incoming'); // Fixed variable name
+    
+    let hasIncoming = false;
 
-:::
+    // Get today's date (with time zeroed out for accurate comparison)
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
 
+    talksData.forEach(talk => {
+      const cardHTML = createTalkCard(talk);
+      const talkDate = new Date(talk.date);
+      
+      // If the talk date is greater than or equal to today, it goes to Incoming!
+      if (talkDate >= today) {
+        incomingContainer.innerHTML += cardHTML;
+        hasIncoming = true;
+      } 
+      // If the talk is in the past, route it based on its category
+      else {
+        if(talk.category === "Conferences") {
+          confContainer.innerHTML += cardHTML;
+        } else if (talk.category === "Symposiums") {
+          sympContainer.innerHTML += cardHTML;
+        } else if (talk.category === "Organised") {
+          orgContainer.innerHTML += cardHTML;
+        }
+      }
+    });
 
-## {{< iconify ion:easel >}} &nbsp;  Co-organised Symposiums and Mini-Conferences
-:::: {style='margin-top: 2em;'}
-::::
-
-
-
-::: {.talk-card}
-### Organised FEniCSx-GMSH tutorials at I2M Bordeaux ([website](https://www.biomecanique.org/fr/notre-congres-annuel/historique-congres/219-2021-46e-congres-sb))
-*Talence, France, September 2024*
-
-**Title:** Tutorials for the install and use of FEniCSx.
-
-**Authors:** [T. Lavigne](index.qmd), G. Sciumè, S. Urcun, M. Abbad Andaloussi.
-
-
-:::: {.columns}
-
-::: {.column width="100pt"}
-
-::: {.button}
-
-[<iconify-icon icon="ion:easel" aria-label="Code"></iconify-icon> Website](https://th0maslavigne.github.io/FEniCSx_GMSH_tutorials/README.html){.button target="_blank"}
-
-:::
-
-:::
-
-::: {.column width="85pt"}
-::: {.button}
-
-[<iconify-icon icon="fa-solid:code" aria-label="Code"></iconify-icon> Code](https://github.com/Th0masLavigne/FEniCSx_GMSH_tutorials.git){.button target="_blank"}
-
-:::
-:::
-
-
-::::
-
-:::
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
-::: {.column width="85pt"}
-::: {.button}
-
-[<iconify-icon icon="fa-solid:code" aria-label="Code"></iconify-icon> Code 2](https://github.com/AlexandreDabySeesaram/shape_registration){.button target="_blank"}
-
-:::
-:::
-
-
-
-::: {.column width="85pt"}
-::: {.button}
-
-[<iconify-icon icon="fa-solid:chalkboard" aria-label="Slides"></iconify-icon> Slides](Resources/Documents/Presentations/RICAM/main.html){.button target="_blank"}
-
-:::
-:::
-
-::: {.column width="85pt"}
-::: {.button}
-
-[<iconify-icon icon="fa-regular:file" aria-label="Code"></iconify-icon> Abstract](https://www.oeaw.ac.at/ricam/detail/event/group-seminar-computational-methods-for-pdes-11){.button target="_blank"}
-
-::: 
-:::
-
--->
+    // Display a nice message if there are no upcoming talks
+    if (!hasIncoming) {
+      incomingContainer.innerHTML = "<p style='color: var(--bs-body-color); font-style: italic; margin-left: 20px;'>No upcoming talks currently scheduled.</p>";
+    }
+  }
+</script>

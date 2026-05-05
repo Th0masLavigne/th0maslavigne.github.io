@@ -1,207 +1,307 @@
 ---
-title: Research Appointments
-image: Resources/images/defense2_blur.JPG
+title: "Academic & Research Appointments"
+bibliography: resources/biblio/biblio_web.bib
 toc: false
-about:
-  template: marquee
-#   image-shape: round
-  image-title: PhD Defence, 1st of December 2023
 format:
   html:
     page-layout: full
 ---
 
+<style>
+  /* --- GLOBAL CARD COLOR THEME --- */
+  :root {
+    --card-bg: #f4f9fc; 
+    --card-border: #031C59; 
+    --text-main: #031C59; 
+  }
 
-:::: {.columns}
+  /* This completely fixes the Dark Mode issue by catching all Quarto theme toggles */
+  html[data-bs-theme="dark"], 
+  body.quarto-dark,
+  [data-bs-theme="dark"] {
+    --card-bg: rgba(198, 198, 198, 0.1);
+    --card-border: #99ddff;
+    --text-main: #f3f3f3;
+  }
 
-::: {.column width="40%" }
-<div style="height: 100%; display: flex; align-items: center; justify-content: left; margin-top: 8%;">
-![](Resources/images/lms-logo.png){width="30%" style="margin-right: 8%;"}
-![](Resources/images/x.png){width="20%" style="margin-right: 0%;"}
-![](Resources/images/cnrs.png){width="35%"}
-</div>
-:::
+  /* --- TIMELINE CARD STYLES --- */
+  .timeline-card {
+    display: flex;
+    flex-direction: row;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-left: 5px solid var(--card-border); 
+    border-radius: 0 12px 12px 0; 
+    overflow: hidden;
+    margin-bottom: 2rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: var(--bs-body-color);
+  }
 
-::: {.column width="60%"}
-**12/2025-11/2027 - Post Doctoral Researcher ANR Rosaly: Simulation of the mechanical behavior of hydrogels**
-<div style="font-size: 0.9em; color: #A3A2A2; margin-top: 0%;">
-* _At:_ [Laboratoire de Mécaniqude des Solides](https://lms.ip-paris.fr/presentation), Institut Polytechnique de Paris, UMR 7649, CNRS
-* _With:_ Jean-Marc Allain
-* _Project_: During my postdoctoral position, I will focus on simulating the mechanical behavior of collagen hydrogels using poroelasticity models implemented in FEniCS. The core work involves using experimental data to identify the material’s mechanical properties based on its fabrication conditions. A key objective is the enhancement of these models to incorporate the complex influence of contractile cells within the gel, specifically including their mechanoperception response. Further development will integrate microstructural information to accurately describe how the collagen fibers move and reorient under mechanical load.
-</div>
-:::
+  .timeline-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 15px rgba(0, 139, 210, 0.15); 
+  }
 
+  /* Logo Zone (Vertical Stack on Desktop) */
+  .timeline-logo-zone {
+    flex: 0 0 220px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 30px; 
+    border-right: 1px solid rgba(0,0,0,0.05);
+  }
+
+  html[data-bs-theme="dark"] .timeline-logo-zone,
+  body.quarto-dark .timeline-logo-zone,
+  [data-bs-theme="dark"] .timeline-logo-zone {
+    background: rgba(255, 255, 255, 0.9); /* Keeps logos visible in dark mode */
+  }
+
+  .timeline-logo-zone img {
+    width: 100%;
+    max-width: 140px;
+    height: auto;
+    max-height: 75px; 
+    object-fit: contain; 
+  }
+
+  /* Content Zone */
+  .timeline-content {
+    padding: 1.5rem 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .timeline-content h3 {
+    margin-top: 0;
+    color: var(--text-main);
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+  }
+
+  .timeline-meta {
+    color: var(--card-border);
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+
+  /* Badge fixes for perfect contrast */
+  .timeline-meta .badge {
+    background-color: var(--card-border);
+    color: #ffffff; 
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  
+  html[data-bs-theme="dark"] .timeline-meta .badge,
+  body.quarto-dark .timeline-meta .badge,
+  [data-bs-theme="dark"] .timeline-meta .badge {
+    color: #031C59 !important; /* Forces dark blue text on the light blue background */
+  }
+
+  .timeline-content p, .timeline-content ul {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+
+  .timeline-content ul {
+    padding-left: 1.2rem;
+  }
+
+  .timeline-content li {
+    margin-bottom: 0.4rem;
+  }
+  
+  .timeline-content li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Clean class for the Hoche note */
+  .timeline-note {
+    margin-top: 10px; 
+    font-size: 0.85rem; 
+    color: var(--card-border);
+  }
+
+  /* Mobile Stacking */
+  @media (max-width: 768px) {
+    .timeline-card {
+      flex-direction: column;
+      border-radius: 12px; 
+      border-left: 1px solid var(--card-border);
+      border-top: 5px solid var(--card-border); 
+    }
+    .timeline-logo-zone {
+      flex: auto;
+      flex-direction: row; 
+      flex-wrap: wrap;
+      justify-content: center; 
+      gap: 25px; 
+      border-right: none;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      padding: 1.5rem;
+    }
+    .timeline-content {
+      padding: 1.5rem;
+    }
+  }
+</style>
+
+:::: {style='margin-top: 3em;'}
 ::::
 
----
+## {{< iconify fa-solid:flask >}} &nbsp; Research Appointments
 
-<!-- I2M -->
-
-:::: {.columns}
-
-::: {.column width="60%"}
-<div style="margin-top: 10%;">
-**09/2025-11/2025 - Post Doctoral Researcher ANR MATISSE: Simulation of porous liquids and HPC installations**
-<div style="font-size: 0.9em; color: #A3A2A2; margin-top: 0%;">
-* _At:_ [Institut de mécanique et d'ingénierie](https://www.i2m.u-bordeaux.fr/), Université de Bordeaux INP, UMR 5295, CNRS
-* _With:_ Giuseppe Sciumè
-* _Project_: I primarily focused on simulating the mechanical behavior of porous fluids (e.g., poroelastic models for fluids) using the advanced finite element software FEniCSx. In addition to leading these simulations, the Postdoc will provide essential computational and numerical support to four specific PhD students (S. Pastore, C. Cornillon, M. Laccour, and L. Liquette) to help them overcome technical hurdles in their research. A key institutional responsibility involves installing and configuring the FEniCSx environment on the available MCIA HPC (High-Performance Computing) cluster and creating a comprehensive installation and usage procedure document for the system.
+<!-- POSTDOC ROSALY -->
+<div class="timeline-card">
+<div class="timeline-logo-zone">
+<img src="resources/images/logos/lms-logo.png" alt="LMS">
+<img src="resources/images/logos/x.png" alt="Polytechnique">
+<img src="resources/images/logos/cnrs.png" alt="CNRS">
+</div>
+<div class="timeline-content">
+<h3>Post-Doctoral Researcher (ANR Rosaly)</h3>
+<div class="timeline-meta">
+<span class="badge">12/2025 - 11/2027</span>
+<span>Laboratoire de Mécanique des Solides, IP Paris, UMR 7649, CNRS</span>
+</div>
+<p><strong>Supervisor:</strong> Jean-Marc Allain</p>
+<p>Leading the poromechanical modelling and characterization of collagen hydrogels embedded with smooth muscle cells. The core work involves using experimental data to identify the material’s mechanical properties based on its fabrication conditions.</p>
+<p>A key objective is the enhancement of poroelastic models (implemented in FEniCS) to incorporate the complex influence of contractile cells within the gel, specifically including their mechanoperception response. Further development will integrate microstructural information to accurately describe how collagen fibers move and reorient under mechanical load.</p>
 </div>
 </div>
-:::
 
-::: {.column width="40%"}
-<div style="text-align: right;margin-top: 14%;">
-![](Resources/images/I2M_logo.png){width="55%" fig-align="right" style="margin-right: 0%; margin-top: 5%;"}
-![](Resources/images/cnrs.png){width="35%"}
+<!-- POSTDOC MATISSE -->
+<div class="timeline-card">
+<div class="timeline-logo-zone">
+<img src="resources/images/logos/I2M_logo.png" alt="I2M">
+<img src="resources/images/logos/ub.png" alt="Univ Bordeaux">
+<img src="resources/images/logos/cnrs.png" alt="CNRS">
 </div>
-![](Resources/images/ub.png){width="100%"  fig-align="center" style="margin-top: -20%;"}
-:::
+<div class="timeline-content">
+<h3>Post-Doctoral Researcher (ANR MATISSE)</h3>
+<div class="timeline-meta">
+<span class="badge">09/2025 - 11/2025</span>
+<span>Institut de mécanique et d'ingénierie (I2M), Univ. Bordeaux INP, UMR 5295, CNRS</span>
+</div>
+<p><strong>Supervisor:</strong> Giuseppe Sciumè</p>
+<p>Extended multi-compartment poromechanical models for biological soft tissues and porous liquids using the advanced finite element software FEniCSx.</p>
+<p>In addition to leading simulations, I provided essential computational and numerical support to four PhD students to help them overcome technical hurdles. A key institutional responsibility involved the HPC installation of FEniCSx on the MCIA High-Performance Computing cluster, including the creation of comprehensive documentation.</p>
+</div>
+</div>
+
+:::: {style='margin-top: 4em;'}
 ::::
 
+## {{< iconify fa-solid:graduation-cap >}} &nbsp; Education
 
----
-
-
-# Education
-
-
-
-<!-- PhD -->
-
-:::: {.columns}
-
-::: {.column width="40%" }
-<div style="height: 100%; display: flex; align-items: center; justify-content: left; margin-top: 2%;">
-![](Resources/images/PhD_logo.png){width="85%"}
+<!-- PHD -->
+<div class="timeline-card">
+<div class="timeline-logo-zone">
+<img src="resources/images/logos/FNR_LOGO_BIG.png" alt="FNR">
+<img src="resources/images/logos/university-of-luxembourg-logo.png" alt="Uni Lu">
+<img src="resources/images/logos/Logo_couleur_RVB_EN.png" alt="ENSAM">
+<img src="resources/images/logos/I2M_logo.png" alt="I2M">
 </div>
-:::
-
-::: {.column width="60%"}
-**2022-2025 - Co-tutelle <a href="Resources/documents/Thomas_PhD_Manuscript_A4_Final.pdf">PhD</a> (ENSAM, Université du Luxembourg)**
-<div style="margin-top: -0.5%;">
-[AFR *Fond National de la Recherche* du Luxembourg Grant](https://www.fnr.lu/funding-instruments/afr/). 
+<div class="timeline-content">
+<h3>Co-tutelle PhD in Engineering Sciences (Biomechanics)</h3>
+<div class="timeline-meta">
+<span class="badge">09/2022 - 07/2025</span>
+<span> Université du Luxembourg & École Nationale Supérieure des Arts et Métiers (ENSAM) Paris</span>
 </div>
-
-<div style="font-size: 0.9em; color: #A3A2A2; margin-top: -3%;">
-_Title:_ Biomechanical Response of Human Skin: A Hierarchical Porous Media Framework. Proposed for Prix Bézier (ENSAM) and the Tarrach Price from *[Les Amis de l’Université du Luxembourg](http://amis-uni.lu/)*. Awarded the 2025 Excellent Thesis Award (University of Luxembourg).
-</div>
-:::
-
-::::
-
----
-
-<!-- ARPE -->
-
-:::: {.columns}
-
-::: {.column width="60%"}
-<div style="margin-top: 6%;">
-**2021-2022 - Ecole Normale Supérieure (ENS) Paris-Saclay  & Université du Luxembourg** 
-
-
-<div style="font-size: 0.9em; color: #A3A2A2; margin-top: -3%;">
-Pre-doctoral Research Year Abroad (ARPE, ENS Program) at [Legato Team](https://sites.google.com/view/legato-team/team/luxembourg-team/thomas-lavigne):
-Focus on breast and soft tissue biomechanics: hyperelasticity, contact mechanics, micro-CT, image processing, and digital volume correlation.
-</div>
-<div style="font-size: 0.9em; color: #A3A2A2; margin-top: -3%;">
-  - Supervisors: J. Lengiewicz, S. P-A. Bordas, A. Mazier, S. Desphandes
+<p><strong>Funding:</strong> AFR-FNR Grant N°17013812</p>
+<p><strong>Thesis:</strong> <em>Biomechanical Response of Human Skin: A Hierarchical Porous Media Framework.</em> <a href="resources/documents/phd/Thomas_PhD_Manuscript_A4_Final.pdf" target="_blank" style="font-weight: bold;">[Read Manuscript]</a></p>
+<ul>
+<li>Awarded the <strong>2025 Excellent Thesis Award</strong> (University of Luxembourg), ranking among the best 10% of doctoral theses of the year.</li>
+<li>Proposed for the <strong>Tarrach Prize</strong> (<a href="https://amis-uni.lu" target="_blank">Les Amis de l'Université du Luxembourg</a>) and the <strong>Prix Bézier</strong> (ENSAM).</li>
+<li>Applicant for the FNR Outstanding PhD Thesis Award.</li>
+</ul>
 </div>
 </div>
-:::
 
-::: {.column width="40%"}
-<div style="text-align: right;">
-![](Resources/images/university-of-luxembourg-logo.png){width="25%" fig-align="right" style="margin-right: 5%; margin-top: 5%;"}
-![](Resources/images/LOGOS_ENS-PARIS-SACLAY.png){width="50%"  fig-align="right" style="margin-top: 5%;"}
+<!-- ARPE / PRE-DOC -->
+<div class="timeline-card">
+<div class="timeline-logo-zone">
+<img src="resources/images/logos/LOGOS_ENS-PARIS-SACLAY.png" alt="ENS Paris-Saclay">
+<img src="resources/images/logos/university-of-luxembourg-logo.png" alt="Univ Lu">
 </div>
-:::
-::::
-
----
-
-<!-- ENSAM -->
-
-:::: {.columns}
-
-::: {.column width="40%"}
-<div style="text-align: left; margin-top: 6%;">
-![](Resources/images/Logo_couleur_RVB_EN.png){width="70%" fig-align="left"}
-![](Resources/images/LOGO_BME.png){width="20%" fig-align="left" }
+<div class="timeline-content">
+<h3>Pre-Doctoral Research Year (ARPE)</h3>
+<div class="timeline-meta">
+<span class="badge">09/2021 - 09/2022</span>
+<span>École Normale Supérieure (ENS) Paris-Saclay & Legato Team (Univ. Luxembourg)</span>
 </div>
-:::
-
-::: {.column width="60%"}
-<div style="margin-top: 2%;">
-**2020-2021 - École Nationale Supérieure des Arts et Métiers (ENSAM) / [BME Master’s Program](https://www.bme-paris.com/program/master-2/biomechanics/)** 
-
-<div style="font-size: 0.9em; color: #A3A2A2; margin-top: -3%;">
-MSc in Biomechanics Biomechanical Response of Human Skin: Mechanical science, Continuum Mechanics, Dynamics, Biomaterial, Biocell, Anatomy, Experimental Methods.
-</div>
-<div style="font-size: 0.9em; color: #A3A2A2; margin-top: -3%;">
-  - Thesis: Poromechanical modeling of muscle tissue to account for its apparent viscoelastic behaviour.
-  - At: Institut de Biomécanique Humaine Georges Charpak ([IBHGC](https://biomecanique.ensam.eu/accueil-biomeca-100770.kjsp)), Paris
-  - Supervisors: [P-Y. Rohan](https://sites.google.com/site/cpyrohan/home), [G. Sciumè](https://www.bdx-poromechanics.com/involved-persons.html), H. Pillet
+<p><strong>Supervisors:</strong> J. Lengiewicz, S. P-A. Bordas, A. Mazier, S. Deshpande</p>
+<p>A one-year research fellowship focused on breast and soft tissue biomechanics: hyperelasticity, contact mechanics, micro-CT, image processing, and digital volume correlation. This successful placement laid the foundation for the subsequent co-tutelle PhD project.</p>
 </div>
 </div>
-:::
-::::
 
----
-
-<!-- ENS -->
-
-:::: {.columns}
-
-::: {.column width="60%"}
-<div style="margin-top: 2%;">
-**2018-2022 - Ecole Normale Supérieure (ENS) Paris-Saclay Student** 
-
-<div style="font-size: 0.9em; color: #A3A2A2; margin-top: -3%;">
-* Master 1 in [Mechanical Sciences and Manufacturing](https://inge-meca.ens-paris-saclay.fr/formations/mecanique-ingenierie-production-mip). 2019-2020 – (Rank: 1/18)
-  - Thesis: Numerical Dummy for impact and concussion risk in rugby
-  - At: Institut de Biomécanique Humaine Georges Charpak ([IBHGC](https://biomecanique.ensam.eu/accueil-biomeca-100770.kjsp)), Paris
-  - Supervisors: S. Laporte, B. Sandoz
-* Bachelor’s degree in Engineering Sciences ([SAPHIRE](http://saphire.ens-paris-saclay.fr/)) Received with honours (Rank: 12/70)
-  - Thesis: Poynting Effect of 3D printed metal pantographs: in situ experiment and digital volume correlation.
-  - At: Laboratoire de Mécanique Paris-Saclay
-  - Supervisor: [F. Hild](https://www.cnrs.fr/fr/personne/francois-hild)
+<!-- ENSAM MASTER -->
+<div class="timeline-card">
+<div class="timeline-logo-zone">
+<img src="resources/images/logos/Logo_couleur_RVB_EN.png" alt="ENSAM">
+<img src="resources/images/logos/LOGO_BME.png" alt="BME Paris">
+</div>
+<div class="timeline-content">
+<h3>Master of Science in Biomechanics (BME Paris)</h3>
+<div class="timeline-meta">
+<span class="badge">2020 - 2021</span>
+<span>École Nationale Supérieure des Arts et Métiers (ENSAM)</span>
+</div>
+<p><strong>Supervisors:</strong> P-Y. Rohan, G. Sciumè, H. Pillet (at IBHGC, Paris)</p>
+<p><strong>Thesis:</strong> <em>Poromechanical modeling of muscle tissue to account for its apparent viscoelastic behaviour.</em></p>
+<ul>
+<li>Graduated with high honours, ranking <strong>4th out of 27 students</strong>.</li>
+<li>Specialized in computational biomechanics, soft tissue mechanics, and advanced finite element modelling.</li>
+</ul>
 </div>
 </div>
-:::
 
-::: {.column width="40%"}
-<div style="text-align: right;">
-![](Resources/images/LOGOS_ENS-PARIS-SACLAY.png){width="50%"  fig-align="right" style="margin-top: 15%;"}
+<!-- ENS BACHELOR / M1 -->
+<div class="timeline-card">
+<div class="timeline-logo-zone">
+<img src="resources/images/logos/LOGOS_ENS-PARIS-SACLAY.png" alt="ENS Paris-Saclay">
 </div>
-:::
-::::
-
----
-
-<!-- Hoche -->
-
-:::: {.columns}
-
-::: {.column width="40%"}
-<div style="text-align: left; margin-top: 0%;">
-![](Resources/images/LOGO_HOCHE.png){width="30%" fig-align="left"}
+<div class="timeline-content">
+<h3>Master 1 & Bachelor's in Mechanical Engineering</h3>
+<div class="timeline-meta">
+<span class="badge">2018 - 2020</span>
+<span>École Normale Supérieure (ENS) Paris-Saclay</span>
 </div>
-:::
-
-::: {.column width="60%"}
-<div style="margin-top: 3%;">
-**2016-2018 - Classe préparatoire PCSI-PSI* Lycée Hoche Versailles** 
-<div style="font-size: 0.9em; color: #A3A2A2; margin-top: -1%;">
-Intensive two-year course preparing for highly competitive national entrance exams to the French Grandes Écoles
+<ul>
+<li><strong>Master 1 (Mechanical Sciences & Manufacturing):</strong> Ranked <strong>1st out of 18 students</strong>. Thesis focused on a numerical dummy for impact and concussion risk in rugby (IBHGC, Supervisors: S. Laporte, B. Sandoz).</li>
+<li><strong>Bachelor's Degree (SAPHIRE):</strong> Received with high honours, ranking <strong>12th out of 70 students</strong>. Thesis focused on the Poynting Effect of 3D printed metal pantographs using in situ experiments and DVC (LMPS, Supervisor: F. Hild).</li>
+</ul>
 </div>
 </div>
-:::
-::::
 
-<div style="margin-top: -5%;">
----
+<!-- CPGE / HOCHE -->
+<div class="timeline-card">
+<div class="timeline-logo-zone">
+<img src="resources/images/logos/LOGO_HOCHE.png" alt="Lycée Hoche">
 </div>
-
-June **2016**, Lycée Emilie de Breteuil: General Baccalauréat (A-level equivalent): Engineering Sciences major. (High honours)
+<div class="timeline-content">
+<h3>Classes Préparatoires aux Grandes Écoles (PCSI/PSI*)</h3>
+<div class="timeline-meta">
+<span class="badge">2016 - 2018</span>
+<span>Lycée Hoche, Versailles</span>
+</div>
+<p>Intensive two-year academic program in advanced mathematics, physics, and engineering sciences. Rigorous preparation for the highly competitive national entrance exams to the French Grandes Écoles (leading to admission at ENS Paris-Saclay).</p>
+<p class="timeline-note"><em>Prior to this: General Baccalauréat in Engineering Sciences (High Honours) at Lycée Emilie de Breteuil (June 2016).</em></p>
+</div>
+</div>

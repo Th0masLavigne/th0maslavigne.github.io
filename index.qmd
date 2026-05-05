@@ -1,224 +1,269 @@
 ---
-title: Thomas Lavigne, PHD
-image: Resources/images/profile_pic2.jpeg
-bibliography: Resources/biblio/biblio_web.bib
+title: ""
+bibliography: resources/biblio/biblio_web.bib
 toc: false
-about:
-  id: hero-heading
-  template: trestles
-  links:
-    - text: "{{< iconify fa-brands:orcid >}} Orcid"
-      href: https://orcid.org/0000-0003-2690-3542
-    - text: "{{< iconify fa6-brands:google-scholar >}} Scholar"
-      href: https://scholar.google.com/citations?user=FYXQf_UAAAA
-    - text: "{{< iconify simple-icons:researchgate >}} Researchgate"
-      href: https://www.researchgate.net/profile/Thomas-Lavigne-2
-    - icon: github
-      text: Github
-      href: https://github.com/Th0masLavigne
-    - icon: envelope
-      text: Email
-      href: 'mailto: thomas.lavigne@polytechnique.edu'
 format:
   html:
     page-layout: custom
     include-in-header:
       - text: |
-          <style>
-            /* TARGETS THE ABOUT SECTION WRAPPER */
-            .about-template-trestles {
-              /* Remove vertical centering spacing and force to the top */
-              padding-top: 10px !important; 
-              min-height: auto !important; /* Prevents it from forcing a minimum screen height */
-              padding-bottom: 10px !important; /* Reduce bottom padding as well */
-            }
-
-            /* TARGETS THE HERO CONTENT ITSELF (Your Name, Image, Links) */
-            #hero-heading {
-              /* Ensure the internal content has no large top margin */
-              margin-top: 0 !important; 
-            }
-          </style>
-      - text: |
           <meta name="google-site-verification" content="tU9wtzWA1tzRdwTl-Sqo-j5PqUVDTz4gUn_Xy9Pji1Q" />
+          <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+          <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    include-after-body:
+      - text: |
+            <script type="application/javascript" src="resources/style_css_files/custom_hal.js"></script>
+            <script type="application/javascript" src="resources/style_css_files/carousel.js"></script>
 ---
 
+<style>
+  body {
+    background-image: 
+      linear-gradient(rgba(3, 28, 89, 0.1), rgba(3, 28, 89, 0.3)), 
+      url("resources/images/backgrounds/background_skin.JPG");
+    background-size: cover; background-position: center center; background-attachment: fixed; margin: 0;
+  }
 
+  #quarto-content, .quarto-container, .page-layout-custom { background-color: transparent !important; }
 
+  nav.navbar {
+    background: rgba(3, 28, 89, 0.85) !important; backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255, 255, 255, 0.1); box-shadow: none !important;
+  }
+  
+  .main-sheet {
+    background-color: var(--bs-body-bg) !important; position: relative; z-index: 1;
+    width: 100vw !important; max-width: 100vw !important;
+    margin-left: calc(50% - 50vw) !important; margin-right: calc(50% - 50vw) !important;
+    margin-top: 45vh !important; border-radius: 30px 30px 0 0 !important;
+    padding: 3rem 5% !important; box-shadow: 0px -15px 40px rgba(0,0,0,0.2); transition: background-color 0.4s ease; 
+  }
 
-  <style>
-    body {
-      background-image: url("Resources/images/backrgound_arm2.png");
-      background-size: contain;/*cover / contain */
-      background-position: center top; /*20% or 20px*/
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      margin: 0;    
-      margin-top: 8vh;
-    }
-      .page_contente {
-      /*background-color: rgba(255, 255, 255, 1);*/
-      /*left: 0;
-      width: 100%;*/
-      /* padding: 200px; */
-      /*margin: 0;*/
-      margin-top: -15vh; /* This ensures the white background starts at the middle of the page */
-    }
-  </style>
+  @media (min-width: 992px) { .main-sheet { padding-left: 15vw !important; padding-right: 15vw !important; } }
+  @media (min-width: 1400px) { .main-sheet { padding-left: 22vw !important; padding-right: 22vw !important; } }
 
+  .hero-container { text-align: center; margin-top: -6.5rem; margin-bottom: 1.5rem; }
+  .hero-container img {
+    width: 160px; height: 160px; border-radius: 50%; object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2); border: 5px solid var(--bs-body-bg); margin-bottom: 0.5rem;
+  }
+  .hero-container h1 { font-weight: 700; margin-top: 0; margin-bottom: 0.25rem; }
 
+  .info-card {
+    background: rgba(0, 139, 210, 0.05); border-left: 5px solid var(--bs-primary, #031C59);
+    padding: 1.5rem 2rem; margin-bottom: 2rem; border-radius: 0 12px 12px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: var(--bs-body-color);
+  }
+  
+  .info-card.card-right { border-left: none; border-right: 5px solid var(--bs-primary, #031C59); border-radius: 12px 0 0 12px; }
+  .info-card:hover { transform: translateY(-6px); box-shadow: 0 10px 20px rgba(0,0,0,0.06); background: rgba(0, 139, 210, 0.1); }
+  .info-card h3 { margin-top: 0; color: var(--bs-primary, #031C59) !important; font-size: 1.4rem; }
 
+  body.quarto-dark .info-card { border-color: #99ddff; background: rgba(198, 198, 198, 0.2); }
+  body.quarto-dark .info-card h3 { color: #99ddff !important; }
 
-:::::{.page_contente}
-:::{#hero-heading}
+  #collab-map {
+    height: 450px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid var(--card-border);
+    margin-bottom: 2rem;
+    z-index: 1;
+  }
 
-# Welcome,
+  .carousel-titlecaption {
+    position: absolute; bottom: 0; left: 0; width: 100%;
+    background: rgba(148, 167, 217, 0.85) !important; backdrop-filter: blur(6px); padding: 15px 20px;
+    color: #ffffff !important; box-sizing: border-box; border-radius: 0 0 12px 12px; border-top: 2px solid #008BD2; font-size: 0.95rem;
+  }
+</style>
 
-I am Thomas Lavigne, a researcher in **Biomechanics** and **Computational Modeling**, specializing in the **poromechanical and multiscale modeling of soft biological tissues**. My work focused on characterizing the complex time-dependent mechanical behavior of tissues like human skin and skeletal muscle, with direct applications in fields such as pressure ulcer prevention and tissue engineering. 
+:::::{.main-sheet}
 
----
+<!-- HERO SECTION -->
+:::{.hero-container}
+<img src="resources/images/profile_pic2.jpeg" alt="Thomas Lavigne">
+<h1>Thomas Lavigne</h1>
+<p style="font-size: 1.15rem; color: var(--bs-body-color); opacity: 0.9; max-width: 600px; margin: 0 auto;">
+  Researcher in Biomechanics & Computational Modeling, specializing in poromechanics and multiscale modeling of soft biological tissues.
+</p>
 
-Former student of **École Normale Supérieure (ENS) Paris-Saclay** (mechanical engineering department), I recently earned a **Dual Doctoral Degree** (*Docteur en Sciences de l'Ingénieur*) through a **Co-tutelle PhD (2022-2025)** entitled: *Biomechanical modelling of human skin: a hierarchical porous media framework*. This <a href="Resources/documents/Thomas_PhD_Manuscript_A4_Final.pdf">PhD</a> work allied theroetical developments, numerical assessments and experimental campaigns, along with international collaboration and dissemination, with a special care on reproducibility. It successfully allowed to couple mechanics and biology (microvascular response) using porous media framework, providing insights on the time-dependent response of human skin as well as ischemic and hyperemic responses to an external load without introducing any neurological effects. This program was a joint effort between:
-
-- **Université du Luxembourg**
-- **École Nationale Supérieure des Arts et Métiers (ENSAM) Paris**
-
-This work was recognized with the **2025 Excellent Thesis Award** from the University of Luxembourg and proposed for the FNR Outstanding PhD Award, Prix Bézier (ENSAM), suggested for application to the FNR Outstanding PhD Award.
-
-::: {.content-hidden}
- and more recently proposed for a potential participation at Prix Tarrach from *Les Amis du Luxembourg*
+<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-top: 1rem;">
+  <a href="https://orcid.org/0000-0003-2690-3542" class="btn btn-outline-primary rounded-pill" target="_blank">{{< iconify fa-brands:orcid >}} Orcid</a>
+  <a href="https://scholar.google.com/citations?user=FYXQf_UAAAA" class="btn btn-outline-primary rounded-pill" target="_blank">{{< iconify fa6-brands:google-scholar >}} Scholar</a>
+  <a href="https://www.researchgate.net/profile/Thomas-Lavigne-2" class="btn btn-outline-primary rounded-pill" target="_blank">{{< iconify simple-icons:researchgate >}} ResearchGate</a>
+  <a href="https://github.com/Th0masLavigne" class="btn btn-outline-primary rounded-pill" target="_blank">{{< iconify ion:logo-github >}} GitHub</a>
+  <a href="mailto:thomas.lavigne@polytechnique.edu" class="btn btn-outline-primary rounded-pill">{{< iconify fa6-solid:envelope >}} Email</a>
+</div>
 :::
 
 ---
 
-More recently, I am part of post-doctoral research projects:
+<p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem;">
+  <strong>Welcome!</strong> My research focuses on characterizing the complex time-dependent mechanical behavior of soft biological tissues like human skin and skeletal muscle. I utilize advanced numerical simulation alongside theoretical developments and experiments to create models with direct applications in fields such as pressure ulcer prevention and tissue engineering.
+</p>
 
-- **Post-Doctoral Position (09/2025–11/2025)**: A three-month appointment at **I2M Bordeaux**, dedicated to **multiscale modeling, HPC software install and porous fluids**.
-- **CNRS ANR Rosaly Post-Doctoral Researcher (12/2025–2027)**: A two-year project focused on the **mechanical characterization of hydrogels** intended for use in advanced cell culture systems (LMS, Polytechnique).
-
----
-
-As part of the biomechanical team of the [Legato Team](https://sites.google.com/view/legato-team/team/luxembourg-team/thomas-lavigne), [Institut de Biomécanique Humaine Georges Charpak](https://biomecanique.ensam.eu/accueil-biomeca-100770.kjsp) and [Porous Modelling team at I2M](https://www.bdx-poromechanics.com/involved-persons.html), I designed tutorials and symposiums to help in the learning and use of tools such as GIT and FEniCSx. I also actively participated in studies on breast chemotherapia (Unversity of Leeds, [R. Collet](https://fluid-dynamics.leeds.ac.uk/profiles/rose-collet/), PhD), brain growth (IMT Atlantique, [A. Kerachni](https://www.bing.com/search?q=anne+kerachni&cvid=3d29bf57000a492ea53dbb6f39619ed6&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOdIBCDIzNjVqMGo0qAIAsAIA&FORM=ANAB01&PC=DCTS), PhD), brain porous modelling (University of Luxembourg, [M. Abbad Andaloussi](https://www.uni.lu/fstm-en/people/meryem-abbad-andaloussi/)), microfluidic chips design and simulations (Université de Bordeaux, [H. Pi](https://www.researchgate.net/profile/Haohong-Pi), PhD and [M. Laccour](https://www.linkedin.com/in/matthieu-lacour-gadz?originalSubdomain=fr)). 
-
----
-
-You can learn more about my background in my <a href="Resources/documents/CV.pdf">[CV]</a>. 
-
-:::: {style='margin-top: 2em;'}
-::::
-
-::: {.line}
-
-<div style="border-top: 1px solid #00436d; width: 45%; margin: 0 auto;"></div>
-
+::: {.info-card}
+### 🔬 Current & Recent Research
+*   **CNRS ANR Rosaly Post-Doctoral Researcher (12/2025–2027):** A two-year project focused on the **mechanical characterization of hydrogels embeded with smooth muscle cells**, intended for use in understanding aneurysms at the [Laboratoire de Mécanique des Solides (LMS)](https://lms.ip-paris.fr/personnel/doctorants-post-doctorants), Polytechnique.
+*   **Post-Doctoral Position (09/2025–11/2025):** A three-month appointment at [I2M Bordeaux](https://www.bdx-poromechanics.com/involved-persons.html), dedicated to **multiscale modeling, HPC software deployment, and porous fluids**.
 :::
 
-:::: {style='margin-top: 0em;'}
-::::
 
-:::: {.columns}
+::: {.info-card .card-right}
+### 🎓 The PhD Journey
+Former student of the **École Normale Supérieure (ENS) Paris-Saclay** (Mechanical Engineering), I recently earned a **Dual Doctoral Degree** (*Docteur en Sciences de l'Ingénieur*) through a **Co-tutelle PhD (2022-2025)** that was funded by an AFR grant of the Luxembourg Fond National de la Recherche (FNR). A French grant (CDSN) was also obtained for this work but was abandonned for the AFR FNR. 
 
-::: {.column width="15%"}
+My thesis, *Biomechanical modelling of human skin: a hierarchical porous media framework*, successfully coupled mechanics and biology (microvascular response) to provide insights into the time-dependent, ischemic, and hyperemic responses of human skin to an external load. 
 
+**Joint Effort:** Université du Luxembourg & ENSAM Paris.<br>
+*Awarded the **2025 Excellent Thesis Award** (Uni.lu) and proposed for the Rolf Tarrach Prize (Les amis du Luxembourg), the Outstanding PhD Award (FNR) and the Prix Bézier (ENSAM).*
+
+<!-- Using your native 'button' class defined in style_site.scss! -->
+<div class="button" style="margin-top: 15px;">
+  <a href="resources/documents/phd/Thomas_PhD_Manuscript_A4_Final.pdf" target="_blank" class="btn btn-outline-primary rounded-pill">{{< iconify fa6-solid:book >}} <span class="button-text">Full Manuscript</span></a>
+  <a href="resources/documents/phd/main_VF.pdf" target="_blank" class="btn btn-outline-primary rounded-pill">{{< iconify fa6-solid:person-chalkboard >}} <span class="button-text">Defense Slides</span></a>
+  <a href="resources/documents/phd/summary_thesis_lavigne.pdf" target="_blank" class="btn btn-outline-primary rounded-pill">{{< iconify fa6-solid:file-lines >}} <span class="button-text">Lay Abstract</span></a>
+  <a href="resources/documents/phd/Lavigne_tarrach_template_ppt_split.pdf" target="_blank" class="btn btn-outline-primary rounded-pill">{{< iconify fa6-solid:person-chalkboard >}} <span class="button-text">Lay Slides</span></a>
+</div>
 :::
 
-::: {.column width="80%"}
 
-<!-- ![](Resources/Images/Background_Lungs_mesh_2.png){width="80%" style="display: block; margin: 0 auto;"}
-
-:::: {style='margin-top: 3em;'}
-:::: -->
-
-<!-- <iframe width="100%" height="550" src="Resources/AR/3D_lung_AR.html"></IFRAME> -->
-
-
-
-:::{.carousel}
-<div class="carousel-slide">
-  <img src="Resources/images/ETA_background - Copie.jpeg" alt="PhD">
-  <div class="carousel-titlecaption"><b>PhD Graphical Abstract</b> <br> 
-  <span style="font-size: smaller;font-weight: 300">Coupling biology in mechanics through porous modelling for Human skin.</span></div>
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+  <h3 style="margin: 0;">🌍 International Research Footprint</h3>
+  <button onclick="resetMap()" class="btn btn-outline-primary rounded-pill btn-sm">
+    <iconify-icon icon="fa6-solid:arrows-rotate"></iconify-icon> Reset View
+  </button>
 </div>
 
-<div class="carousel-slide">
-  <img src="projects/2022/2022-09-01-PhD/expe.png" alt="ldf">
-  <div class="carousel-titlecaption"><b>LDF Expermental set-up.</b> <br> 
-  <span style="font-size: smaller;font-weight: 300">Measuring microcirculation response to an external load.</span></div>
-</div>
+<p style="font-size: 0.9rem; margin-bottom: 15px;">
+  <span style="color: #2A81CB;">●</span> Research Labs & Education | <span style="color: #E84C3D;">●</span> Conferences & Symposiums
+</p>
+<div id="collab-map"></div>
 
-
-<div class="carousel-slide">
-  <img src="Resources/images/projet_pont.JPEG" alt="bridge">
-  <div class="carousel-titlecaption"><b>Building a Bridge with ice sticks.</b> <br> 
-  <span style="font-size: smaller;font-weight: 300">Design (theoretical, experimental, numerical) a bridge made of ice sticks as a group project at the ENS (2018-2019).</span></div>
-</div>
-
-<div class="carousel-slide">
-  <img src="Resources/images/profile_pic.jpg" alt="bridge">
-  <div class="carousel-titlecaption"><b></b> <br> 
-  <span style="font-size: smaller;font-weight: 300"></span></div>
-</div>
-
-
-
-
-:::
-
-:::{.carousel-nav}
-<span class="prev">&#10094;</span>
-<span class="next">&#10095;</span>
-:::
 
 <script>
-  let slideIndex = 0; // Start at 0 for array indexing
-  
-  // Function to show a specific slide (n is the index)
+let map;
+const initialView = [48, 10]; // Centré sur l'Europe
+const initialZoom = 4;
+
+document.addEventListener('DOMContentLoaded', function() {
+  map = L.map('collab-map', {
+    scrollWheelZoom: false
+  }).setView(initialView, initialZoom);
+
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OpenStreetMap'
+  }).addTo(map);
+
+  // Laboratoires et Éducation (Marqueurs Bleus)
+  var labs = [
+    { name: "LMS, Polytechnique (Palaiseau/Paris)", coords: [48.7135, 2.2105], type: "Post-Doc Actuel" },
+    { name: "IBHGC, ENSAM (Paris)", coords: [48.8315, 2.3610], type: "Doctorat (Co-tutelle)" },
+    { name: "I2M (Bordeaux)", coords: [44.8378, -0.5792], type: "Post-Doc / Doctorat" },
+    { name: "University of Luxembourg", coords: [49.5042, 5.9479], type: "Doctorat (Co-tutelle)" },
+    { name: "ENS Paris-Saclay", coords: [48.7126, 2.1663], type: "Éducation" },
+    { name: "IMT Atlantique (Rennes)", coords: [48.1173, -1.6778], type: "Collab (Mécanique Cérébrale)" },
+    { name: "LBTI (Lyon)", coords: [45.7795, 4.8750], type: "Collab (Biologie Cutanée)" },
+    { name: "FEMTO-ST (Besançon)", coords: [47.2500, 5.9900], type: "Collab (Expérimentations Peau)" },
+    { name: "FAU Erlangen-Nuremberg", coords: [49.5978, 11.0037], type: "Séjour de Recherche" },
+    { name: "University of Leeds", coords: [53.8067, -1.5550], type: "Collab (Oncologie Mammaire)" },
+    { name: "Euler Institute (Lugano, Suisse)", coords: [46.0037, 8.9511], type: "Collab (Milieux Poreux)" },
+    { name: "Bucknell University (PA, USA)", coords: [40.9548, -76.8814], type: "Collab (Mécanique Musculaire)" }
+  ];
+
+  // Conférences (Points Rouges)
+  var conferences = [
+    { name: "WCB 2022 (Taipei)", coords: [25.0330, 121.5654], date: "2022" },
+    { name: "Euromech 670 (Rennes)", coords: [48.1173, -1.6778], date: "2026" },
+    { name: "EPUAP (Lausanne)", coords: [46.5197, 6.6323], date: "2024" },
+    { name: "Interpore BeneLux (Esch)", coords: [49.4967, 5.9522], date: "2024" },
+    { name: "BSSM (Glasgow)", coords: [55.8642, -4.2518], date: "2023" },
+    { name: "CMBBE / SB (Paris/St-Etienne)", coords: [48.8566, 2.3522], date: "2021-2023" },
+    { name: "FEniCSx Symposium (Talence)", coords: [44.8066, -0.5891], date: "2024" }
+  ];
+
+  labs.forEach(function(loc) {
+    L.marker(loc.coords).addTo(map)
+      .bindPopup("<b>" + loc.name + "</b><br>" + loc.type);
+  });
+
+  conferences.forEach(function(conf) {
+    L.circleMarker(conf.coords, {
+      color: '#E84C3D', fillColor: '#E84C3D', fillOpacity: 0.8, radius: 7
+    }).addTo(map).bindPopup("<b>" + conf.name + "</b><br>Congrès/Symposium " + conf.date);
+  });
+
+  setTimeout(function() { map.invalidateSize(); }, 500);
+});
+
+function resetMap() {
+  if (map) {
+    map.flyTo(initialView, initialZoom);
+  }
+}
+</script>
+
+::: {.info-card}
+### 🤝 Collaborations & Mentoring
+I am deeply dedicated to open science and committed to sharing knowledge and fostering new research. I actively participate in **student mentoring**, guiding interns and junior researchers in computational mechanics and biomechanics.
+
+As part of the [Legato Team](https://sites.google.com/view/legato-team/team/luxembourg-team/thomas-lavigne), the [IBHGC](https://biomecanique.ensam.eu/accueil-biomeca-100770.kjsp), and the [I2M Porous Modelling team](https://www.bdx-poromechanics.com/involved-persons.html), I designed and maintain tutorials to help researchers master tools like **Git** and **FEniCSx**. 
+
+I also collaborate on multidisciplinary studies, including:
+
+*   Breast chemotherapy modeling (Univ. of Leeds)
+*   Brain growth & porous modeling (IMT Atlantique / Univ. of Luxembourg)
+*   Microfluidic chip design (Univ. de Bordeaux)
+
+**I am always open to new collaborations and student mentoring opportunities.** Feel free to [contact me via email](mailto:thomas.lavigne@polytechnique.edu)!
+:::
+
+
+You can learn more about my detailed academic background in my [Academic CV](resources/documents/cv/thomas_lavigne_cv_2.pdf).
+
+
+<!-- CAROUSEL SECTION -->
+:::{.carousel style="margin-top: 3rem;"}
+<div class="carousel-slide">
+  <img src="resources/images/misc/ETA_background - Copie.jpeg" alt="PhD Graphical Abstract">
+  <div class="carousel-titlecaption"><strong>PhD Graphical Abstract</strong> Coupling biology and mechanics in Human skin.</div>
+</div>
+<div class="carousel-slide">
+  <img src="resources/images/backgrounds/background_skin.JPG" alt="LDF Experimental set-up">
+  <div class="carousel-titlecaption"><strong>Human Skin as a Porous Network.</strong></div>
+</div>
+<div class="carousel-slide">
+  <img src="resources/images/misc/brain.png" alt="Brain cortical folding">
+  <div class="carousel-titlecaption"><strong>Brain Biomechanics</strong> Modeling cortical folding and oncology.</div>
+</div>
+<div class="carousel-slide">
+  <img src="resources/images/misc/projet_pont.JPEG" alt="Building a Bridge">
+  <div class="carousel-titlecaption"><strong>Building a Bridge with ice sticks</strong> Design (theoretical, experimental, numerical) of an ice stick bridge (ENS 2018-2019).</div>
+</div>
+:::
+
+<div class="carousel-nav" style="text-align:center; margin-bottom: 4rem;">
+  <span class="prev" style="cursor: pointer; padding: 15px; font-size: 1.5rem;">&#10094;</span>
+  <span class="next" style="cursor: pointer; padding: 15px; font-size: 1.5rem;">&#10095;</span>
+</div>
+
+<script>
+  let slideIndex = 0; 
   function showSlides(n) {
     let slides = document.querySelectorAll(".carousel-slide");
-    
-    // Handle wrap-around
+    if (slides.length === 0) return;
     if (n >= slides.length) {slideIndex = 0} 
     if (n < 0) {slideIndex = slides.length - 1}
-    
-    // Hide all slides and remove the active class
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].classList.remove("active");
-      slides[i].style.display = "none";
-    }
-    
-    // Show the current slide and add the active class
-    slides[slideIndex].classList.add("active");
+    slides.forEach(s => s.style.display = "none");
     slides[slideIndex].style.display = "block";
   }
-
-  // Function to move to the next or previous slide
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-
-  // Initial function call to show the first slide and set up listeners
   document.addEventListener('DOMContentLoaded', () => {
-    // Check if the elements exist before adding listeners
-    const prevButton = document.querySelector(".prev");
-    const nextButton = document.querySelector(".next");
-    
-    if (prevButton && nextButton) {
-        showSlides(slideIndex); // Show the first slide (index 0)
-
-        // Attach event listeners to the navigation buttons
-        prevButton.addEventListener('click', () => {
-          plusSlides(-1);
-        });
-        nextButton.addEventListener('click', () => {
-          plusSlides(1);
-        });
-    }
+    showSlides(slideIndex); 
+    document.querySelector(".prev").onclick = () => showSlides(--slideIndex);
+    document.querySelector(".next").onclick = () => showSlides(++slideIndex);
   });
 </script>
 
-:::
-
-::::
-
-:::
 :::::
