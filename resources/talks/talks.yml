@@ -7,7 +7,7 @@
   authors: "T. Lavigne, et al."
   website: "https://euromech.org/colloquia/all-events/670/"
   slides: "resources/presentations/euromech/euromech_670_2026_lavigne.pptx"
-  abstract: "resources/documents/Euromech_670_abstracts.pdf"
+  abstract: "resources/documents/conferences/Euromech_670_abstracts.pdf"
   code: "https://github.com/Th0masLavigne/2-compartment-poromechanical-and-LDF-measurement.git"
 
 - id: "epuap_2024"
