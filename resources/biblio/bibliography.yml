@@ -1,0 +1,129 @@
+- id: "pub_two_phase_2024"
+  year: 2025
+  title: "A mathematical model for two-phase flow in confined environments: numerical solution and validation"
+  authors: "G. Sciumé, Haohong Pi, Abdelaziz Omari, Thomas Lavigne"
+  journal: "Int. J. Numer. Method. Fluids"
+  doi: "10.1002/fld.70030"
+  keywords: "Cahn-Hilliard-Navier-Stokes | finite element modeling | interfacialdynamics | microfluidics | MATISSE"
+  abstract: "This study presents a numerical framework for modeling two-phase flow in confined environments, focusing on the interplay between capillary and viscous forces. The model integrates the Cahn-Hilliard and Navier-Stokes (CH-NS) equations, utilizing a diffuse-interface approach to capture interfacial dynamics without the limitations of sharp-interface models. Implemented in the finite element platform FEniCS, the framework incorporates Dirichlet boundary conditions to model a fully non-wetting phase. The validation of the proposed model is achieved through two applications: The retraction of an oil droplet from a capillary tube and the drainage of water-wet microfluidic chips. Numerical results align with experimental data, demonstrating the framework’s ability to replicate interfacial behaviors, including capillary-driven dynamics and fingering phenomena. This work provides a versatile computational tool for studying immiscible fluid flow, offering potential for advancements in fundamental research on microfluidics, enhanced oil recovery, and remediation of contaminated soil."
+  image: "resources/images/publications/sciume2025.png"
+
+- id: "pub_skin_2025"
+  year: 2025
+  title: "Hierarchical poromechanical approach to investigate the impact of mechanical loading on human skin micro-circulation"
+  authors: "Thomas Lavigne, Stéphane Urcun, Bérengère Fromy, Audrey Josset-Lamaugarny, Alexandre Lagache, Camilo A. Suarez-Afanador, Stéphane P. A. Bordas, Pierre-Yves Rohan, Giuseppe Sciumè"
+  journal: "Int. J. Numer. Method. Biomed. Eng."
+  doi: "10.1002/cnm.70066"
+  keywords: "FEniCSx | haemodynamics | human skin | poro-elasticity | Skin"
+  abstract: "Extensive research on human skin anatomy has revealed that the skin functions as a complex multi-scale and multi-phase system, containing up to 70% of bounded and free circulating water. The presence of moving fluids significantly influences the mechanical and biological responses of the skin, affecting its time-dependent behavior and the transport of essential nutrients and oxygen to cells. Poroelastic modeling emerges as a promising approach to investigate biologically relevant phenomena at finer scales while embedding crucial mechanisms at larger scales as it facilitates the integration of multi-scale and multi-physics processes. Despite extensive use of poromechanics in other tissues, no hierarchical multi-compartment porous model that incorporates blood supply has yet been experimentally evaluated to simulate the in vivo mechanical and micro-circulatory response of human skin. This paper introduces a hierarchical two-compartment model that accounts for fluid distribution within the interstitium and the micro-circulation of blood. A general theoretical framework, which includes a biphasic interstitium (comprising interstitial fluid and non-structural cells), is formulated and studied through a one-dimensional consolidation test of a 100 μm column. The inclusion of a biphasic interstitium allows the model to account separately for the motion of cells and interstitial fluid, recognising their differing characteristic times. An extension of the model to include biological exchanges such as oxygen transport is discussed in the appendix. The preliminary evaluation demonstrated that cell viscosity introduces a second characteristic time beyond that of interstitial fluid movement. However, at high cell viscosity values and short time scales, cells exhibit behavior akin to that of solid materials. Based on these observations, a simplified version of the model was used to replicate an experimental campaign carried out on short time scales. Local pressure (up to 31 kPa) was applied to the skin of the dorsal face of the middle finger through a laser Doppler probe PF801 (Perimed Sweden) attached to an apparatus as previously described (Fromy B. Res 1998). The model demonstrated its qualitative ability to represent both ischaemia and post-occlusive reactive hyperaemia, aligning with experimental observations. All numerical simulations were performed using the open source software FEniCSx v0.9.0. To promote transparency and reproducibility, the anonymized experimental data and the corresponding finite element codes are publicly available on GitHub."
+  image: "resources/images/publications/hierarch.png"
+
+- id: "pub_synthetic_2025"
+  year: 2025
+  title: "[PREPRINT] Synthetic Porous Microstructures: Automatic Design, Simulation, and Permeability Analysis"
+  authors: "Thomas Lavigne, Camilo Andrés Suarez Afanador, Anas Obeidat, Stéphane Urcun"
+  journal: "arXiv Preprint"
+  doi: "10.48550/arXiv.2502.14518"
+  keywords: "Porous Media | Permeability | Synthetic Microstructures | EDAC-DCPSE | Skin"
+  abstract: "This study introduces an open-source computational framework for the generation and permeability evaluation of synthetic porous media. The proposed methodology integrates crystallographic and meshing tools to construct controlled microstructures with tunable porosity, facilitating seamless transitions from geometric modelling to computational domains for numerical simulations. The generated structures are analysed through fluid-structure interaction (FSI) simulations, leveraging the Entropically Damped Artificial Compressibility (EDAC) formulation in conjunction with the Discretization-Corrected Particle Strength Exchange (DC-PSE) method. A novel approach for the numerical estimation of the macroscopic permeability tensor is presented, employing a stochastic upscaling technique inspired by the volume averaging method. To validate the framework, we investigate the transition between creeping and non-Darcy flow regimes through parametric permeability studies, utilizing a one-dimensional approach for practical benchmarking. The results establish a foundation for experimental validation and provide insights into the customised design of porous structures for engineering and biomedical applications, offering a versatile tool for research in fluid transport and porous media mechanics."
+  image: "resources/images/publications/synth.png"
+
+- id: "pub_strain_2024"
+  year: 2024
+  title: "Poromechanical modelling of the time-dependent response of in vivo human skin during extension"
+  authors: "Thomas Lavigne, Stéphane Urcun, Emmanuelle Jacquet, Jérôme Chambert, Aflah Elouneg, Camilo A. Suarez-Afanador, Stéphane P. A. Bordas, Giuseppe Sciumè, Pierre-Yves Rohan"
+  journal: "Int. J. Numer. Method. Biomed. Eng."
+  doi: "10.1002/cnm.70111"
+  keywords: "FEniCSx | human skin | poro-elasticity | time-dependent | Skin"
+  abstract: "This paper proposes a proof of concept application of a biphasic constitutive model to identify the mechanical properties of in vivo human skin under extension. Although poromechanics theory has been extensively used to model other soft biological tissues, only a few studies have been published for skin, and most have been limited to ex vivo or in silico conditions. However, in vivo procedures are crucial to determine the subject-specific properties at different body sites. This study focuses on cyclic uni-axial extension of the upper arm skin, using unpublished data collected by Chambert et al. Our analysis shows that a two-layer finite element model allows representing all relevant features of the observed mechanical response to the imposed external loading, which was composed, in this contribution, of four loading-sustaining-unloading cycles. The Root Mean Square Error (RMSE) between the calibrated model and the measured Force-time response was 8.84e-3N. Our biphasic model represents a preliminary step towards investigating the mechanical conditions responsible for the onset of injury. It allows for the analysis of changes in Interstitial Fluid (IF) pressure, flow, and osmotic pressure, in addition to the mechanical fields. Future work will focus on the interaction of multiple biochemical factors and the complex network of regulatory signals."
+  image: "resources/images/publications/besancon.png"
+
+- id: "pub_fenics_2023"
+  year: 2023
+  title: "Single and bi-compartment poro-elastic model of perfused biological soft tissues: FEniCSx implementation and tutorial"
+  authors: "Thomas Lavigne, Stéphane Urcun, Pierre-Yves Rohan, Giuseppe Sciumè, Davide Baroli, Stéphane P.A. Bordas"
+  journal: "J. Mech. Behav. Biomed. Mater."
+  doi: "10.1016/j.jmbbm.2023.105902"
+  keywords: "Mixed space | Poro-elasticity | Bi-compartment | FEniCSx | Skin | MATISSE"
+  abstract: "Soft biological tissues demonstrate strong time-dependent and strain-rate mechanical behavior, arising from their intrinsic visco-elasticity and fluid–solid interactions. The time-dependent mechanical properties of soft tissues influence their physiological functions and are related to several pathological processes. Poro-elastic modeling represents a promising approach because it allows the integration of multiscale/multiphysics data to probe biologically relevant phenomena at a smaller scale and embeds the relevant mechanisms at the larger scale. The implementation of multiphase flow poro-elastic models however is a complex undertaking, requiring extensive knowledge. The open-source software FEniCSx Project provides a novel tool for the automated solution of partial differential equations by the finite element method. This paper aims to provide the required tools to model the mixed formulation of poro-elasticity, from the theory to the implementation, within FEniCSx. Several benchmark cases are studied. A column under confined compression conditions is compared to the Terzaghi analytical solution, using the L2-norm. An implementation of poro-hyper-elasticity is proposed. A bi-compartment column is compared to previously published results (Cast3m implementation). For all cases, accurate results are obtained in terms of a normalized Root Mean Square Error (RMSE). Furthermore, the FEniCSx computation is found three times faster than the legacy FEniCS one. The benefits of parallel computation are also highlighted."
+  image: "resources/images/publications/tutos.png"
+
+- id: "pub_contact_2023"
+  year: 2023
+  title: "Identification of material parameters and traction field for soft bodies in contact"
+  authors: "Thomas Lavigne, Stéphane P.A. Bordas, Jakub Lengiewicz"
+  journal: "Comput. Methods Appl. Mech. Eng."
+  doi: "10.1016/j.cma.2023.115889"
+  keywords: "Hyper-elasticity | Inverse form | Large strains | Contact | Calibration | Soft bodies | Breast"
+  abstract: "We provide an optimization framework that is capable of identifying the material parameters and contact traction field from two measured deformed geometries of a soft body in contact. The novelty of the framework is the idea of parametrizing the missing contact traction field and incorporating it into the inverse+forward hyper-elasticity formulation. We provide the continuum- and finite element formulation of the framework, as well as the direct differentiation method of sensitivity analysis to efficiently obtain necessary gradients for the BFGS optimizer. The correctness of the formulation and the excellent performance of the framework are confirmed by a series of benchmark numerical examples."
+  image: "resources/images/publications/jakub.png"
+
+- id: "pub_dvc_breast_2022"
+  year: 2022
+  title: "Digital Volume Correlation for large deformations of soft tissues: Pipeline and proof of concept for the application to breast ex vivo deformations"
+  authors: "Thomas Lavigne, Antoine Mazier, A. Perney, Stéphane P.A. Bordas, François Hild, Jakub Lengiewicz"
+  journal: "J. Mech. Behav. Biomed. Mater."
+  doi: "10.1016/j.jmbbm.2022.105490"
+  keywords: "Digital Volume Correlation | Elastic regularization | Hard/soft tissues | Large displacements | Kinematic fields | X-ray tomography | Breast"
+  abstract: "Being able to reposition tumors from prone imaging to supine surgery stances is key for bypassing current invasive marking used for conservative breast surgery. This study aims to demonstrate the feasibility of using Digital Volume Correlation (DVC) to measure the deformation of a female quarter thorax between two different body positioning when subjected to gravity. A segmented multipart mesh (bones, cartilage and tissue) was constructed and a three-step FE-based DVC procedure with heterogeneous elastic regularization was implemented. With the proposed framework, the large displacement field of a hard/soft breast sample was recovered with low registration residuals and small error between the measured and manually determined deformations of phase interfaces. The present study showed the capacity of FE-based DVC to faithfully capture large deformations of hard/soft tissues."
+  image: "resources/images/publications/breast_dvc.png"
+
+- id: "pub_muscle_2022"
+  year: 2022
+  title: "Société de Biomécanique Young Investigator Award 2021: Numerical investigation of the time-dependent stress-strain mechanical behaviour of skeletal muscle tissue in the context of pressure ulcer prevention"
+  authors: "Thomas Lavigne, Giuseppe Sciumè, Séverine Laporte, Hélène Pillet, Stéphane Urcun, Benjamin Wheatley, Pierre-Yves Rohan"
+  journal: "Clinical Biomechanics"
+  doi: "10.1016/j.clinbiomech.2022.105592"
+  keywords: "Pressure ulcer | Load-tolerant soft tissues | Muscle passive behaviour | Viscoelasticity | Poroelasticity | Muscle"
+  abstract: "Background: Pressure-induced tissue strain is one major pathway for Pressure Ulcer development and, especially, Deep Tissue Injury. Biomechanical investigation of the time-dependent stress–strain mechanical behaviour of skeletal muscle tissue is therefore essential. In the literature, a viscoelastic formulation is generally assumed for the experimental characterization of skeletal muscles, with the limitation that the underlying physical mechanisms that give rise to the time dependent stress–strain behaviour are not known. The objective of this study is to explore the capability of poroelasticity to reproduce the apparent viscoelastic behaviour of passive muscle tissue under confined compression. Methods: Experimental stress-relaxation response of 31 cylindrical porcine samples tested under fast and slow confined compression by Vaidya and collaborators were used. An axisymmetric Finite Element model was developed in ABAQUS and, for each sample a one-to-one inverse analysis was performed to calibrate the specimen-specific constitutive parameters, namely, the drained Young's modulus, the void ratio, hydraulic permeability, the Poisson's ratio, the solid grain's and fluid's bulk moduli. Findings: The peak stress and consolidation were recovered for most of the samples (N=25) by the poroelastic model (normalised root-mean-square error ≤0.03 for fast and slow confined compression conditions). Interpretation: The strength of the proposed model is its fewer number of variables (N=6 for the proposed poroelastic model versus N=18 for the viscohyperelastic model proposed by Vaidya and collaborators). The incorporation of poroelasticity to clinical models of Pessure Ulcer formation could lead to more precise and mechanistic explorations of soft tissue injury risk factors."
+  image: "resources/images/publications/m1.png"
+
+- id: "pub_poynting_2020"
+  year: 2020
+  title: "[Most Cited Paper 2024] Poynting effects in pantographic metamaterial captured via multiscale DVC"
+  authors: "Patrick Auger, Thomas Lavigne, Benjamin Smaniotto, Mario Spagnuolo, Francesco dell'Isola, François Hild"
+  journal: "J. Strain Analysis"
+  doi: "10.1177/0309324720976625"
+  keywords: "Poynting Effect | Pantographic Metamaterial | Multiscale DVC | Strain Analysis | Metamaterial"
+  abstract: "Metamaterials are often studied for their peculiar mechanical properties. However, few 4D studies were conducted on 3D printed pantographs. This study aims at analyzing an in situ torsion test in a lab tomograph. The acquired scans were used to measure displacement fields via digital volume correlation. The final goal was to analyze the deformation mechanisms of an Inconel pantograph and to rationalize potential Poynting effects."
+  image: "resources/images/publications/jsa.png"
+
+- id: "pub_glioblastoma_2025"
+  year: 2026
+  title: "[SUBMITTED] Quantification of Glioblastoma growth induced displacement using Digital Volume Correlation: A proof of concept"
+  authors: "Meryem Abbad Andaloussi, ..., Thomas Lavigne, et al."
+  journal: "Under Review"
+  doi: ""
+  keywords: "Glioblastoma | Digital Volume Correlation | Tumor Growth | Brain Mechanics | Brain"
+  abstract: "To be communicated."
+  image: "resources/images/publications/review.png"
+
+- id: "pub_rajabi_gcnn"
+  year: 2024
+  title: "[PREPRINT] Physics-informed Dynamic Graph Convolutional Neural Network with Curriculum Learning for Pore-scale Flow Simulations"
+  authors: "Rajabi, ..., Thomas Lavigne, et al."
+  journal: "In progress"
+  doi: "" # Kept a dummy format so the DOI link on the site doesn't break. You can replace with actual DOI later.
+  keywords: "Physics-Informed Neural Networks | Graph Convolutional Neural Network | Pore-Scale Flow"
+  abstract: "To be communicated."
+  image: "resources/images/publications/review.png"
+
+- id: "pub_kerachni_scipedia_2024"
+  year: 2024
+  title: "MRI-based computational modeling of human cortical folding"
+  authors: "A. Kerachni, ..., Thomas Lavigne, et al."
+  journal: "Scipedia"
+  doi: "hal-05370557v1"
+  keywords: "MRI, Computational Modeling | Human Cortical Folding | Brain Mechanics | Brain"
+  abstract: "To be communicated."
+  image: "resources/images/publications/kerachni.png"
+
+- id: "pub_kerachni_submitted_2025"
+  year: 2026
+  title: "[SUBMITTED] Open-source MRI-informed computational model of human cortical folding"
+  authors: "A. Kerachni, Thomas Lavigne, et al."
+  journal: "Submitted"
+  doi: ""
+  keywords: "Open-Source | MRI-Informed | Cortical Folding | Computational Model | Brain"
+  abstract: "To be communicated."
+  image: "resources/images/publications/review.png"

@@ -1,0 +1,198 @@
+\documentclass[11pt, a4paper]{article}
+
+% ---- PACKAGES ----
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage[a4paper, top=1.8cm, bottom=1.8cm, left=2.2cm, right=2.2cm]{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{microtype}
+\usepackage{parskip}
+\usepackage{setspace}
+\usepackage{tcolorbox}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{multicol} 
+
+% ---- COLORS ----
+\definecolor{accentblue}{RGB}{47, 84, 150}   
+\definecolor{darkblue}{RGB}{30, 60, 110}
+\definecolor{bodytext}{RGB}{30, 30, 30}
+\definecolor{headerbg}{RGB}{235, 245, 250}    
+
+% ---- HYPERLINKS ----
+\hypersetup{colorlinks=true, urlcolor=accentblue, linkcolor=accentblue}
+
+\pagestyle{plain}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+% ---- SECTION STYLE ----
+\titleformat{\section}{\large\bfseries\color{accentblue}}{}{0em}{}[]
+\titlespacing*{\section}{0pt}{14pt}{6pt}
+
+% ============================================================
+\begin{document}
+% ============================================================
+
+% ---- HEADER ----
+\begin{minipage}[c]{0.75\textwidth}
+  {\fontsize{24}{28}\selectfont\textbf{\textcolor{darkblue}{Thesis Summary}}}\\[0.4cm]
+  \textbf{Defended:} 24\textsuperscript{th} June 2025 \quad|\quad \textbf{Grant:} AFR-FNR \#17013812\\[0.15cm]
+  \textbf{Supervisors:} Prof.\ S. Bordas (Univ.\ Luxembourg), Dr.\ P.-Y. Rohan (ENSAM),\\[0.05cm] \phantom{\textbf{Supervisors: }}Dr.\ G. Sciumè (I2M)\\[0.15cm]
+  \textbf{Title:} 
+  \begin{tabular}[t]{@{}l@{}}
+    \textit{Biomechanical Response of Human Skin:}
+    \textit{A Hierarchical Porous Media Framework}
+  \end{tabular}
+\end{minipage}
+\hfill\hspace{0.8cm}
+\begin{minipage}[c]{0.21\textwidth}
+  \raggedleft
+  \includegraphics[width=\linewidth]{FigHeader.png} 
+\end{minipage}
+
+\vspace{0.1cm}
+\textcolor{accentblue!60}{\rule{\linewidth}{1pt}}
+\vspace{-0.2cm}
+
+My work lives at the vital intersection of \textbf{biomechanics}, \textbf{mathematical modelling}, and \textbf{clinical healthcare}. My research establishes a \textbf{"Digital Twin" of human skin}—a physics-based, patient-specific computational model—that provides a quantitative basis to predict and prevent deep tissue injuries based on individual patient biomechanics.
+
+\section*{1. The Societal Challenge: The Silent Epidemic}
+Pressure ulcers (PUs)—commonly known as bedsores—represent a massive healthcare crisis, affecting up to 20\% of hospitalized European patients and 50\% worldwide~[1,2]. 
+These injuries occur when prolonged mechanical pressure causes a breakdown in tissue integrity, threatening vulnerable, mobility-impaired populations such as the elderly or those with spinal cord injuries. 
+A particularly dangerous form of this pathology is Deep Tissue Injury (DTI), which originates in the deep muscle or at the muscle-bone interface and spreads outward, often remaining visually undetectable until irreversible necrosis has occurred.
+
+The central aetiology of these ulcers is a fundamental competition between mechanical deformation and biological survival~[3]. 
+Severe mechanical pressure leads to ischemia, depriving cells of oxygen and nutrients while accumulating metabolic waste. 
+Paradoxically, when the load is removed, the sudden restoration of blood flow causes reperfusion injury, further damaging the tissue through inflammation and oxidative stress. 
+While current diagnostic tools like the Braden Scale are useful for general screening, they remain largely qualitative~[4]. 
+My work paves the way towards quantitative, patient-specific prediction.
+
+\section*{2. The Scientific Bottleneck and Current Limitations}
+
+
+
+
+To predict tissue damage, researchers rely heavily on mathematical modelling, but current methods face a major dichotomy due to discrepancies in time and length scales. 
+On one hand, purely mechanical finite element models treat the skin as a single-phase viscoelastic solid. 
+While these models can replicate the time-dependent creep and relaxation of skin, they often fail to explain the physical origins of the behavior, ignoring the vital fluid components that keep the tissue alive. 
+On the other hand, explicit vascular models focus heavily on fluid dynamics but neglect the mechanical influence of surrounding tissues. 
+When these models attempt to define explicit, multiscale vascular trees, they encounter a computational bottleneck that confines the simulation to an impractically small volume. 
+
+\begin{wrapfigure}[13]{r}{0.38\textwidth}  
+  \vspace{-40pt}
+  \begin{tcolorbox}[colback=headerbg, colframe=accentblue, arc=4pt,
+    boxrule=0.8pt, left=4pt, right=4pt, top=4pt, bottom=4pt]
+    \centering
+    \includegraphics[width=\linewidth]{Fig1.png}
+    \par\vspace{4pt}
+    {\small\color{darkblue} \textit{Figure 1: Skin modelled as a hierarchical porous medium, from the macroscopic tissue scale down to the microscopic Representative Elementary Volume (REV).}}
+  \end{tcolorbox}
+  \vspace{-10pt}
+\end{wrapfigure}
+
+This separation creates a significant missing link in the field. 
+We are currently limited to accurately simulate how a mechanical load, such as a patient sitting, translates into a fluid dynamics problem where blood flow is restricted. 
+My research bridges this gap by capturing how external compression physically pinches off blood flow while simultaneously altering the tissue's load-bearing capacity (time-dependent response).
+
+\section*{3. The Poromechanical Hypothesis}
+Imagine squeezing a \textbf{wet, resilient sponge}. 
+As you apply pressure, the water inside is forced out, and the sponge's structure deforms. When you release the pressure, the water rushes back in, and the sponge slowly regains its original shape. 
+Human skin behaves very similarly. 
+To capture this mathematically, we can define a Representative Elementary Volume (REV)—as illustrated in Figure 1—that translates the complex clinical anatomy of the skin into a rigorous computational structure.
+It is not just a solid piece of tissue; it is a complex, hierarchical porous framework filled with interstitial fluid and blood. 
+
+Derived from the Thermodynamically Constrained Averaging Theory (TCAT~[5]), my work views tissue as an interacting mixture of a solid extracellular scaffold and vital fluid phases. 
+This approach introduces the concept of bidirectional solid-fluid coupling, rooted in the foundational principle of effective stress~[7]. 
+As the tissue is compressed, fluids are squeezed out of high-pressure regions, transferring stress away from the solid scaffold. 
+By tracking this interaction, we can test a crucial hypothesis: that the complex phenomena of ischemia and reactive hyperemia (blood-flow overshoot) can be explained purely through passive mechanical physics, without relying on complex neurological or metabolic control loops.
+
+\section*{4. Methodology: Building a Hierarchical "Digital Twin"}
+
+The methodology of this research bridges micro-scale vascular dynamics and macro-scale tissue deformation through progressive computational modelling and rigorous \textit{in vivo} human testing. 
+
+To capture the complex solid-fluid interplay, a single-compartment biphasic model~[6, 8] was first developed and rigorously evaluated against shared in vivo experimental data of upper-arm skin extension. 
+This foundational model was then progressively expanded into a novel two-compartment multiphase system~[6, 10] that directly links mechanical loading to ischemia. 
+Conceptually, the dominant interstitial compartment absorbs the initial mechanical shock, and its instantaneous pressurization pinches off the secondary vascular compartment, driving ischemia. The subsequent fluid flow then governs the skin's apparent macroscopic viscoelasticity. 
+These coupled, non-linear equations were implemented using the open-source software FEniCSx via a monolithic approach to ensure numerical stability during large deformations.
+
+To experimentally control the coupling between mechanical loading and skin perfusion, I conducted an \textit{in vivo} experimental campaign using Laser Doppler Flowmetry (LDF) on a gender-inclusive cohort of 11 human participants~[10]. 
+We measured real-time blood flux during controlled finger indentations, allowing for the direct comparison of model predictions against actual physiological responses in living human subjects~[10]. 
+
+Furthermore, identifying material parameters like permeability \textit{in vivo} is incredibly challenging and often requires invasive procedures. 
+To bypass this, I developed an \textit{in silico} "Numerical Phantom"~[13]. 
+By generating synthetic, spatially heterogeneous 3D porous microstructures and applying high-fidelity fluid dynamics simulations using the EDAC-DCPSE method, we can now virtualize transport properties. 
+This provides a robust method to link micro-scale structural geometry directly to macro-scale tissue behavior.
+
+\section*{5. Main Findings}
+
+\begin{wrapfigure}[16]{l}{0.52\textwidth}
+  \vspace{-20pt}
+  \begin{tcolorbox}[colback=headerbg, colframe=accentblue, arc=4pt,
+    boxrule=0.8pt, left=4pt, right=4pt, top=4pt, bottom=4pt]
+    \centering
+    \includegraphics[width=\linewidth]{Fig2.png}
+    \par\vspace{4pt}
+    {\small\color{darkblue}\textit{Figure 2: Experimental (median $\pm$ IQR) and simulated (black) LDF responses to cyclic indentation. Local fluid velocity is reduced during ischemia (blue) and accelerated during reperfusion (red).}}
+  \end{tcolorbox}
+  \vspace{-10pt}
+\end{wrapfigure}
+
+The progressive evaluation of these models yielded fundamental insights into soft tissue biomechanics. 
+First, by evaluating the single-compartment model against the shared in vivo skin extension data~[8], we proved that macroscopic skin relaxation under constant strain is not solely a product of solid collagen fibers rearranging. 
+Instead, it is significantly driven by the physical redistribution of interstitial fluid within the porous matrix, challenging the prevalence of purely "dry" viscoelastic assumptions in the literature.
+
+Second, the bi-compartment model successfully reproduced both the ischemic drop under pressure and the rapid hyperemic overshoot upon release. 
+Crucially, this was achieved purely through passive poromechanical coupling—specifically, the rapid re-inflation of the compressed vascular porosity driven by pressure gradients. 
+This demonstrates that complex neurological control loops are not strictly necessary to explain these phenomena under mechanical loads~[10]. 
+
+Finally, the experimental data revealed remarkably consistent behavior across the human cohort. 
+When normalized to individual baseline flows, the hemodynamic responses were virtually identical across both male and female participants. 
+This universality suggests that the underlying physical drivers of ischemia and reperfusion are fundamentally mechanical rather than hormonally or biologically distinct between sexes.
+
+\section*{6. Impact and Open Science}
+Supported by the \textbf{Luxembourg National Research Fund (FNR)}, this thesis establishes human skin as a hierarchical porous medium where fluid dynamics and tissue mechanics are fundamentally inseparable. 
+The modelling framework developped is highly modular making it expandable to other tissues such as the brain. 
+Over the course of my PhD, I authored six main journal articles, presented at multiple international conferences across Europe, and was awarded both the \textbf{2025 Excellent Thesis Award} and the \textbf{Best Poster Award (2nd rank)} at the Luxembourg PhD Day 2024.
+
+A cornerstone of this doctoral project is a rigorous commitment to Open Science. 
+Recognizing that complex poromechanical models are often difficult to implement, I published all codes, anonymised data (RGPD), and synthetic microstructures openly on GitHub~[9, 11, 12, 15]. 
+To ensure genuine reproducibility, I completed the Inria certification in "Reproducible Research" and created comprehensive step-by-step online tutorials~[14]. 
+This active knowledge-sharing has already democratized access to these tools and sparked fruitful international collaborations. 
+The framework is currently being applied to patient-specific breast tumor modeling with researchers at the University of Leeds, cortical folding and brain mechanics at IMT Atlantique, and glioblastoma growth quantification at the University of Luxembourg.
+
+\section*{7. From Foundation to Leadership: Current \& Future Directions}
+This framework opens exciting avenues for personalized medicine, where patient-specific ultrasound and stiffness data could soon be used to create individualized risk maps for vulnerable populations. 
+The poromechanical foundation is also highly adaptable. As a postdoctoral researcher at the \textbf{Laboratoire de mécanique des solides (Ecole Polytechnique, CNRS)}, I am currently expanding this modular framework to study aneurysm risks by embedding smooth muscle cells within collagen hydrogel fibers. 
+Simultaneously, I am leading the computational supervision of research on other soft tissues, such as the cornea, to improve myopia surgery outcomes. This evolution from a targeted doctoral project to a multi-organ research program demonstrates the immense robustness, scalability, and clinical potential of the models established during my PhD.
+
+\vspace{0.3cm}
+\noindent\textcolor{accentblue!60}{\rule{\linewidth}{1pt}}
+{\footnotesize
+\textbf{Selected Bibliography}
+\begin{multicols}{2}
+\begin{enumerate}[label={[\arabic*]}, leftmargin=2em, itemsep=0pt, parsep=0pt, topsep=0pt]
+\item K. Vanderwee et al., \textit{J. Eval. Clin. Pract.}, 2007.
+\item C. H. Lyder \& E. A. Ayello, \textit{NIH}, 2008.
+\item S. Loerakker et al., \textit{J. Appl. Physiol.}, 2011.
+\item N. Bergstrom, \textit{Nurs. Res.}, 1987.
+\item W. G. Gray \& T. Miller, \textit{TCAT}, Springer, 2014.
+\item T. Lavigne et al., \textit{J. Mech. Behav. Biomed. Mater.}, 2023.
+\item K. Terzaghi, \textit{Theoretical soil mechanics}, 1943.
+\item T. Lavigne et al., \textit{Int. J. Numer. Method. Biomed. Eng.}, 2025.
+\item T. Lavigne, GitHub: \textit{Skin\_porous\_modelling}, 2024.
+\item T. Lavigne et al., \textit{Int. J. Numer. Method. Biomed. Eng.}, 2025.
+\item T. Lavigne, GitHub: \textit{2-compartment-LDF}, 2025.
+\item T. Lavigne, GitHub: \textit{Dolfinx\_Porous\_Media}, 2023.
+\item T. Lavigne et al., \textit{Synthetic Porous Microstructures, Arxiv}, 2025.
+\item T. Lavigne, \textit{FEniCSx GMSH Tutorials}, 2024.
+\item T. Lavigne, GitHub: \textit{Porous\_media\_Generation}, 2024.
+\end{enumerate}
+\end{multicols}
+}
+
+\end{document}

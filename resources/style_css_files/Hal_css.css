@@ -1,0 +1,73 @@
+
+
+
+
+
+/* classe css de la page*/
+#res_script{
+	border:0;
+	background-color:white;
+	color:rgb(60, 53, 91);
+}
+
+/*Titre*/
+div.ZoneTitreResultat
+{
+	display:none;
+}
+/* classes pour les rubriques pour certains type de classement (type de publi, année de publi) */ 
+.Rubrique{
+	border-bottom: 2px solid rgb(60, 53, 91);
+}
+
+/*nom du champ*/
+.ChampRes {
+	display:none;
+}
+
+/* classe commune à  tous les champs affichÃ©s */ 
+.ValeurRes {
+	color:black;
+  margin-left:1em;
+}
+/* classe pour les titres */ 
+.Titre, .Titre a {
+   font-weight:bold;
+	color:rgb(60, 53, 91);
+}
+
+.annee_publi, .typdoc, .Rubrique, .SousRubrique {
+    color:rgb(60, 53, 91);
+}
+
+.NoticeRes {
+	border-bottom: 0px;
+}
+.NoticeResAvecVignette {
+	border-bottom: 0px;
+}
+
+
+.LienBibtexACoteFulltext, .DOI {
+    color:rgb(85, 94, 217);
+}
+
+a:link { 
+    text-decoration: none; 
+    color:rgb(85, 94, 217);
+  } 
+  a:visited { 
+    text-decoration: none; 
+    color:rgb(85, 94, 217);
+
+  } 
+  a:hover { 
+    text-decoration: underline; 
+    color:rgb(85, 94, 217);
+	font-weight:bold;
+
+  } 
+  a:active { 
+    text-decoration: none; 
+  }
+  

@@ -1,95 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://th0maslavigne.github.io/Talks.html</loc>
-    <lastmod>2026-04-29T15:59:25.784Z</lastmod>
-  </url>
-  <url>
-    <loc>https://th0maslavigne.github.io/Teaching.html</loc>
-    <lastmod>2026-04-29T15:59:25.784Z</lastmod>
+    <loc>https://th0maslavigne.github.io/publications.html</loc>
+    <lastmod>2026-05-05T22:34:58.373Z</lastmod>
   </url>
   <url>
     <loc>https://th0maslavigne.github.io/index.html</loc>
-    <lastmod>2026-04-29T15:59:25.792Z</lastmod>
+    <lastmod>2026-05-05T22:34:58.341Z</lastmod>
   </url>
   <url>
-    <loc>https://th0maslavigne.github.io/posts/2024/2024-12-12-Erlangen/index.html</loc>
-    <lastmod>2026-04-29T15:59:25.808Z</lastmod>
+    <loc>https://th0maslavigne.github.io/teaching.html</loc>
+    <lastmod>2026-05-05T22:34:59.268Z</lastmod>
   </url>
   <url>
-    <loc>https://th0maslavigne.github.io/posts/2024/2024-09-10-FEniCSx/index.html</loc>
-    <lastmod>2026-04-29T15:59:25.793Z</lastmod>
+    <loc>https://th0maslavigne.github.io/news.html</loc>
+    <lastmod>2026-05-05T22:34:58.341Z</lastmod>
   </url>
   <url>
-    <loc>https://th0maslavigne.github.io/posts/2025/2025-20-11-HPC/index.html</loc>
-    <lastmod>2026-04-29T15:59:25.819Z</lastmod>
+    <loc>https://th0maslavigne.github.io/education.html</loc>
+    <lastmod>2026-05-05T22:34:58.341Z</lastmod>
   </url>
   <url>
-    <loc>https://th0maslavigne.github.io/posts/2026/2026-08-04-diplome_ENSAM/index.html</loc>
-    <lastmod>2026-04-29T15:59:25.820Z</lastmod>
+    <loc>https://th0maslavigne.github.io/resources/presentations/phd_defense/presentation.html</loc>
+    <lastmod>2026-05-05T22:34:59.267Z</lastmod>
   </url>
   <url>
-    <loc>https://th0maslavigne.github.io/Research.html</loc>
-    <lastmod>2026-04-29T15:59:25.281Z</lastmod>
-  </url>
-  <url>
-    <loc>https://th0maslavigne.github.io/projects/2020/2020-03-01/index.html</loc>
-    <lastmod>2026-04-29T15:59:25.822Z</lastmod>
-  </url>
-  <url>
-    <loc>https://th0maslavigne.github.io/projects/2019/2019-11-01/index.html</loc>
-    <lastmod>2026-04-29T15:59:25.821Z</lastmod>
-  </url>
-  <url>
-    <loc>https://th0maslavigne.github.io/projects/2025/2025-09-03/index.html</loc>
-    <lastmod>2026-04-29T15:59:25.847Z</lastmod>
-  </url>
-  <url>
-    <loc>https://th0maslavigne.github.io/projects/2021/2021-09-01/index.html</loc>
-    <lastmod>2026-04-29T15:59:25.823Z</lastmod>
-  </url>
-  <url>
-    <loc>https://th0maslavigne.github.io/projects/2021/2021-03-01/index.html</loc>
-    <lastmod>2026-04-29T15:59:25.823Z</lastmod>
-  </url>
-  <url>
-    <loc>https://th0maslavigne.github.io/projects/2025/2025-12-01/index.html</loc>
-    <lastmod>2026-04-29T15:59:25.848Z</lastmod>
-  </url>
-  <url>
-    <loc>https://th0maslavigne.github.io/projects/2022/2022-09-01-PhD/index.html</loc>
-    <lastmod>2026-04-29T15:59:25.839Z</lastmod>
-  </url>
-  <url>
-    <loc>https://th0maslavigne.github.io/News.html</loc>
-    <lastmod>2026-04-29T15:59:25.281Z</lastmod>
-  </url>
-  <url>
-    <loc>https://th0maslavigne.github.io/Resources/presentations/phd_defense/presentation.html</loc>
-    <lastmod>2026-04-29T15:59:25.783Z</lastmod>
-  </url>
-  <url>
-    <loc>https://th0maslavigne.github.io/posts/2025/2025-10-12-ETA/index.html</loc>
-    <lastmod>2026-04-29T15:59:25.818Z</lastmod>
-  </url>
-  <url>
-    <loc>https://th0maslavigne.github.io/posts/2025/2025-24-06-PhD/index.html</loc>
-    <lastmod>2026-04-29T15:59:25.819Z</lastmod>
-  </url>
-  <url>
-    <loc>https://th0maslavigne.github.io/posts/2024/2024-02-06-Most_Cited/index.html</loc>
-    <lastmod>2026-04-29T15:59:25.793Z</lastmod>
+    <loc>https://th0maslavigne.github.io/projects.html</loc>
+    <lastmod>2026-05-05T22:34:58.373Z</lastmod>
   </url>
   <url>
     <loc>https://th0maslavigne.github.io/about.html</loc>
-    <lastmod>2026-04-29T15:59:25.792Z</lastmod>
+    <lastmod>2026-05-05T22:34:58.341Z</lastmod>
   </url>
   <url>
-    <loc>https://th0maslavigne.github.io/Publication.html</loc>
-    <lastmod>2026-04-29T15:59:25.281Z</lastmod>
-  </url>
-  <url>
-    <loc>https://th0maslavigne.github.io/Education.html</loc>
-    <lastmod>2026-04-29T15:59:25.281Z</lastmod>
+    <loc>https://th0maslavigne.github.io/talks.html</loc>
+    <lastmod>2026-05-05T22:34:59.268Z</lastmod>
   </url>
 </urlset>
