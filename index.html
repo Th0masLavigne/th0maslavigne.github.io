@@ -352,19 +352,27 @@ ul.task-list li input[type="checkbox"] {
 
 <style>
   body {
+    margin: 0;
+    background-color: transparent;
+    }
+
+  #quarto-content, .quarto-container, .page-layout-custom { background-color: transparent !important; }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
     background-image: 
       linear-gradient(rgba(3, 28, 89, 0.1), rgba(3, 28, 89, 0.3)), 
       url("resources/images/backgrounds/background_skin.JPG");
-    background-size: cover; background-position: center center; background-attachment: fixed; margin: 0;
-    /* Fix for iOS missing background image */
-    @media (max-width: 768px) {
-      body {
-        background-attachment: scroll; /* Overrides the 'fixed' property on mobile */
-      }
-    }
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
   }
-
-  #quarto-content, .quarto-container, .page-layout-custom { background-color: transparent !important; }
 
   nav.navbar {
     background: rgba(3, 28, 89, 0.85) !important; backdrop-filter: blur(10px); 
