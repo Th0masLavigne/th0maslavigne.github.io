@@ -84,7 +84,7 @@ format:
     theme:
       light: [flatly,resources/style_css_files/style_site.scss]
       dark: [darkly,resources/style_css_files/style_site_dark.scss]
-    respect-user-color-scheme: true
+    respect-user-color-scheme: false
     css: resources/style_css_files/styles.css
     toc: true
     smooth-scroll: true
