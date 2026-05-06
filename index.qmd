@@ -173,18 +173,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Laboratoires et Éducation (Marqueurs Bleus)
   var labs = [
-    { name: "LMS, Polytechnique (Palaiseau/Paris)", coords: [48.7135, 2.2105], type: "Post-Doc Actuel" },
-    { name: "IBHGC, ENSAM (Paris)", coords: [48.8315, 2.3610], type: "Doctorat (Co-tutelle)" },
-    { name: "I2M (Bordeaux)", coords: [44.8378, -0.5792], type: "Post-Doc / Doctorat" },
-    { name: "University of Luxembourg", coords: [49.5042, 5.9479], type: "Doctorat (Co-tutelle)" },
-    { name: "ENS Paris-Saclay", coords: [48.7126, 2.1663], type: "Éducation" },
-    { name: "IMT Atlantique (Rennes)", coords: [48.1173, -1.6778], type: "Collab (Mécanique Cérébrale)" },
-    { name: "LBTI (Lyon)", coords: [45.7795, 4.8750], type: "Collab (Biologie Cutanée)" },
-    { name: "FEMTO-ST (Besançon)", coords: [47.2500, 5.9900], type: "Collab (Expérimentations Peau)" },
-    { name: "FAU Erlangen-Nuremberg", coords: [49.5978, 11.0037], type: "Séjour de Recherche" },
-    { name: "University of Leeds", coords: [53.8067, -1.5550], type: "Collab (Oncologie Mammaire)" },
-    { name: "Euler Institute (Lugano, Suisse)", coords: [46.0037, 8.9511], type: "Collab (Milieux Poreux)" },
-    { name: "Bucknell University (PA, USA)", coords: [40.9548, -76.8814], type: "Collab (Mécanique Musculaire)" }
+    { name: "LMS, Polytechnique (Palaiseau/Paris)", coords: [48.7135, 2.2105], type: "Post-Doc Current" },
+    { name: "IBHGC, ENSAM (Paris)", coords: [48.8315, 2.3610], type: "PhD (Co-tutelle) / Internship" },
+    { name: "I2M (Bordeaux)", coords: [44.8378, -0.5792], type: "Post-Doc / PhD (Co-tutelle) / Internship" },
+    { name: "University of Luxembourg", coords: [49.5042, 5.9479], type: "PhD (Co-tutelle) / Internship" },
+    { name: "ENS Paris-Saclay", coords: [48.7126, 2.1663], type: "Education" },
+    { name: "IMT Atlantique (Rennes)", coords: [48.1173, -1.6778], type: "Collab (Brain)" },
+    { name: "LBTI (Lyon)", coords: [45.7795, 4.8750], type: "Collab (Skin Biology)" },
+    { name: "FEMTO-ST (Besançon)", coords: [47.2500, 5.9900], type: "Collab (Skin Experiments)" },
+    { name: "FAU Erlangen-Nuremberg", coords: [49.5978, 11.0037], type: "Visiting" },
+    { name: "University of Leeds", coords: [53.8067, -1.5550], type: "Collab (Breast)" },
+    { name: "Euler Institute (Lugano, Suisse)", coords: [46.0037, 8.9511], type: "Collab (Porous media)" },
+    { name: "Bucknell University (PA, USA)", coords: [40.9548, -76.8814], type: "Collab (Muscle modelling)" }
   ];
 
   // Conférences (Points Rouges)
