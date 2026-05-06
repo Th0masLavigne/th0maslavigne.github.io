@@ -390,24 +390,30 @@ ul.task-list li input[type="checkbox"] {
   :root {
     --card-bg: #f4f9fc; 
     --card-border: #008BD2;
-    --folder-bg: #f4f9fc; 
+    /* Light Mode: Make the folder a distinct soft blue */
+    --folder-bg: #e6f2f8; 
     --folder-border: #008BD2; 
     --text-main: #031C59; 
-    --tab-inactive: rgba(0, 139, 210, 0.05);
-    --tab-hover: rgba(0, 139, 210, 0.15);
+    
+    /* Darken inactive tabs so the active one pops out */
+    --tab-inactive: rgba(3, 28, 89, 0.1);
+    --tab-hover: rgba(0, 139, 210, 0.2);
   }
 
   /* Dark Mode Catch-All */
   html[data-bs-theme="dark"], 
   body.quarto-dark,
   [data-bs-theme="dark"] {
-    --card-bg: rgba(198, 198, 198, 0.1); /* Translucent background for standard cards */
-    --folder-bg: #14234b; /* Solid dark blue strictly for the folder UI so tabs don't ghost */
+    --card-bg: rgba(198, 198, 198, 0.1); 
+    /* Dark Mode: Make the folder a distinct dark blue */
+    --folder-bg: #1a2a5c; 
     --card-border: #99ddff;
     --folder-border: #99ddff;
     --text-main: #f3f3f3;
-    --tab-inactive: rgba(0, 0, 0, 0.25);
-    --tab-hover: rgba(255, 255, 255, 0.1);
+    
+    /* Darken inactive tabs significantly in dark mode */
+    --tab-inactive: rgba(0, 0, 0, 0.4);
+    --tab-hover: rgba(255, 255, 255, 0.15);
   }
 
   /* --- PUBLICATION FOLDER UI STYLES --- */
@@ -424,22 +430,29 @@ ul.task-list li input[type="checkbox"] {
     border-bottom: none; 
     border-radius: 10px 10px 0 0;
     cursor: pointer; 
-    font-weight: 600; 
+    /* Slightly fade text for inactive tabs */
+    opacity: 0.7;
+    font-weight: 500; 
     margin-right: 6px; 
     position: relative; 
     z-index: 1; 
-    transition: background 0.2s, transform 0.2s;
+    transition: background 0.2s, transform 0.2s, opacity 0.2s;
   }
   
   .pub-tab:hover { 
     background: var(--tab-hover); 
+    opacity: 0.9;
     z-index: 10; 
   }
   
+  /* The Active Tab matches the folder body exactly */
   .pub-tab.active { 
     background: var(--folder-bg) !important; 
     border-bottom: 2px solid var(--folder-bg) !important; 
+    opacity: 1;
     font-weight: 800; 
+    /* Add a subtle top border to make it pop like a real folder */
+    border-top: 3px solid var(--folder-border);
     z-index: 15; 
   }
 
@@ -452,6 +465,8 @@ ul.task-list li input[type="checkbox"] {
     min-height: 400px; 
     position: relative; 
     z-index: 1;
+    /* Add a subtle shadow to separate the folder from the page background */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
   }
   
   .pub-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 25px; }
@@ -504,7 +519,7 @@ ul.task-list li input[type="checkbox"] {
   /* --- OUTREACH CARD STYLES --- */
   .outreach-card {
     display: flex; flex-direction: column; 
-    background: var(--card-bg); /* Now uses the unified card background */
+    background: var(--card-bg); 
     border: 1px solid var(--card-border); 
     border-left: 5px solid var(--card-border); 
     border-radius: 0 12px 12px 0; 

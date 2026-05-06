@@ -376,7 +376,8 @@ ul.task-list li input[type="checkbox"] {
     --text-main: #031C59; 
     --badge-role-bg: #5b626b;
     --badge-role-text: #ffffff;
-    --badge-fund-text: #008BD2;
+    --badge-fund-text: #031C59;
+    --card-hover-bg: #a8d4ff; /* Slight tint for light mode hover */
   }
 
   /* Dark Mode Sync */
@@ -389,6 +390,7 @@ ul.task-list li input[type="checkbox"] {
     --badge-role-bg: #99ddff;
     --badge-role-text: #031C59;
     --badge-fund-text: #99ddff;
+    --card-hover-bg: rgba(255, 255, 255, 0.4); /* Slight tint for dark mode hover */
   }
 
   /* --- PROJECT GRID STYLES --- */
@@ -396,9 +398,16 @@ ul.task-list li input[type="checkbox"] {
     color: var(--text-main);
     font-weight: 700;
     margin-top: 3rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem; /* Reduced to pull the subtitle closer */
     border-bottom: 2px solid var(--card-border);
     padding-bottom: 10px;
+  }
+
+  .section-subtitle {
+    font-size: 0.95rem;
+    color: var(--bs-body-color);
+    margin-bottom: 2rem;
+    font-style: italic;
   }
 
   .project-grid { 
@@ -413,15 +422,35 @@ ul.task-list li input[type="checkbox"] {
     border-radius: 8px;
     padding: 20px;
     cursor: pointer; 
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
     display: flex; 
     flex-direction: column; 
     box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    position: relative; /* For the "Click to read" text */
   }
   
   .project-card:hover { 
     transform: translateY(-5px); 
     box-shadow: 0 8px 20px rgba(0, 139, 210, 0.15); 
+    background-color: var(--card-hover-bg); /* New hover background */
+  }
+
+  /* "Click to Read" indicator that appears on hover */
+  .click-indicator {
+    font-size: 0.8rem;
+    color: var(--badge-fund-text);
+    font-weight: 600;
+    margin-top: auto; /* Pushes it to the bottom */
+    padding-top: 15px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .project-card:hover .click-indicator {
+    opacity: 1;
   }
 
   .project-title { 
@@ -521,12 +550,18 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="section-title anchored">
 Ongoing Projects
 </h2>
+<p class="section-subtitle">
+Click on any project card to read more details about the research and methodology.
+</p>
 <div id="ongoing-grid" class="project-grid">
 
 </div>
 <h2 class="section-title anchored" style="margin-top: 4rem;">
 Past Projects
 </h2>
+<p class="section-subtitle">
+Click on any project card to read more details about the research and methodology.
+</p>
 <div id="past-grid" class="project-grid">
 
 </div>
@@ -608,6 +643,7 @@ Past Projects
           <span class="badge-fund"> ${project.funding}</span>
         </div>
         <p class="project-desc">${project.short_description}</p>
+        <span class="click-indicator">Read More &rarr;</span>
       `;
       
       if (project.status && project.status.toLowerCase() === 'ongoing') {
