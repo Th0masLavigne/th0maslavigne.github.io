@@ -420,6 +420,18 @@ ul.task-list li input[type="checkbox"] {
     z-index: 1;
   }
 
+  .carousel-slide {
+  border-radius: 12px; 
+  overflow: hidden;
+  position: relative; /* Ensures caption positioning stays relative to the slide */
+  }
+
+  .carousel-slide img {
+  width: 100%;
+  display: block;
+  border-radius: 12px; /* Redundant but safe for some browsers */
+  }
+
   .carousel-titlecaption {
     position: absolute; bottom: 0; left: 0; width: 100%;
     background: rgba(148, 167, 217, 0.85) !important; backdrop-filter: blur(6px); padding: 15px 20px;
