@@ -90,13 +90,13 @@
 
 - id: "pub_glioblastoma_2025"
   year: 2026
-  title: "[SUBMITTED] Quantification of Glioblastoma growth induced displacement using Digital Volume Correlation: A proof of concept"
+  title: "[SUBMITTED] Non-invasive mapping of glioblastoma mass effect using digital volume correlation combined with MRI: Proof-of-concept"
   authors: "Meryem Abbad Andaloussi, ..., Thomas Lavigne, et al."
-  journal: "Under Review"
-  doi: ""
-  keywords: "Glioblastoma | Digital Volume Correlation | Tumor Growth | Brain Mechanics | Brain"
-  abstract: "To be communicated."
-  image: "resources/images/publications/review.png"
+  journal: "Brain Research Bulletin"
+  doi: "10.1016/j.brainresbull.2026.111991"
+  keywords: "Digital volume correlation | Glioblastoma | Elastic regularization | Tumor induced displacements | Strain fields | Magnetic resonance imaging"
+  abstract: "Conventional imaging techniques lack the ability to quantify localized brain tissue displacements and strains associated with Glioblastoma (GBM) growth and treatment response. In this proof-of-concept study, a non- invasive approach is presented to map displacement and strain fields using Digital Volume Correlation (DVC) on serial T1-Gadolinium MRI scans of a GBM patient over 63 days. A comprehensive MRI pre-processing pipeline was applied, followed by the generation of meshes segmenting healthy brain tissue, tumor, and ventricles. Three distinct regularization scenarios were implemented to capture localized tissue deformations. DVC results were qualitatively compared to MRI anatomical changes and quantitatively validated against symmetric normalization (SyN) registration. DVC outperforms conventional SyN registration in capturing heterogeneous tissue deformations. These preliminary findings suggest greater sensitivity to biomechanical alterations induced by tumor progression and demonstrate the potential of DVC-augmented imaging to serve as a quantitative biomarker for assessing GBM-induced brain mechanics. By generating maps of ventricle deformation, the method provides new opportunities for early detection and monitoring of elevated intracranial pressure (ICP) in GBM patients."
+  image: "resources/images/publications/meryem.png"
 
 - id: "pub_rajabi_gcnn"
   year: 2024
