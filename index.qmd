@@ -144,7 +144,7 @@ Former student of the **École Normale Supérieure (ENS) Paris-Saclay** (Mechani
 My thesis, *Biomechanical modelling of human skin: a hierarchical porous media framework*, successfully coupled mechanics and biology (microvascular response) to provide insights into the time-dependent, ischemic, and hyperemic responses of human skin to an external load. 
 
 **Joint Effort:** Université du Luxembourg & ENSAM Paris.<br>
-*Awarded the **2025 Excellent Thesis Award** (Uni.lu) and proposed for the Rolf Tarrach Prize (Les amis du Luxembourg), the Outstanding PhD Award (FNR) and the Prix Bézier (ENSAM).*
+*Awarded the **2025 Excellent Thesis Award** (Uni.lu) and the Rolf Tarrach Prize (Les amis du Luxembourg). Proposed for the Outstanding PhD Award (FNR) and the Prix Bézier (ENSAM).*
 
 <!-- Using your native 'button' class defined in style_site.scss! -->
 <div class="button" style="margin-top: 15px;">
