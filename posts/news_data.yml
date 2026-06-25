@@ -1,3 +1,11 @@
+- id: "fenics_2026"
+  title: "FEniCS 2026: Poromechanics and Skin Micro-circulation"
+  date: "2026-06-18"
+  category: "Conferences"
+  image: "posts/2025/2025-20-11-HPC/fenics2.png"
+  short_description: "I presented our research on the impact of mechanical loading on human skin micro-circulation using a FEniCSx implementation at FEniCS 2026 in Paris."
+  full_content: "I recently attended the <strong>FEniCS 2026</strong> conference in Paris, France, where I presented our work titled: <em>\"Poromechanics to investigate the impact of mechanical loading on human skin micro-circulation: a FEniCSx implementation\"</em> (T. Lavigne, et al.). <br><br> This research focuses on utilizing a poromechanical approach to better understand the complex interactions between mechanical stress and micro-vascular blood flow in human skin. By leveraging the advanced computational capabilities of <strong>FEniCSx</strong>, we were able to implement this coupled framework efficiently. It was a fantastic opportunity to share our methodologies with the FEniCS community and discuss the numerical challenges associated with biomechanical modeling. <br><br> <a href='https://zenodo.org/records/20632492' target='_blank' class='btn btn-sm btn-outline-primary rounded-pill'>Read the Abstract</a> <a href='https://github.com/Th0masLavigne/2-compartment-poromechanical-and-LDF-measurement.git' target='_blank' class='btn btn-sm btn-outline-secondary rounded-pill'>View Code on GitHub</a> <a href='https://fenicsproject.org/fenics-2026/' target='_blank' class='btn btn-sm btn-outline-info rounded-pill'>Conference Website</a>"
+
 - id: "news_cism_2026"
   title: "CISM School: Parameter Identification Using Full-Field Measurements"
   date: "2026-05-05"
