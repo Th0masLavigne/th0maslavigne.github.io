@@ -144,14 +144,14 @@ Former student of the **École Normale Supérieure (ENS) Paris-Saclay** (Mechani
 My thesis, *Biomechanical modelling of human skin: a hierarchical porous media framework*, successfully coupled mechanics and biology (microvascular response) to provide insights into the time-dependent, ischemic, and hyperemic responses of human skin to an external load. 
 
 **Joint Effort:** Université du Luxembourg & ENSAM Paris.<br>
-*Awarded the **2025 Excellent Thesis Award** (Uni.lu) and the Rolf Tarrach Prize (Les amis du Luxembourg). Proposed for the Outstanding PhD Award (FNR) and the Prix Bézier (ENSAM).*
+*Awarded the **2025 Excellent Thesis Award** (Uni.lu) and the Rolf Tarrach Prize (Les amis du Luxembourg). Shortlisted for the Outstanding PhD Award (FNR). Proposed for the the Prix Bézier (ENSAM).*
 
 <!-- Using your native 'button' class defined in style_site.scss! -->
 <div class="button" style="margin-top: 15px;">
   <a href="resources/documents/phd/Thomas_PhD_Manuscript_A4_Final.pdf" target="_blank" class="btn btn-outline-primary rounded-pill">{{< iconify fa6-solid:book >}} <span class="button-text">Full Manuscript</span></a>
   <a href="resources/documents/phd/main_VF.pdf" target="_blank" class="btn btn-outline-primary rounded-pill">{{< iconify fa6-solid:person-chalkboard >}} <span class="button-text">Defense Slides</span></a>
   <a href="resources/documents/phd/summary_thesis_lavigne.pdf" target="_blank" class="btn btn-outline-primary rounded-pill">{{< iconify fa6-solid:file-lines >}} <span class="button-text">Lay Abstract</span></a>
-  <a href="resources/documents/phd/Lavigne_tarrach_template_ppt_split.pdf" target="_blank" class="btn btn-outline-primary rounded-pill">{{< iconify fa6-solid:person-chalkboard >}} <span class="button-text">Lay Slides</span></a>
+  <a href="resources/documents/phd/Lavigne_tarrach_split.pdf" target="_blank" class="btn btn-outline-primary rounded-pill">{{< iconify fa6-solid:person-chalkboard >}} <span class="button-text">Lay Slides</span></a>
 </div>
 :::
 
@@ -247,7 +247,7 @@ I also collaborate on multidisciplinary studies, including:
 :::
 
 
-You can learn more about my detailed academic background in my [Academic CV](resources/documents/cv/thomas_lavigne_cv_2.pdf).
+You can learn more about my detailed academic background in my [Academic CV](resources/documents/cv/thomas_lavigne_cv_en.pdf).
 
 
 <!-- CAROUSEL SECTION -->

@@ -40,8 +40,10 @@ website:
             text: Academic & Research Appointments
       - text: CV
         menu:
-        - text: Academic CV
-          href: resources/documents/cv/thomas_lavigne_cv_2.pdf
+        - text: Academic CV (EN)
+          href: resources/documents/cv/thomas_lavigne_cv_en.pdf
+        - text: Academic CV (FR)
+          href: resources/documents/cv/thomas_lavigne_cv_fr.pdf
         - text: Narrative CV (2025)
           href: resources/documents/cv/Narrative_CV_Lavigne.pdf
         target: _blank
