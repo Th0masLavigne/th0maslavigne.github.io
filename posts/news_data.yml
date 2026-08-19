@@ -1,3 +1,11 @@
+- id: "rolf_tarrach"
+  title: "Rolf Tarrach Award 2026: Best PhD Award at University of Luxembourg"
+  date: "2026-07-08"
+  category: "Award"
+  image: "posts/2026/RolfTarrach/rolf_tarrach.jpeg"
+  short_description: "I am deeply honored to have received the 15th Rolf Tarrach Award for the best doctoral thesis at the University of Luxembourg, recognizing my research on biomechanics for pressure ulcer prevention."
+  full_content: "On July 8, 2026, I had the immense honor of officially receiving the <strong>15th Rolf Tarrach Award</strong> (Amis de l'Université du Luxembourg a.s.b.l.) for the best doctoral thesis at the Université du Luxembourg during a memorable evening at the Chamber of Commerce. <br><br> This award highlights my PhD thesis, <em>\"Biomechanical Response of Human Skin: A Hierarchical Porous Media Framework.\"</em> My research combined computational modeling with experimental methods to investigate how prolonged pressure restricts blood flow and can damage human skin. By better understanding these mechanisms, our models aim to help healthcare professionals predict and prevent severe pressure ulcers before they appear in patients with limited mobility. <br><br> I would like to extend a special thank you to Gerard Hoffmann, Alexandra Da silva, Christine Valenza, my supervisor Stéphane P.A. Bordas, and rector emeritus Rolf Tarrach for sharing this fantastic moment with me on stage. I am also deeply grateful to the sponsors whose support funds the award: Intesa Sanpaolo Wealth Management Luxembourg and the Luis y Antonio Portabella Foundation. <br><br> This PhD was a rewarding cotutelle journey between the Université du Luxembourg and Arts et Métiers ParisTech (involving Pierre-Yves Rohan at i-biomec and Giuseppe Sciumè at I2M Bordeaux), funded by the Luxembourg National Research Fund (FNR). <br><br> Following this wonderful milestone, I am excited to announce that I am now continuing my research journey as a postdoctoral researcher at the Laboratoire de Mécanique des Solides at École Polytechnique."
+
 - id: "fenics_2026"
   title: "FEniCS 2026: Poromechanics and Skin Micro-circulation"
   date: "2026-06-18"
