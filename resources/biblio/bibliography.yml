@@ -1,3 +1,13 @@
+- id: "pub_porous_liquid_2026"
+  year: 2026
+  title: "[SUBMITTED, PREPRINT] Mechanics of porous liquids with strain-dependent porosity"
+  authors: "G. Sciumé, T. Lavigne, W. Gray"
+  journal: "SSRN, International Journal of Multiphase Flow"
+  doi: "https://dx.doi.org/10.2139/ssrn.7274320"
+  keywords: "Porous Liquids | Poromechanics | Thermodynamically Constrained Averaging Theory (TCAT) | Biphasic Flow"
+  abstract: "The field of porous liquids (PLs) has introduced materials that combine fluidity with permanent, intrinsic porosity, offering significant potential in several engineering applications such as gas separation and catalysis. Current PL models assume a non-deforming porous architecture. This work broadens the concept to adaptive or dynamic porous liquids where internal porosity evolves dynamically under flow and deformation. To address this, we propose a physics-based, bi-phasic mathematical model founded on Biot's poroelasticity, extended for a fluid-like porous scaffold using background provided by the Thermodynamically Constrained Averaging Theory (TCAT). This framework explicitly couples the liquid scaffold deformation and interstitial fluid flow, providing a mechanistic explanation for the emergent apparent viscoelastic rheology. Two illustrative applications are presented. In the first one the model demonstrates formal consistency by recovering the classical response of a poroelastic solid in a one-dimensional consolidation case. In the second application the numerical simulation of flow in a bifurcated channel reveal a unique capacity for transient infiltration into dead-end microchannels driven by coupled pressure redistribution and dynamic porosity changes. This work establishes a unified poromechanical formulation for PLs, bridging the gap between molecular porous liquids and dynamic soft porous materials, and offering new insights into how microscale phase redistribution governs the macroscopic rheological behavior of the liquid."
+  image: "resources/images/publications/review.png"
+
 - id: "pub_two_phase_2024"
   year: 2025
   title: "A mathematical model for two-phase flow in confined environments: numerical solution and validation"
