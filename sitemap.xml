@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://th0maslavigne.github.io/publications.html</loc>
-    <lastmod>2026-08-19T09:05:31.722Z</lastmod>
-  </url>
-  <url>
-    <loc>https://th0maslavigne.github.io/teaching.html</loc>
-    <lastmod>2026-08-19T09:05:32.637Z</lastmod>
-  </url>
-  <url>
-    <loc>https://th0maslavigne.github.io/index.html</loc>
-    <lastmod>2026-08-19T09:05:31.688Z</lastmod>
-  </url>
-  <url>
-    <loc>https://th0maslavigne.github.io/talks.html</loc>
-    <lastmod>2026-08-19T09:05:32.637Z</lastmod>
+    <loc>https://th0maslavigne.github.io/education.html</loc>
+    <lastmod>2026-11-20T14:24:40.498Z</lastmod>
   </url>
   <url>
     <loc>https://th0maslavigne.github.io/projects.html</loc>
-    <lastmod>2026-08-19T09:05:31.721Z</lastmod>
+    <lastmod>2026-11-20T14:24:40.531Z</lastmod>
+  </url>
+  <url>
+    <loc>https://th0maslavigne.github.io/publications.html</loc>
+    <lastmod>2026-11-20T14:24:40.531Z</lastmod>
   </url>
   <url>
     <loc>https://th0maslavigne.github.io/resources/presentations/phd_defense/presentation.html</loc>
-    <lastmod>2026-08-19T09:05:32.636Z</lastmod>
+    <lastmod>2026-11-20T14:24:41.559Z</lastmod>
   </url>
   <url>
-    <loc>https://th0maslavigne.github.io/education.html</loc>
-    <lastmod>2026-08-19T09:05:31.688Z</lastmod>
+    <loc>https://th0maslavigne.github.io/teaching.html</loc>
+    <lastmod>2026-11-20T14:24:41.560Z</lastmod>
   </url>
   <url>
     <loc>https://th0maslavigne.github.io/news.html</loc>
-    <lastmod>2026-08-19T09:05:31.688Z</lastmod>
+    <lastmod>2026-11-20T14:24:40.498Z</lastmod>
+  </url>
+  <url>
+    <loc>https://th0maslavigne.github.io/talks.html</loc>
+    <lastmod>2026-11-20T14:24:41.560Z</lastmod>
+  </url>
+  <url>
+    <loc>https://th0maslavigne.github.io/index.html</loc>
+    <lastmod>2026-11-20T14:24:40.498Z</lastmod>
   </url>
 </urlset>
